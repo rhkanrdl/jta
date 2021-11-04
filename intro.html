@@ -8,6 +8,7 @@
         <title>탐나오비즈니스</title>
         <link href="source/css/boxicons.css" rel="stylesheet">
         <link href="source/css/style.css" rel="stylesheet">
+
         <!-- javaScript -->
         <script src="source/js/jquery-3.5.1.min.js"></script>
         <script src="source/js/slick.min.js"></script>
@@ -27,10 +28,43 @@
         <!-- S:mainContent -->
         <div id="content" class="intro">
 
-            <section class="login"></section>
+            <fieldset>
+                <legend class="sr-only">로그인폼</legend>
 
-            <section class="information"></section>
 
+                <h1>탐나오비즈니스</h1>
+
+                <section class="information">
+                    <img src="source/images/img-intro.png">
+                </section>
+
+                <section class="login">
+
+
+                        <div class="login-type">
+                            <input name="type" id="type01" type="radio" checked><label for="type01">여행사</label>
+                            <input name="type" id="type02" type="radio"><label for="type02">판매업체</label>
+                        </div>
+
+                        <div class="login-box">
+
+                            <label for="id">아이디</label>
+                            <input id="id" type="text" placeholder="아이디를 입력하세요">
+
+                            <label for="passwd">패스워드</label>
+                            <input id="passwd" type="password" placeholder="비밀번호를 입력하세요">
+                            <button class="submit">로그인</button>
+
+                            <ul class="tools">
+                                <li><a href="">아이디/패스워드찾기</a></li>
+                                <li><a class="red" href="">회원가입(여행사전용)</a></li>
+                            </ul>
+                        </div>
+
+
+                </section>
+
+            </fieldset>
         </div>
         <!-- E:mainContent -->
 
@@ -43,13 +77,13 @@
                     <li>
                         <a href="">회사소개</a>
                     </li>
-                    <li>
+                    <li class="mob mob1">
                         <a href="">이용약관</a>
                     </li>
                     <li>
                         <a href="">입점/제휴안내</a>
                     </li>
-                    <li>
+                    <li class="mob">
                         <a href="">
                             <strong>개인정보취급방침</strong>
                         </a>
@@ -63,11 +97,12 @@
                 </ul>
 
                 <address>
-                    <p>
-                        <h2>제주특별자치도관광협회</h2>
+
+                    <h2>제주특별자치도관광협회</h2>
+                    <p class="inline">
                         <strong>1522-3454</strong>
 
-                        <span>상담시간: 월~금 09:00-18:00 (점심시간 : 12:00-13:00)
+                        <span class="time">상담시간: 월~금 09:00-18:00 (점심시간 : 12:00-13:00)
                         </span>
                     </p>
                     <p>
