@@ -8,72 +8,40 @@ $(function(){
 
 
 
-    $("button.check-co").click(function() {
-        $("#modal-co").addClass("on");
+    
+    $("section .login-type input[name=type]").on("click", function(){
+        
+        var check = $(this).attr("id"); 
+
+        $("div.login-box").removeClass("on");
+        $("div.login-box."+ check).addClass("on");
+    });
+    
+    $("section.main-list .data-type input[name=type]").on("click", function(){
+        
+        var check = $(this).attr("id"); 
+
+        $("div.data-box").removeClass("on");
+        $("div.data-box."+ check).addClass("on");
+    });
+    
+    $("section.main-reserv .data-type input[name=reservType]").on("click", function(){
+        
+        var check = $(this).attr("id"); 
+
+        $("div.search-box").removeClass("on");
+        $("div.search-box."+ check).addClass("on");
+        console.log(check);
     });
     
     
+    
+
 
     $(window).on("resize", function(){
         $("nav#main-menu h3 a").unbind();
         menu();
         coverimage();
-    });
-
-    /* ----- slider ----- */
-    var $mainIssue = $("section.main-issue div.slider");
-
-    $mainIssue.slick({
-
-        // arrows:false,
-        autoplay:true,
-        autoplaySpeed:4000,
-        fade:true,
-        speed: 1000,
-        nextArrow: ".issue-next",
-    
-    });
-    
-    var $mainNews = $("section.main-news div.slider");
-
-    $mainNews.slick({
-
-        arrows:false,
-        autoplay:true,
-        autoplaySpeed:4000,
-        speed: 1000,
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        vertical: true,
-    
-    });
-
-    var $mainEquipment = $("section.main-equipment div.slider");
-    $mainEquipment.slick({
-        autoplay:true,
-        autoplaySpeed:5000,
-        speed: 800,
-        dots: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        prevArrow: ".slick-prev",
-        nextArrow: ".slick-next",
-        
-        responsive: [
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                  variableWidth: false,
-                  centerMode:false
-              }
-            }
-        ]
-        
-
     });
 
 
@@ -176,15 +144,3 @@ function outlink() {
         $(this).toggleClass("on");
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-

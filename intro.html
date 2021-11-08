@@ -16,7 +16,7 @@
 
     </head>
 
-    <body class="main-layout">
+    <body class="intro">
         <!-- S:skip_navi -->
         <div class="skip_navi">
             <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
@@ -46,7 +46,22 @@
                             <input name="type" id="type02" type="radio"><label for="type02">판매업체</label>
                         </div>
 
-                        <div class="login-box">
+                        <div class="login-box type01 on">
+
+                            <label for="id">아이디</label>
+                            <input id="id" type="text" placeholder="이메일 아이디를 입력하세요">
+
+                            <label for="passwd">패스워드</label>
+                            <input id="passwd" type="password" placeholder="비밀번호를 입력하세요">
+                            <button class="submit">로그인</button>
+
+                            <ul class="tools">
+                                <li><a href="">아이디/패스워드찾기</a></li>
+                                <li><a class="red" href="">회원가입(여행사전용)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="login-box type02">
 
                             <label for="id">아이디</label>
                             <input id="id" type="text" placeholder="아이디를 입력하세요">
@@ -69,7 +84,7 @@
         <!-- E:mainContent -->
 
         <!-- S:footer -->
-        <footer id="footer">
+        <footer id="footer" class="intro">
 
             <div class="container">
 
@@ -114,7 +129,8 @@
                         통신판매업번호:제2018-제주아라0049호 개인정보관리책임자:김철휘 E-mail : tamnao@tamnao.com Fax :
                         064-749-7445
                     </p>
-                    <p>
+
+                    <p class="attention">
                         탐나오는 통신판매중개자로서 거래당사자가 아니므로 개별 판매자가 등록한 상품거래정보 및 거래에 대해서 책임을 지지 않습니다.
                     </p>
 
