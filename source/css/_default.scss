@@ -22,8 +22,9 @@ $screen-size-pc: 1200px;
 		vertical-align: top;
 		font-size: 14px;
 		color: #999999;
-		width: 24px;
-		line-height: 22px;
+		width: 26px;
+		line-height: 26px;
+		border-radius:50%;
 		margin: 0 2px;
                 
 		@media (min-width: $screen-size-pc) {
@@ -52,8 +53,8 @@ $screen-size-pc: 1200px;
 	strong {
 		font-weight: normal;
 		font-weight:500;
-		color:#222;
-		text-decoration:underline;
+		color:#fff;
+		background:#2E3646;
 	}
 }
 
