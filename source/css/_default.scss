@@ -94,6 +94,7 @@ input,
 select,
 textarea {
 	@include border-radius(0);
+	background:#fff;
 	/*
         @media all and (max-width: 1199px) {
             appearance: none;
