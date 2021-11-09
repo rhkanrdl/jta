@@ -35,6 +35,14 @@ $(function(){
     });
     
     
+    $("section.sub-contents #sub-menu li.on a").on("click", function(e){
+
+        $("nav#sub-menu").toggleClass("active");
+        e.preventDefault();
+
+    });
+    
+    
     
 
 
