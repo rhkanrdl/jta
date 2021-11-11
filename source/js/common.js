@@ -70,13 +70,6 @@ $(window).on("resize", function(){
 /* ----- menu ----- */
 function menu() {
 
-    $(document).on("mousemove", function(e){
-        if (windowW > 1200 && e.pageY > 410) {
-            $("nav#main-menu").removeClass("on");
-            $("#header").removeClass("on");
-        }
-    });
-
     $("button.main-menu").on("click", function () {
         $("nav#main-menu").toggleClass("on");
     });
