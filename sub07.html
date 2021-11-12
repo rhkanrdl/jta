@@ -76,90 +76,114 @@
             <section class="sub-contents">
                 <div class="container">
 
-                    <h3 class="order-result">
-                        <span>감사합니다.</span> 주문이 완료되었습니다.
+                    <div class="hotelSearch">
+                        <h3>숙박예약</h3>
 
-                        <small>
-                            '탐나오여행사'님의 주문이
-                            <span>정상적으로 완료되었습니다. </span>
-                            <span>(주문번호: <strong>A20201204-20324)</strong></span>
-                        </small>
+                        <div class="date">
+                            <div class="start">
+                                <label for="startDay">입실일</label>
+                                <input type="date">
+                            </div>
+                            <u>-</u>
+                            <div class="end">
+                                <label for="endDay">퇴실일</label>
+                                <input type="date">
+                            </div>
+                        </div>
+
+                        <div class="form">
+                            <input type="text" placeholder="상품명을 입력하세요">
+                            <button>검색</button>
+
+                        </div>
+
+                        <button class="moreCheck">검색조건 펼치기</button>
+
+                        <div class="moreCheck">
+                            <dl>
+                                <dt>
+                                    유형
+                                </dt>
+                                <dd>
+                                    <input id="searchtype01" type="checkbox">
+                                    <label for="searchtype01">전체</label>
+
+                                    <input id="searchtype02" type="checkbox">
+                                    <label for="searchtype02">호텔</label>
+
+                                    <input id="searchtype03" type="checkbox">
+                                    <label for="searchtype03">펜션</label>
+
+                                    <input id="searchtype04" type="checkbox">
+                                    <label for="searchtype04">리조트/풀빌라/콘도</label>
+
+                                    <input id="searchtype05" type="checkbox">
+                                    <label for="searchtype05">게스트하우스</label>
+                                </dd>
+                                <dt>
+                                    지역
+                                </dt>
+                                <dd>
+                                    <input id="searchtype06" type="checkbox">
+                                    <label for="searchtype06">전체</label>
+
+                                    <input id="searchtype07" type="checkbox">
+                                    <label for="searchtype07">제주시</label>
+
+                                    <input id="searchtype08" type="checkbox">
+                                    <label for="searchtype08">동부권</label>
+
+                                    <input id="searchtype09" type="checkbox">
+                                    <label for="searchtype09">서부권</label>
+
+                                    <input id="searchtype10" type="checkbox">
+                                    <label for="searchtype10">중문/서귀포</label>
+                                </dd>
+                                <dt>
+                                    지역
+                                </dt>
+                                <dd>
+                                    <input id="searchtype11" type="checkbox">
+                                    <label for="searchtyp11">수영장</label>
+
+                                    <input id="searchtype12" type="checkbox">
+                                    <label for="searchtyp12">바베큐</label>
+                                    
+                                    <input id="searchtype13" type="checkbox">
+                                    <label for="searchtyp13">애완동물</label>
+                                    
+                                    <input id="searchtype14" type="checkbox">
+                                    <label for="searchtyp14">매점</label>
+                                    
+                                    <input id="searchtype15" type="checkbox">
+                                    <label for="searchtyp15">조식무료</label>
+                                    
+                                    <input id="searchtype16" type="checkbox">
+                                    <label for="searchtyp16">스파/사우나</label>
+                                    
+                                    <input id="searchtype17" type="checkbox">
+                                    <label for="searchtyp17">조식운영</label>
+                                    
+                                    <input id="searchtype18" type="checkbox">
+                                    <label for="searchtyp18">전기차충전소</label>
+                                    
+                                    <input id="searchtype19" type="checkbox">
+                                    <label for="searchtyp19">WIFI</label>
+                                </dd>
+                            </dl>
+
+                            <button class="refreash">초기화</button>
+
+
+                        </div>
+                    </div>
+
+
+
                     
-                    </h3>
-
-                    <!-- <nav id="sub-menu">
-                        <ul>
-                            <li><a href="">나의예약/구매내역</a></li>
-                            <li class="on"><a href="">1:1문의현황</a></li>
-                            <li><a href="">온라인 견적문의현황</a></li>
-                            <li><a href="">개인정보수정</a></li>
-                            <li><a href="">비밀번호 변경</a></li>
-                            <li><a href="">회원탈퇴</a></li>
-                        </ul>
-                    </nav> -->
-
-                    <ul class="information">
-                        <li>
-                            주문상세내역은 상단의 마이페이지 > 나의예약/구매 또는 상단 숙박 예약확인·렌터카 예약확인에서 확인하실 수 있습니다.
-                        </li>
-                        <li>
-                            주문과 관련된 문의사항이 있으신 경우 고객센터를 통해 문의해 주시기 바랍니다.
-                        </li>
-                    </ul>
-
-                        <h4 class="bTitle">주문하신 상품</h4>
-
-                        <ul class="choiceList">
-                            <li>
-                                <div class="box">
-                                    <div class="division">
-                                        <strong>구분</strong>
-                                        <span>숙박</span>
-                                    </div>
-                                    <div class="composition">
-                                        <strong>상품정보</strong>
-                                        <h5>칼호텔 스텐다드</h5>
-                                        <span>2021.12.06 - 2021.12.07</span>
-                                        <span>객실수량 : 3개</span>
-
-                                        <i>인원추가 (성인:1명 / +30,000원)</i>
-                                        <i>조식추가 (성인:4명 , 유아:1명 / +55,000원)</i>
-                                    </div>
-                                    <div class="price">
-                                        <strong>최종금액</strong>
-                                        <span>330,000</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="box">
-                                    <div class="division">
-                                        <strong>구분</strong>
-                                        <span>렌터카</span>
-                                    </div>
-                                    <div class="composition">
-                                        <strong>상품정보</strong>
-                                        <h5>칼호텔 스텐다드</h5>
-                                        <span>2021.12.06 - 2021.12.07</span>
-                                        <span>객실수량 : 3개</span>
-
-                                        <i>인원추가 (성인:1명 / +30,000원)</i>
-                                        <i>조식추가 (성인:4명 , 유아:1명 / +55,000원)</i>
-                                    </div>
-                                    <div class="price">
-                                        <span>330,000</span>
-                                    </div>
-                                </div>
-                            </li>
-
-
-
-                        </ul>
-
-                        <button class="big">확인</button>
-
                 </div>
             </section>
+
 
 
 
@@ -183,6 +207,7 @@
         <footer id="footer">
 
             <div class="container">
+
 
 
                 <ul>
@@ -210,7 +235,6 @@
                         <a class="red" href="" target="_blank">탐나오바로가기</a>
                     </li>
                 </ul>
-
                 <address>
 
                     <h2>제주특별자치도관광협회</h2>

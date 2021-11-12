@@ -55,6 +55,37 @@ $(function(){
     });
     
     
+    var searchToogle = "";
+
+    $(".hotelSearch button.moreCheck").on("click", function(){
+
+        if (searchToogle == "") {
+
+            console.log("야옹");
+
+            $(this).addClass("on");
+            $(".hotelSearch").addClass("on");
+            $(".hotelSearch div.moreCheck").addClass("on");
+    
+            $(this).html("검색조건 닫기");
+
+            searchToogle = "a";
+
+        } else {
+
+            console.log("멍멍");
+            
+            $(this).removeClass("on");
+            $(".hotelSearch").removeClass("on");
+            $(".hotelSearch div.moreCheck").removeClass("on");
+    
+            $(this).html("검색조건 펼치기");
+
+            searchToogle = "";
+
+        }
+
+    });
     
 
 
