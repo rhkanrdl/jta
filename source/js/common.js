@@ -41,6 +41,18 @@ $(function(){
         e.preventDefault();
 
     });
+
+    $(".faqList li h5").on("click", function(){
+        $(".faqList li h5").removeClass("on");
+        $(this).addClass("on");
+    });
+
+    $(".tabs input").on("click", function(){
+        var check = $(this).attr("id"); 
+
+        $(".tab").removeClass("on");
+        $(".tab."+ check).addClass("on");
+    });
     
     
     
