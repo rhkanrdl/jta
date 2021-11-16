@@ -57,15 +57,14 @@ $(function(){
     
     var searchToogle = "";
 
-    $(".hotelSearch button.moreCheck").on("click", function(){
+    $(".itemSearch button.moreCheck").on("click", function(){
 
         if (searchToogle == "") {
 
-            console.log("야옹");
 
             $(this).addClass("on");
-            $(".hotelSearch").addClass("on");
-            $(".hotelSearch div.moreCheck").addClass("on");
+            $(".itemSearch").addClass("on");
+            $(".itemSearch div.moreCheck").addClass("on");
     
             $(this).html("검색조건 닫기");
 
@@ -73,11 +72,10 @@ $(function(){
 
         } else {
 
-            console.log("멍멍");
             
             $(this).removeClass("on");
-            $(".hotelSearch").removeClass("on");
-            $(".hotelSearch div.moreCheck").removeClass("on");
+            $(".itemSearch").removeClass("on");
+            $(".itemSearch div.moreCheck").removeClass("on");
     
             $(this).html("검색조건 펼치기");
 
@@ -85,6 +83,39 @@ $(function(){
 
         }
 
+    });
+    
+
+    $(".itemList dt button").on("click", function(){
+
+        
+
+        if ($(this).hasClass("open")) {
+
+            $(this).removeClass("open");
+            $(this).parent().removeClass("on");
+            $(this).html("객실더보기");
+
+        } else {
+            $(".itemList dt button").removeClass("open");
+            $(".itemList dt").removeClass("on");
+            $(".itemList dt button").html("객실더보기");
+
+            $(this).addClass("open");
+            $(this).parent().addClass("on");
+            $(this).html("접기");
+
+        }
+    
+    });
+    
+
+    $(".itemList .links button").on("click", function(){
+        $("div.popup.qna").addClass("on");
+    });
+
+    $("div.popup button.close").on("click", function(){
+        $("div.popup").removeClass("on");
     });
     
 
