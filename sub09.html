@@ -76,8 +76,8 @@
             <section class="sub-contents">
                 <div class="container">
 
-                    <div class="itemSearch">
-                        <h3>숙박예약</h3>
+                    <div class="itemSearch ">
+                        <h3>렌터카예약</h3>
 
 
                         <button class="moreCheck">검색조건 펼치기</button>
@@ -87,12 +87,12 @@
 
                             <div class="date">
                                 <div class="start">
-                                    <label for="startDay">입실일</label>
+                                    <label for="startDay">대여일</label>
                                     <input type="date">
                                 </div>
                                 <u>-</u>
                                 <div class="end">
-                                    <label for="endDay">퇴실일</label>
+                                    <label for="endDay">반납일</label>
                                     <input type="date">
                                 </div>
                             </div>
@@ -105,73 +105,172 @@
 
                             <dl>
                                 <dt>
-                                    유형
+                                    차종
                                 </dt>
                                 <dd>
-                                    <input id="searchtype01" type="checkbox">
+                                    <input id="searchtype01" type="checkbox" checked>
                                     <label for="searchtype01">전체</label>
 
                                     <input id="searchtype02" type="checkbox">
-                                    <label for="searchtype02">호텔</label>
+                                    <label for="searchtype02">소형</label>
 
                                     <input id="searchtype03" type="checkbox">
-                                    <label for="searchtype03">펜션</label>
+                                    <label for="searchtype03">중형</label>
 
                                     <input id="searchtype04" type="checkbox">
-                                    <label for="searchtype04">리조트/풀빌라/콘도</label>
+                                    <label for="searchtype04">고급</label>
 
                                     <input id="searchtype05" type="checkbox">
-                                    <label for="searchtype05">게스트하우스</label>
+                                    <label for="searchtype05">SUV/승합</label>
+
+                                    <input id="searchtype06" type="checkbox">
+                                    <label for="searchtype06">수입</label>
                                 </dd>
                                 <dt>
-                                    지역
+                                    연료
                                 </dt>
                                 <dd>
-                                    <input id="searchtype06" type="checkbox">
-                                    <label for="searchtype06">전체</label>
 
-                                    <input id="searchtype07" type="checkbox">
-                                    <label for="searchtype07">제주시</label>
+                                    <input id="searchtype07" type="checkbox" checked>
+                                    <label for="searchtype07">전체</label>
 
                                     <input id="searchtype08" type="checkbox">
-                                    <label for="searchtype08">동부권</label>
+                                    <label for="searchtype08">휘발유</label>
 
                                     <input id="searchtype09" type="checkbox">
-                                    <label for="searchtype09">서부권</label>
+                                    <label for="searchtype09">경유</label>
 
                                     <input id="searchtype10" type="checkbox">
-                                    <label for="searchtype10">중문/서귀포</label>
-                                </dd>
-                                <dt>
-                                    편의시설
-                                </dt>
-                                <dd class="facilities">
+                                    <label for="searchtype10">LPG</label>
+
                                     <input id="searchtype11" type="checkbox">
-                                    <label for="searchtype11">수영장</label>
+                                    <label for="searchtype11">전기</label>
 
                                     <input id="searchtype12" type="checkbox">
-                                    <label for="searchtype12">바베큐</label>
+                                    <label for="searchtype12">하이브리드</label>
+                                </dd>
+                                <dt>
+                                    연령
+                                </dt>
+                                <dd>
                                     
-                                    <input id="searchtype13" type="checkbox">
-                                    <label for="searchtype13">애완동물</label>
+                                    <input id="searchtype13" type="checkbox" checked>
+                                    <label for="searchtype13">전체</label>
                                     
                                     <input id="searchtype14" type="checkbox">
-                                    <label for="searchtype14">매점</label>
+                                    <label for="searchtype14">만21세이상</label>
                                     
                                     <input id="searchtype15" type="checkbox">
-                                    <label for="searchtype15">조식무료</label>
+                                    <label for="searchtype15">만22세이상</label>
                                     
                                     <input id="searchtype16" type="checkbox">
-                                    <label for="searchtype16">스파/사우나</label>
+                                    <label for="searchtype16">만23세이상</label>
                                     
                                     <input id="searchtype17" type="checkbox">
-                                    <label for="searchtype17">조식운영</label>
+                                    <label for="searchtype17">만24세이상</label>
                                     
                                     <input id="searchtype18" type="checkbox">
-                                    <label for="searchtype18">전기차충전소</label>
+                                    <label for="searchtype18">만25세이상</label>
                                     
                                     <input id="searchtype19" type="checkbox">
-                                    <label for="searchtype19">WIFI</label>
+                                    <label for="searchtype19">만26세이상</label>
+                                </dd>
+                                <dt>
+                                    연식
+                                </dt>
+                                <dd>
+                                    
+                                    <input id="searchtype20" type="checkbox" checked>
+                                    <label for="searchtype20">전체</label>
+                                    
+                                    <input id="searchtype21" type="checkbox">
+                                    <label for="searchtype21">2016~17년</label>
+                                    
+                                    <input id="searchtype22" type="checkbox">
+                                    <label for="searchtype22">2017~18년</label>
+                                    
+                                    <input id="searchtype23" type="checkbox">
+                                    <label for="searchtype23">2018~19년</label>
+                                    
+                                    <input id="searchtype24" type="checkbox">
+                                    <label for="searchtype24">2019~20년</label>
+                                    
+                                    <input id="searchtype25" type="checkbox">
+                                    <label for="searchtype25">2021~22년</label>
+                                    
+                                    <input id="searchtype26" type="checkbox">
+                                    <label for="searchtype26">WIFI</label>
+                                </dd>
+                                <dt>
+                                    옵션
+                                </dt>
+                                <dd class="facilities">
+                                    
+                                    <input id="searchtype27" type="checkbox" checked>
+                                    <label for="searchtype27">금연차량</label>
+                                    
+                                    <input id="searchtype28" type="checkbox">
+                                    <label for="searchtype28">네비게이션</label>
+                                    
+                                    <input id="searchtype29" type="checkbox">
+                                    <label for="searchtype29">블랙박스</label>
+                                    
+                                    <input id="searchtype30" type="checkbox">
+                                    <label for="searchtype30">후방카메라</label>
+                                    
+                                    <input id="searchtype31" type="checkbox">
+                                    <label for="searchtype31">전방센서</label>
+                                    
+                                    <input id="searchtype32" type="checkbox">
+                                    <label for="searchtype32">후방센서</label>
+                                    
+                                    <input id="searchtype33" type="checkbox">
+                                    <label for="searchtype33">썬루프</label>
+                                    
+                                    <input id="searchtype34" type="checkbox">
+                                    <label for="searchtype34">블루투스</label>
+                                    
+                                    <input id="searchtype35" type="checkbox">
+                                    <label for="searchtype35">열선시트</label>
+                                    
+                                    <input id="searchtype36" type="checkbox">
+                                    <label for="searchtype36">열선핸들</label>
+                                    
+                                    <input id="searchtype37" type="checkbox">
+                                    <label for="searchtype37">통풍시트</label>
+                                    
+                                    <input id="searchtype38" type="checkbox">
+                                    <label for="searchtype38">카시트(유료)</label>
+                                    
+                                    <input id="searchtype39" type="checkbox">
+                                    <label for="searchtype39">카시트(무료)</label>
+                                    
+                                    <input id="searchtype40" type="checkbox">
+                                    <label for="searchtype40">운전석에어백</label>
+                                    
+                                    <input id="searchtype41" type="checkbox">
+                                    <label for="searchtype41">조수석에어백</label>
+                                    
+                                    <input id="searchtype42" type="checkbox">
+                                    <label for="searchtype42">4륜구동</label>
+                                    
+                                    <input id="searchtype43" type="checkbox">
+                                    <label for="searchtype43">스마트키</label>
+                                    
+                                    <input id="searchtype44" type="checkbox">
+                                    <label for="searchtype44">뒷좌석자동문</label>
+                                    
+                                    <input id="searchtype45" type="checkbox">
+                                    <label for="searchtype45">전기충전무료</label>
+                                    
+                                    <input id="searchtype46" type="checkbox">
+                                    <label for="searchtype46">USB</label>
+                                    
+                                    <input id="searchtype47" type="checkbox">
+                                    <label for="searchtype47"> AUX</label>
+                                    
+                                    <input id="searchtype48" type="checkbox">
+                                    <label for="searchtype48">DMB</label>
                                 </dd>
                             </dl>
 
@@ -182,13 +281,107 @@
                     </div>
 
 
-                    <div class="itemList">
+                    <div class="carItemList">
                         <dl>
                             <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
 
-                                <button>객실더보기</button>
+                                <button>더보기</button>
+                            </dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        <strong>에이렌터카</strong>
+
+                                        <span class="price">62,400원</span>
+
+                                        <ul>
+                                            <li>
+                                                <p>자차미포함</p>
+                                                <p>
+                                                    <input name="type" id="type01" type="radio">
+                                                    <label for="type01">80,000원</label>
+                                                </p>
+                                                <p>
+                                                    (만 21세 이상, 운전경력 1년 이상)
+                                                </p>
+                                            </li>
+                                        </ul>
+
+                                        <p class="text">조식미포함</p>
+                                        <p class="text">기준 2인 / 최대 2인</p>
+                                        <p class="text">추가요금 성인 (+50,000원) / 소아 (+20,000원) / 유아 (무료)</p>
+
+                                        <div class="toolBox">
+                                            <div class="count">
+                                                <span>잔여수량 : 5</span>
+
+                                                <div class="control">
+                                                    <button class="minus">빼기</button>
+                                                    <u>1</u>
+                                                    <button class="plus">더하기</button>
+                                                </div>
+
+                                                <button class="reservation">바로예약</button>
+
+                                                <div class="links">
+                                                    <a href="">상세보기</a>
+                                                    <button>1:1문의</button>
+                                                    <a class="big" href="">온라인견적문의</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong>마운틴더블</strong>
+
+                                        <span class="price">62,400원</span>
+
+                                        <p class="text">조식미포함</p>
+                                        <p class="text">기준 2인 / 최대 2인</p>
+                                        <p class="text">추가요금 성인 (+50,000원) / 소아 (+20,000원) / 유아 (무료)</p>
+
+                                        <div class="toolBox">
+                                            <div class="count">
+                                                <span>잔여수량 : 5</span>
+
+                                                <div class="control">
+                                                    <button class="minus">빼기</button>
+                                                    <u>1</u>
+                                                    <button class="plus">더하기</button>
+                                                </div>
+
+                                                <button class="reservation">바로예약</button>
+
+                                                <div class="links">
+                                                    <a href="">상세보기</a>
+                                                    <button>1:1문의</button>
+                                                    <a class="big" href="">온라인견적문의</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+
+
+                                </ul>
+                            </dd>
+                            
+                            <dt>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
+
+                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -258,10 +451,13 @@
                             </dd>
                             
                             <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
-
-                                <button>객실더보기</button>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
+                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -331,10 +527,13 @@
                             </dd>
                             
                             <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
-
-                                <button>객실더보기</button>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
+                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -404,10 +603,14 @@
                             </dd>
                             
                             <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
 
-                                <button>객실더보기</button>
+                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -477,83 +680,14 @@
                             </dd>
                             
                             <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
+                                <strong>쏘나타 DN8 (휘발유) 5인승</strong>
+                                <p>
+                                    <span>오토</span>
+                                    <span>중형</span>
+                                    <span>금연차량</span>
+                                </p>
 
-                                <button>객실더보기</button>
-                            </dt>
-                            <dd>
-                                <ul>
-                                    <li>
-                                        <strong>패밀리디럭스트윈A-킹더블+싱글</strong>
-
-                                        <span class="price">62,400원</span>
-
-                                        <p class="text">조식미포함</p>
-                                        <p class="text">기준 2인 / 최대 2인</p>
-                                        <p class="text">추가요금 성인 (+50,000원) / 소아 (+20,000원) / 유아 (무료)</p>
-
-                                        <div class="toolBox">
-                                            <div class="count">
-                                                <span>잔여수량 : 5</span>
-
-                                                <div class="control">
-                                                    <button class="minus">빼기</button>
-                                                    <u>1</u>
-                                                    <button class="plus">더하기</button>
-                                                </div>
-
-                                                <button class="reservation">바로예약</button>
-
-                                                <div class="links">
-                                                    <a href="">상세보기</a>
-                                                    <button>1:1문의</button>
-                                                    <a class="big" href="">온라인견적문의</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <strong>마운틴더블</strong>
-
-                                        <span class="price">62,400원</span>
-
-                                        <p class="text">조식미포함</p>
-                                        <p class="text">기준 2인 / 최대 2인</p>
-                                        <p class="text">추가요금 성인 (+50,000원) / 소아 (+20,000원) / 유아 (무료)</p>
-
-                                        <div class="toolBox">
-                                            <div class="count">
-                                                <span>잔여수량 : 5</span>
-
-                                                <div class="control">
-                                                    <button class="minus">빼기</button>
-                                                    <u>1</u>
-                                                    <button class="plus">더하기</button>
-                                                </div>
-
-                                                <button class="reservation">바로예약</button>
-
-                                                <div class="links">
-                                                    <a href="">상세보기</a>
-                                                    <button>1:1문의</button>
-                                                    <a class="big" href="">온라인견적문의</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-
-
-
-                                </ul>
-                            </dd>
-                            
-                            <dt>
-                                <strong>코업시티호텔 하버뷰</strong>
-                                <span>중문/서귀포</span>
-
-                                <button>객실더보기</button>
+                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -645,7 +779,7 @@
                 </h3>
 
                 <p class="option">
-                    [코업시티호텔 하버뷰 - 마운틴 더블] 
+                    [쏘나타 DN8 (휘발유) 5인승 - 마운틴 더블] 
                 </p>
 
                 <textarea placeholder="내용을 입력하세요"></textarea>

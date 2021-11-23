@@ -110,6 +110,30 @@ $(function(){
     });
     
 
+    $(".carItemList dt button").on("click", function(){
+
+        
+
+        if ($(this).hasClass("open")) {
+
+            $(this).removeClass("open");
+            $(this).parent().removeClass("on");
+            $(this).html("펼쳐보기");
+
+        } else {
+            $(".carItemList dt button").removeClass("open");
+            $(".carItemList dt").removeClass("on");
+            $(".carItemList dt button").html("펼쳐보기");
+
+            $(this).addClass("open");
+            $(this).parent().addClass("on");
+            $(this).html("접기");
+
+        }
+    
+    });
+    
+
     $(".itemList .links button").on("click", function(){
         $("div.popup.qna").addClass("on");
     });
@@ -181,21 +205,21 @@ function menu() {
 function coverimage() {
 
 
-    $(".main-issue .slide").each(function(){
+    $(".onlineEstimate .item p.image").each(function(){
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
 
-    $(".main-content .news p.image").each(function(){
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    });
+    // $(".main-content .news p.image").each(function(){
+    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    // });
 
-    $(".main-equipment .slide p.image").each(function(){
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    });
+    // $(".main-equipment .slide p.image").each(function(){
+    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    // });
 
-    $(".sub-content .sub-agency-detail p.image").each(function(){
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    });
+    // $(".sub-content .sub-agency-detail p.image").each(function(){
+    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    // });
 }
 
 /* ----- main tab ----- */ 
