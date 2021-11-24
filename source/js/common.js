@@ -168,28 +168,6 @@ function menu() {
         $("nav#main-menu").toggleClass("on");
     });
 
-    $("nav#main-menu h3 a").on("click", function (e) {
-        
-        $("nav#main-menu h3").removeClass("on");
-
-
-
-        if (windowW < 1200 && $(this).parent().parent().find("ul").length) {
-
-            $(this).parent().addClass("on");
-            e.preventDefault();
-
-        }
-        else {
-            $("nav#main-menu h3 a").unbind();
-
-        }
-    });
-
-    $("nav#main-menu div.menus").on("mouseenter", function(){
-        $(this).parent().addClass("on");
-        $("#header").addClass("on");
-    });
 
 }
 
