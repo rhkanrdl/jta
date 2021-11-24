@@ -5627,6 +5627,18 @@ body div#content.sub section.sub-contents div.container div.itemList dl dd ul li
   }
 }
 
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count span u {
+  text-decoration: none;
+}
+
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count span.red {
+  color: #ED5351;
+}
+
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count span.red u {
+  font-weight: 600;
+}
+
 body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.control {
   display: inline-block;
   vertical-align: top;

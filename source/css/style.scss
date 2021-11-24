@@ -3476,6 +3476,18 @@ body {
                                                         font-size:14px;
                                                         min-width:100px;
                                                     }
+
+                                                    u {
+                                                        text-decoration:none;
+                                                    }
+
+                                                    &.red {
+                                                        color:#ED5351;
+
+                                                        u {
+                                                            font-weight:600;
+                                                        }
+                                                    }
                                                 }
 
                                                 div.control {
