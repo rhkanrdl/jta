@@ -4207,6 +4207,134 @@ body div#content.sub section.sub-contents div.container ul.noticeList li.reply h
   }
 }
 
+body div#content.sub section.sub-contents div.container div.boardView {
+  margin: 30px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView {
+    margin: 50px 0 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box {
+  border-top: 2px solid #AAAAAA;
+  border-bottom: 1px solid #CCCCCC;
+  background: #FAFAFA;
+  padding: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.board-box {
+    padding: 20px 36px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box h4 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222222;
+  margin: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.board-box h4 {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box ul li {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 20px;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.board-box ul li {
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box ul li span {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-box ul li u {
+  text-decoration: none;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView hr {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.file {
+  position: relative;
+  padding: 16px 0 16px 114px;
+  border-bottom: 1px solid #ccc;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.file strong {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 84px;
+  line-height: 32px;
+  background: #7C818D;
+  border-radius: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.file p {
+  margin: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.file p a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #555555;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-text {
+  padding: 20px 0;
+  margin: 0 0 40px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-text img {
+  max-width: 100%;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.board-text p {
+  font-size: 16px;
+  margin: 0 0 6px;
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.btns {
+  text-align: center;
+}
+
+body div#content.sub section.sub-contents div.container div.boardView div.btns button {
+  font-size: 19px;
+  font-weight: 500;
+  width: 152px;
+  height: 66px;
+  color: #222;
+  background: #E5E5E5;
+  border: 1px solid #999999;
+}
+
 body div#content.sub section.sub-contents div.container div.tabs {
   text-align: center;
   white-space: nowrap;
@@ -5772,11 +5900,12 @@ body div#content.sub section.sub-contents div.container div.itemList dl dt.on + 
 
 body div#content.sub section.sub-contents div.container div.carItemList dl dt {
   position: relative;
+  width: 100%;
   height: 62px;
   border: 1px solid #aaa;
   border-top: 2px solid #5970A7;
   border-right: none;
-  padding: 24px 12px 6px;
+  padding: 24px 80px 6px 12px;
 }
 
 @media (min-width: 1200px) {
@@ -5787,13 +5916,18 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dt {
 }
 
 body div#content.sub section.sub-contents div.container div.carItemList dl dt strong {
+  display: block;
   font-size: 20px;
   color: #5970A7;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.carItemList dl dt strong {
+    display: inline-block;
     font-size: 21px;
   }
 }
@@ -5877,13 +6011,13 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd {
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li {
   display: none;
   position: relative;
   border: 1px solid #aaa;
@@ -5891,87 +6025,145 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
   padding: 15px;
 }
 
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li:first-child {
+  display: block;
+}
+
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li {
     padding: 20px 420px 20px 20px;
     min-height: 140px;
     margin-bottom: 10px;
     border-top: 1px solid #aaa;
   }
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li:first-child {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li:first-child {
     border-top: none;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li:first-child {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li > strong {
   display: block;
-}
-
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li strong {
-  display: block;
-  font-size: 18px;
-  color: #222;
-  width: calc(100% - 100px);
-  word-break: keep-all;
-  margin: 0 0 10px;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li strong {
-    font-size: 19px;
-    margin: 0 0 20px;
-  }
-}
-
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li span.price {
-  display: block;
-  position: absolute;
-  right: 15px;
-  top: 16px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ED5351;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li span.price {
-    font-size: 19px;
-    right: 420px;
-  }
-}
-
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li p.text {
-  display: inline-block;
   position: relative;
-  font-size: 15px;
-  margin: 0;
-  word-break: keep-all;
-  color: #555;
-  padding-right: 20px;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 6px;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li p.text {
-    font-size: 16px;
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li > strong {
+    font-size: 18px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li p.text::after {
-  content: "";
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li > strong i {
   display: block;
   position: absolute;
-  right: 10px;
-  top: 6px;
-  width: 1px;
-  height: 12px;
-  background: #AAAAAA;
+  right: 0;
+  top: 0;
+  font-style: normal;
+  font-weight: 400;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li p.text:last-of-type::after {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 14px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li {
+    padding: 16px 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li:last-child {
+  border-bottom: none;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  line-height: 1;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.option {
+  font-size: 16px;
+  width: 110px;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price {
+  width: calc(100% - 110px);
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price input {
   display: none;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price label {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  padding: 0 0 0 34px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #191919;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price label {
+    display: inline-block;
+    font-size: 17px;
+    min-width: 130px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price label::before {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price input:checked + label::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg transform='translate(-15 -465)'%3E%3Cg transform='translate(15 465)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3Ccircle cx='7' cy='7' r='7' transform='translate(20 470)' fill='%23ed5351'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price i {
+  display: block;
+  font-style: normal;
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.price i {
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox {
   position: relative;
   border-top: 1px solid #CCCCCC;
   margin-top: 10px;
@@ -5979,7 +6171,7 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox {
     position: absolute;
     right: 20px;
     top: 0;
@@ -5991,8 +6183,13 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count span {
-  display: inline-block;
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box {
+  clear: both;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box span {
+  display: block;
+  float: left;
   vertical-align: top;
   font-size: 13px;
   color: #555555;
@@ -6002,25 +6199,56 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count span {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box span {
     font-size: 14px;
     min-width: 100px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 9px;
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box span u {
+  text-decoration: none;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box span.red {
+  color: #ED5351;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box span.red u {
+  font-weight: 600;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box p.price {
+  display: block;
+  margin: 0;
+  float: right;
+  font-size: 20px;
+  font-weight: 800;
+  color: #ED5351;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right {
+  text-align: right;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right {
+    padding-top: 40px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 4px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control {
     padding-top: 4px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control button {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control button {
   width: 28px;
   height: 28px;
   vertical-align: top;
@@ -6030,21 +6258,21 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control button {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control button {
     width: 30px;
     height: 30px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control button.minus {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control button.minus {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.226' height='2.024' viewBox='0 0 11.226 2.024'%3E%3Cpath d='M75.932,137.674h-9.57a1.032,1.032,0,0,0,0,2.024h9.57a1.032,1.032,0,0,0,0-2.024' transform='translate(-65.534 -137.674)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center/12px auto;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control button.plus {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control button.plus {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.097' height='13.097' viewBox='0 0 13.097 13.097'%3E%3Cpath d='M77.666,71.117H73.05V66.5a.966.966,0,0,0-1.932,0v4.616H66.5a.966.966,0,0,0,0,1.932h4.616v4.616a.966.966,0,0,0,1.932,0V73.05h4.616a.966.966,0,0,0,0-1.932' transform='translate(-65.535 -65.535)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center/12px auto;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control u {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control u {
   display: inline-block;
   line-height: 28px;
   vertical-align: top;
@@ -6055,17 +6283,15 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.control u {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right div.control u {
     line-height: 30px;
     padding: 0 15px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count button.reservation {
-  position: absolute;
-  right: 0;
-  top: 10px;
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right button.reservation {
   padding: 0 15px;
+  margin: 0 0 0 20px;
   height: 40px;
   background: #ED5351;
   border: 1px solid #C94745;
@@ -6076,21 +6302,21 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count button.reservation {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.box.right button.reservation {
     width: 140px;
     font-size: 17px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 15px;
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links a,
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links button {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links a,
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links button {
   display: inline-block;
   font-size: 14px;
   -webkit-box-flex: 1;
@@ -6105,28 +6331,82 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd ul
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links a,
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links button {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links a,
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links button {
     font-size: 15px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links a.big,
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links button.big {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links a.big,
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links button.big {
   background: #D5DFEF;
   border-color: #8994A7;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links a.big,
-  body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links button.big {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links a.big,
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links button.big {
     min-width: 140px;
     max-width: 140px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.carItemList dl dd ul li div.toolBox div.count div.links button {
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.toolBox div.count div.links button {
   margin: 0 12px;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text {
+  padding: 22px 22px 2px;
+  background: #F2F2F2;
+  font-size: 15px;
+  margin: 16px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text {
+    font-size: 16px;
+    margin: 15px -400px 0 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 0 0 100px;
+  word-break: keep-all;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p {
+    padding: 0 0 0 130px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  color: #222;
+  padding: 0 0 0 10px;
+  font-weight: 500;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p strong::before {
+  content: "-";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p strong span {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li div.text p strong span {
+    display: unset;
+  }
 }
 
 body div#content.sub section.sub-contents div.container div.carItemList dl dt.on + dd ul li {

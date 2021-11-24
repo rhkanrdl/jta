@@ -2127,6 +2127,125 @@ body {
                         }
                     }
 
+                    div.boardView {
+                        margin:30px 0 0;
+
+                        @media (min-width: $screen-size-pc) {
+                            margin:50px 0 0;
+                        }
+
+                        div.board-box {
+                            border-top: 2px solid #AAAAAA;
+                            border-bottom: 1px solid #CCCCCC;
+                            background:#FAFAFA;
+                            padding:15px;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding:20px 36px;
+                            }
+
+                            h4 {
+                                font-size:17px;
+                                font-weight:500;
+                                color:#222222;
+                                margin:0 0 10px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:18px;
+                                }
+                            }
+
+                            ul {
+                                list-style:none;
+                                margin:0;
+                                padding:0;
+
+                                li {
+                                    display:inline-block;
+                                    font-size:15px;
+                                    margin-right:20px;
+                                    color:#555555;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        font-size:16px;
+                                    }
+
+                                    span {
+                                        display:none;
+                                    }
+
+                                    u {
+                                        text-decoration:none;
+                                    }
+                                }
+                            }
+                        }
+
+                        hr {
+                            display:none;
+                        }
+
+                        div.file {
+                            position: relative;
+                            padding:16px 0 16px 114px;
+                            border-bottom:1px solid #ccc;
+
+                            strong {
+                                display:block;
+                                position:absolute;
+                                left:10px;
+                                top:16px;
+                                width:84px;
+                                line-height:32px;
+                                background:#7C818D;
+                                border-radius:32px;
+                                text-align:center;
+                                color:#fff;
+                                font-size:14px;
+                                font-weight:400;
+                            }
+
+                            p {
+                                margin:0;
+                                a {
+                                    font-size:16px;
+                                    text-decoration:underline;
+                                    color:#555555;
+                                }
+                            }
+                        }
+
+                        div.board-text {
+                            padding:20px 0;
+                            margin:0 0 40px;
+                            border-bottom:1px solid #AAAAAA;
+
+                            img {
+                                max-width:100%;
+                            }
+
+                            p {
+                                font-size:16px;
+                                margin:0 0 6px;
+                                color:#222;
+                            }
+                        }
+
+                        div.btns {
+                            text-align:center;
+
+                            button {
+                                font-size:19px;
+                                font-weight:500;
+                                width:152px;
+                                height:66px;
+                                color:#222;
+                                background:#E5E5E5;
+                                border:1px solid #999999;
+                            }
+                        }
+                    }
+
                     div.tabs {
                         text-align: center;
                         white-space: nowrap;
@@ -3622,11 +3741,13 @@ body {
 
                             dt {
                                 position:relative;
+                                width:100%;
                                 height:62px;
                                 border:1px solid #aaa;
                                 border-top:2px solid #5970A7;
                                 border-right:none;
-                                padding:24px 12px 6px;
+                                padding:24px 80px 6px 12px;
+                                
 
                                 @media (min-width: $screen-size-pc) {
                                     padding:14px 20px 6px;
@@ -3634,11 +3755,16 @@ body {
                                 }
 
                                 strong {
+                                    display:block;
                                     font-size:20px;
                                     color:#5970A7;
                                     font-weight:500;
+                                    overflow:hidden;
+                                    text-overflow:ellipsis;
+                                    white-space:nowrap;
 
                                     @media (min-width: $screen-size-pc) {
+                                        display:inline-block;
                                         font-size:21px;
                                     }
                                 }
@@ -3719,17 +3845,21 @@ body {
                                     margin:0 0 40px;
                                 }
 
-                                ul {
+                                &>ul {
                                     margin:0;
                                     padding:0;
                                     list-style:none;
 
-                                    li {
+                                    &>li {
                                         display:none;
                                         position:relative;
                                         border:1px solid #aaa;
                                         border-top:none;
                                         padding:15px;
+
+                                        &:first-child {
+                                            display:block;
+                                        }
 
                                         @media (min-width: $screen-size-pc) {
                                             padding:20px 420px 20px 20px;
@@ -3742,69 +3872,125 @@ body {
                                             }
                                         }
 
-                                        &:first-child {
+                                        &>strong {
                                             display:block;
-                                        }
-
-                                        strong {
-                                            display:block;
-                                            font-size:18px;
-                                            color:#222;
-                                            width:calc(100% - 100px);
-                                            word-break:keep-all;
-                                            margin:0 0 10px;
-
-                                            @media (min-width: $screen-size-pc) {
-                                                font-size:19px;
-                                                margin:0 0 20px;
-                                            }
-                                        }
-
-                                        span.price {
-                                            display:block;
-                                            position:absolute;
-                                            right:15px;
-                                            top:16px;
-                                            font-size:18px;
-                                            font-weight:600;
-                                            color:#ED5351;
-
-                                            @media (min-width: $screen-size-pc) {
-                                                font-size:19px;
-                                                right:420px;
-                                            }
-                                        }
-
-                                        p.text {
-                                            display:inline-block;
                                             position:relative;
-                                            font-size:15px;
-                                            margin:0;
-                                            word-break:keep-all;
-                                            color:#555;
-                                            padding-right:20px;
+                                            font-size:17px;
+                                            font-weight:500;
+                                            margin:0 0 6px;
 
                                             @media (min-width: $screen-size-pc) {
-                                                font-size:16px;
+                                                font-size:18px;
                                             }
 
-                                            &::after {
-                                                content:"";
+                                            i {
                                                 display:block;
                                                 position:absolute;
-                                                right:10px;
-                                                top:6px;
-                                                width:1px;
-                                                height:12px;
-                                                background:#AAAAAA;
+                                                right:0;
+                                                top:0;
+                                                font-style:normal;
+                                                font-weight:400;
                                             }
 
-                                            &:last-of-type {
-                                                &::after {
-                                                    display:none;
+                                        }
+
+                                        ul {
+                                            padding:0;
+                                            margin:0;
+                                            list-style:none;
+
+                                            li {
+                                                border-bottom:1px solid #CCCCCC;
+                                                padding:14px 0;
+                            
+                                                @media (min-width: $screen-size-pc) {
+                                                    padding:16px 0;
+                                                }
+
+                                                &:last-child {
+                                                    border-bottom:none;
+                                                }
+
+                                                p {
+                                                    display:inline-block;
+                                                    vertical-align:top;
+                                                    margin:0;
+                                                    line-height:1;
+
+                                                    &.option {
+                                                        font-size:16px;
+                                                        width:110px;
+                                                    }
+
+                                                    &.price {
+
+                                                        width:calc(100% - 110px);
+
+                                                        input {
+                                                            display: none;
+                                                        }
+                            
+                                                        label {
+                                                            display: block;
+                                                            position: relative;
+                                                            font-size: 16px;
+                                                            padding: 0 0 0 34px;
+                                                            cursor:pointer;
+                                                            font-weight:500;
+                                                            color:#191919;
+                            
+                                                            @media (min-width: $screen-size-pc) {
+                                                                display:inline-block;
+                                                                font-size: 17px;
+                                                                min-width:130px;
+                                                            }
+                            
+                                                            &::before {
+                                                                content: "";
+                                                                display: block;
+                                                                position: absolute;
+                                                                left: 0;
+                                                                top: 50%;
+                                                                transform: translateY(-50%);
+                                                                width: 24px;
+                                                                height: 24px;
+                                                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+                            
+                                                                @media (min-width: $screen-size-pc) {
+                                                                    width:26px;
+                                                                    height:26px;
+                                                                }
+                                                            }
+                            
+                                                        }
+                            
+                                                        input:checked + label {
+                                                            &::before {
+                                                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg transform='translate(-15 -465)'%3E%3Cg transform='translate(15 465)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3Ccircle cx='7' cy='7' r='7' transform='translate(20 470)' fill='%23ed5351'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+                                                            }
+                                                        }
+
+                                                        i {
+                                                            display:block;
+                                                            font-style:normal;
+                                                            margin:10px 0 0;
+                                                            font-size:14px;
+                                                            color:#555555;
+                            
+                                                            @media (min-width: $screen-size-pc) {
+                                                                display:inline-block;
+                                                                font-size:15px;
+                                                                margin:0;
+
+                                                            }
+                                                        }
+
+                                                    }
+                                                    
                                                 }
                                             }
                                         }
+
 
                                         div.toolBox {
                                             position:relative;
@@ -3825,84 +4011,120 @@ body {
 
                                             div.count {
 
-                                                span {
-                                                    display:inline-block;
-                                                    vertical-align:top;
-                                                    font-size:13px;
-                                                    color:#555555;
-                                                    line-height:40px;
-                                                    min-width:80px;
-                                                    padding-right:10px;
+                                                div.box {
+                                                    clear:both;
 
-                                                    @media (min-width: $screen-size-pc) {
-                                                        font-size:14px;
-                                                        min-width:100px;
-                                                    }
-                                                }
-
-                                                div.control {
-                                                    display:inline-block;
-                                                    vertical-align:top;
-                                                    padding-top:9px;
-
-                                                    @media (min-width: $screen-size-pc) {
-                                                        padding-top:4px;
-                                                    }
-
-                                                    button {
-                                                        width:28px;
-                                                        height:28px;
+                                                    span {
+                                                        display:block;
+                                                        float:left;
                                                         vertical-align:top;
-                                                        background:#EBEBEB;
-                                                        border-radius:50%;
-                                                        border:none;
-
+                                                        font-size:13px;
+                                                        color:#555555;
+                                                        line-height:40px;
+                                                        min-width:80px;
+                                                        padding-right:10px;
+    
                                                         @media (min-width: $screen-size-pc) {
-                                                            width:30px;
-                                                            height:30px;
+                                                            font-size:14px;
+                                                            min-width:100px;
                                                         }
-
-                                                        &.minus {
-                                                            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.226' height='2.024' viewBox='0 0 11.226 2.024'%3E%3Cpath d='M75.932,137.674h-9.57a1.032,1.032,0,0,0,0,2.024h9.57a1.032,1.032,0,0,0,0-2.024' transform='translate(-65.534 -137.674)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+    
+                                                        u {
+                                                            text-decoration:none;
                                                         }
-
-                                                        &.plus {
-                                                            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.097' height='13.097' viewBox='0 0 13.097 13.097'%3E%3Cpath d='M77.666,71.117H73.05V66.5a.966.966,0,0,0-1.932,0v4.616H66.5a.966.966,0,0,0,0,1.932h4.616v4.616a.966.966,0,0,0,1.932,0V73.05h4.616a.966.966,0,0,0,0-1.932' transform='translate(-65.535 -65.535)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+    
+                                                        &.red {
+                                                            color:#ED5351;
+    
+                                                            u {
+                                                                font-weight:600;
+                                                            }
                                                         }
                                                     }
+    
+                                                    p.price {
+                                                        display:block;
+                                                        margin:0;
+                                                        float:right;
+                                                        font-size:20px;
+                                                        font-weight:800;
+                                                        color:#ED5351;
+                                                    }
 
-                                                    u {
-                                                        display:inline-block;
-                                                        line-height:28px;
-                                                        vertical-align:top;
-                                                        text-decoration:none;
-                                                        font-size:18px;
-                                                        font-weight:500;
-                                                        padding:0 10px;
+                                                    &.right {
 
+                                                        text-align:right;
+                            
                                                         @media (min-width: $screen-size-pc) {
-                                                            line-height:30px;
+                                                            padding-top:40px;
+                                                        }
+
+                                                        div.control {
+                                                            display:inline-block;
+                                                            vertical-align:top;
+                                                            padding-top:4px;
+        
+                                                            @media (min-width: $screen-size-pc) {
+                                                                padding-top:4px;
+                                                            }
+        
+                                                            button {
+                                                                width:28px;
+                                                                height:28px;
+                                                                vertical-align:top;
+                                                                background:#EBEBEB;
+                                                                border-radius:50%;
+                                                                border:none;
+        
+                                                                @media (min-width: $screen-size-pc) {
+                                                                    width:30px;
+                                                                    height:30px;
+                                                                }
+        
+                                                                &.minus {
+                                                                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.226' height='2.024' viewBox='0 0 11.226 2.024'%3E%3Cpath d='M75.932,137.674h-9.57a1.032,1.032,0,0,0,0,2.024h9.57a1.032,1.032,0,0,0,0-2.024' transform='translate(-65.534 -137.674)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+                                                                }
+        
+                                                                &.plus {
+                                                                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.097' height='13.097' viewBox='0 0 13.097 13.097'%3E%3Cpath d='M77.666,71.117H73.05V66.5a.966.966,0,0,0-1.932,0v4.616H66.5a.966.966,0,0,0,0,1.932h4.616v4.616a.966.966,0,0,0,1.932,0V73.05h4.616a.966.966,0,0,0,0-1.932' transform='translate(-65.535 -65.535)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+                                                                }
+                                                            }
+        
+                                                            u {
+                                                                display:inline-block;
+                                                                line-height:28px;
+                                                                vertical-align:top;
+                                                                text-decoration:none;
+                                                                font-size:18px;
+                                                                font-weight:500;
+                                                                padding:0 10px;
+        
+                                                                @media (min-width: $screen-size-pc) {
+                                                                    line-height:30px;
+                                                                    padding:0 15px;
+                                                                }
+                                                            }
+                                                        }
+        
+                                                        button.reservation {
                                                             padding:0 15px;
+                                                            margin:0 0 0 20px;
+                                                            height:40px;
+                                                            background:#ED5351;
+                                                            border:1px solid #C94745;
+                                                            border-radius:4px;
+                                                            font-size:16px;
+                                                            color:#fff;
+                                                            font-weight:500;
+        
+                                                            @media (min-width: $screen-size-pc) {
+                                                                width:140px;
+                                                                font-size:17px;
+                                                            }
+        
                                                         }
-                                                    }
-                                                }
+    
 
-                                                button.reservation {
-                                                    position:absolute;
-                                                    right:0;
-                                                    top:10px;
-                                                    padding:0 15px;
-                                                    height:40px;
-                                                    background:#ED5351;
-                                                    border:1px solid #C94745;
-                                                    border-radius:4px;
-                                                    font-size:16px;
-                                                    color:#fff;
-                                                    font-weight:500;
-
-                                                    @media (min-width: $screen-size-pc) {
-                                                        width:140px;
-                                                        font-size:17px;
                                                     }
 
                                                 }
@@ -3943,6 +4165,55 @@ body {
                                                     
                                                     button {
                                                         margin:0 12px;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        div.text {
+                                            padding:22px 22px 2px;
+                                            background:#F2F2F2;
+                                            font-size:15px;
+                                            margin:16px 0 0;
+                            
+                                            @media (min-width: $screen-size-pc) {
+                                                font-size:16px;
+                                                margin:15px -400px 0 0;
+                                            }
+
+                                            p {
+                                                position:relative;
+                                                margin:0 0 20px;
+                                                padding:0 0 0 100px;
+                                                word-break:keep-all;
+                                                color:#555555;
+                            
+                                                @media (min-width: $screen-size-pc) {
+                                                    padding:0 0 0 130px;
+                                                }
+
+                                                strong {
+                                                    display:block;
+                                                    position:absolute;
+                                                    left:0;
+                                                    color:#222;
+                                                    padding:0 0 0 10px;
+                                                    font-weight:500;
+
+                                                    &::before {
+                                                        content:"-";
+                                                        display:block;
+                                                        position:absolute;
+                                                        left:0;
+                                                    }
+
+                                                    span {
+                                                        display:block;
+                            
+                                                        @media (min-width: $screen-size-pc) {
+                                                            display:unset;
+                                                        }
+            
                                                     }
                                                 }
                                             }
