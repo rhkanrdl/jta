@@ -4280,6 +4280,12 @@ body div#content.sub section.sub-contents div.container div.boardView div.file {
   border-bottom: 1px solid #ccc;
 }
 
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.file {
+    padding: 19px 0 19px 144px;
+  }
+}
+
 body div#content.sub section.sub-contents div.container div.boardView div.file strong {
   display: block;
   position: absolute;
@@ -4295,6 +4301,13 @@ body div#content.sub section.sub-contents div.container div.boardView div.file s
   font-weight: 400;
 }
 
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.file strong {
+    left: 36px;
+    top: 19px;
+  }
+}
+
 body div#content.sub section.sub-contents div.container div.boardView div.file p {
   margin: 0;
 }
@@ -4305,10 +4318,20 @@ body div#content.sub section.sub-contents div.container div.boardView div.file p
   color: #555555;
 }
 
+body div#content.sub section.sub-contents div.container div.boardView div.file p a:hover {
+  color: #7A94D3;
+}
+
 body div#content.sub section.sub-contents div.container div.boardView div.board-text {
   padding: 20px 0;
   margin: 0 0 40px;
   border-bottom: 1px solid #AAAAAA;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.board-text {
+    padding: 30px 36px;
+  }
 }
 
 body div#content.sub section.sub-contents div.container div.boardView div.board-text img {
@@ -4333,6 +4356,14 @@ body div#content.sub section.sub-contents div.container div.boardView div.btns b
   color: #222;
   background: #E5E5E5;
   border: 1px solid #999999;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.boardView div.btns button {
+    font-size: 20px;
+    width: 160px;
+    height: 70px;
+  }
 }
 
 body div#content.sub section.sub-contents div.container div.tabs {

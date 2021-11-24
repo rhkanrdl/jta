@@ -2190,6 +2190,10 @@ body {
                             padding:16px 0 16px 114px;
                             border-bottom:1px solid #ccc;
 
+                            @media (min-width: $screen-size-pc) {
+                                padding:19px 0 19px 144px;
+                            }
+
                             strong {
                                 display:block;
                                 position:absolute;
@@ -2203,6 +2207,11 @@ body {
                                 color:#fff;
                                 font-size:14px;
                                 font-weight:400;
+
+                                @media (min-width: $screen-size-pc) {
+                                    left:36px;
+                                    top:19px;
+                                }
                             }
 
                             p {
@@ -2211,6 +2220,10 @@ body {
                                     font-size:16px;
                                     text-decoration:underline;
                                     color:#555555;
+
+                                    &:hover {
+                                        color:#7A94D3;
+                                    }
                                 }
                             }
                         }
@@ -2219,6 +2232,10 @@ body {
                             padding:20px 0;
                             margin:0 0 40px;
                             border-bottom:1px solid #AAAAAA;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding:30px 36px;
+                            }
 
                             img {
                                 max-width:100%;
@@ -2242,6 +2259,12 @@ body {
                                 color:#222;
                                 background:#E5E5E5;
                                 border:1px solid #999999;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:20px;
+                                    width:160px;
+                                    height:70px;
+                                }
                             }
                         }
                     }
