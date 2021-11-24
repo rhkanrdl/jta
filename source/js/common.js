@@ -9,14 +9,6 @@ $(function(){
 
 
     
-    $("section .login-type input[name=type]").on("click", function(){
-        
-        var check = $(this).attr("id"); 
-
-        $("div.login-box").removeClass("on");
-        $("div.login-box."+ check).addClass("on");
-    });
-    
     $("section.main-list .data-type input[name=type]").on("click", function(){
         
         var check = $(this).attr("id"); 
