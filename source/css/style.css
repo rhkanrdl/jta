@@ -4224,11 +4224,7 @@ body div#content.sub section.sub-contents div.container div.tabs {
   }
 }
 
-body div#content.sub section.sub-contents div.container div.tabs input {
-  display: none;
-}
-
-body div#content.sub section.sub-contents div.container div.tabs label {
+body div#content.sub section.sub-contents div.container div.tabs button {
   display: inline-block;
   font-size: 18px;
   width: 76px;
@@ -4241,18 +4237,18 @@ body div#content.sub section.sub-contents div.container div.tabs label {
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.tabs label {
+  body div#content.sub section.sub-contents div.container div.tabs button {
     margin-right: 14px;
     width: 150px;
     font-size: 19px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.tabs label:last-of-type {
+body div#content.sub section.sub-contents div.container div.tabs button:last-of-type {
   margin-right: 0;
 }
 
-body div#content.sub section.sub-contents div.container div.tabs input:checked + label {
+body div#content.sub section.sub-contents div.container div.tabs button.on {
   background: #3C3C49;
   border-color: transparent;
   color: #fff;

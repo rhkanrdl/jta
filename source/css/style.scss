@@ -2141,11 +2141,7 @@ body {
 
                         }
 
-                        input {
-                            display: none;
-                        }
-
-                        label {
+                        button {
                             display: inline-block;
                             font-size: 18px;
                             width: 76px;
@@ -2166,13 +2162,13 @@ body {
                             &:last-of-type {
                                 margin-right: 0;
                             }
-                        }
 
-                        input:checked + label {
-                            background: #3C3C49;
-                            border-color: transparent;
-                            color: #fff;
-
+                            &.on {
+                                background: #3C3C49;
+                                border-color: transparent;
+                                color: #fff;
+    
+                            }
                         }
 
                     }

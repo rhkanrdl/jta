@@ -47,8 +47,8 @@ $(function(){
         $(this).addClass("on");
     });
 
-    $(".tabs input").on("click", function(){
-        var check = $(this).attr("id"); 
+    $(".tabs button").on("click", function(){
+        var check = $(this).attr("data"); 
 
         $(".tab").removeClass("on");
         $(".tab."+ check).addClass("on");
