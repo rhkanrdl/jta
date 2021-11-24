@@ -473,7 +473,6 @@ body {
                     }
 
                     div.login-box {
-                        display: none;
                         border: 1px solid #BAC1CE;
                         border-top: none;
                         padding: 52px 32px 32px;
@@ -482,9 +481,6 @@ body {
                             padding: 40px 40px 20px;
                         }
 
-                        &.on {
-                            display: block;
-                        }
 
                         label {
                             display: block;

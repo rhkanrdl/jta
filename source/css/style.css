@@ -2481,7 +2481,6 @@ body div#content.intro fieldset section.login div.login-type input:checked + lab
 }
 
 body div#content.intro fieldset section.login div.login-box {
-  display: none;
   border: 1px solid #BAC1CE;
   border-top: none;
   padding: 52px 32px 32px;
@@ -2491,10 +2490,6 @@ body div#content.intro fieldset section.login div.login-box {
   body div#content.intro fieldset section.login div.login-box {
     padding: 40px 40px 20px;
   }
-}
-
-body div#content.intro fieldset section.login div.login-box.on {
-  display: block;
 }
 
 body div#content.intro fieldset section.login div.login-box label {
