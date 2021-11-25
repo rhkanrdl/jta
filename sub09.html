@@ -76,24 +76,30 @@
             <section class="sub-contents">
                 <div class="container">
 
-                    <div class="itemSearch ">
+                    <div class="itemSearch">
                         <h3>렌터카예약</h3>
 
 
                         <button class="moreCheck">검색조건 펼치기</button>
 
 
-                        <div class="moreCheck">
+                        <div class="moreCheck rent">
 
-                            <div class="date">
+                            <div class="date ">
                                 <div class="start">
                                     <label for="startDay">대여일</label>
-                                    <input type="date">
+                                    <input type="date" value="21-11-26"><!-- 가능 시작 날짜 -->
+                                    <select>
+                                        <option>19:00</option>
+                                    </select>
                                 </div>
                                 <u>-</u>
                                 <div class="end">
                                     <label for="endDay">반납일</label>
-                                    <input type="date">
+                                    <input type="date" value="21-11-28"><!-- 시작날짜 + 몇일? -->
+                                    <select>
+                                        <option>19:00</option>
+                                    </select>
                                 </div>
                             </div>
 
@@ -291,7 +297,6 @@
                                     <span>금연차량</span>
                                 </p>
 
-                                <button>더보기</button>
                             </dt>
                             <dd>
                                 <ul>
@@ -303,30 +308,21 @@
                                         <ul>
                                             <li>
                                                 <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
+                                                <p>
+                                                    <i>(만21세 이상, 운전경력 1년 이상)</i>
                                                 </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
+                                                <div class="text">
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                </div>
                                             </li>
 
                                         </ul>
@@ -352,25 +348,6 @@
                                                     <a class="big" href="">온라인견적문의</a>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
                                         </div>
                                     </li>
                                     <li>
@@ -381,30 +358,21 @@
                                         <ul>
                                             <li>
                                                 <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
+                                                <p>
+                                                    <i>(만21세 이상, 운전경력 1년 이상)</i>
                                                 </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
+                                                <div class="text">
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                </div>
                                             </li>
 
                                         </ul>
@@ -431,32 +399,13 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
-                                        </div>
                                     </li>
-
-
 
 
                                 </ul>
                             </dd>
+
+                            
                             
                             <dt>
                                 <strong>쏘나타 DN8 (휘발유) 5인승</strong>
@@ -466,11 +415,9 @@
                                     <span>금연차량</span>
                                 </p>
 
-                                <button>펼쳐보기</button>
                             </dt>
                             <dd>
                                 <ul>
-
                                     <li>
                                         <strong>에이렌터카 <i>2020-2021년식</i></strong>
 
@@ -479,30 +426,21 @@
                                         <ul>
                                             <li>
                                                 <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
+                                                <p>
+                                                    <i>(만21세 이상, 운전경력 1년 이상)</i>
                                                 </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
+                                                <div class="text">
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                </div>
                                             </li>
 
                                         </ul>
@@ -529,27 +467,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
-                                        </div>
                                     </li>
-                                    
                                     <li>
                                         <strong>에이렌터카 <i>2020-2021년식</i></strong>
 
@@ -558,30 +476,45 @@
                                         <ul>
                                             <li>
                                                 <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
+                                                <p>
+                                                    <i>(만21세 이상, 운전경력 1년 이상)</i>
                                                 </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
 
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
+                                                <div class="text">
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                    <p>
+                                                        <strong>편의장비</strong>금연차량, 네비게이션, 블랙박스, 후방카메라,
+                                                        전방센서, 후방센서, 썬루프, 블루투스, 열선시
+                                                        트, 열선핸들, 가죽시트, 통풍시트, 카시트(유료),
+                                                        카시트(무료), 운전석에어백, 조수석에어백, 4륜
+                                                        구동, 스마트키, 뒷자석자동문, 전기충전무료, 
+                                                        USB, AUX, DMB
+                                                    </p>
+                                                </div>
                                             </li>
 
                                         </ul>
@@ -608,185 +541,8 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
-                                        </div>
-                                    </li>
-                                    
-                                    <li>
-                                        <strong>에이렌터카 <i>2020-2021년식</i></strong>
-
-                                        <span class="price">62,400원</span>
-
-                                        <ul>
-                                            <li>
-                                                <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-
-                                        </ul>
-                                        <div class="toolBox">
-                                            <div class="count">
-
-                                                <div class="box">
-                                                    <span class="red">잔여수량 : <u>5</u></span>
-                                                    <p class="price">80,000원</p>
-                                                </div>
-
-                                                <div class="box right">
-                                                    <div class="control">
-                                                        <button class="minus">빼기</button>
-                                                        <u>1</u>
-                                                        <button class="plus">더하기</button>
-                                                    </div>
-                                                    <button class="reservation">바로예약</button>
-                                                </div>
-                                                <div class="links">
-                                                    <a href="">상세보기</a>
-                                                    <button>1:1문의</button>
-                                                    <a class="big" href="">온라인견적문의</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
-                                        </div>
                                     </li>
 
-                                    
-                                    <li>
-                                        <strong>에이렌터카 <i>2020-2021년식</i></strong>
-
-                                        <span class="price">62,400원</span>
-
-                                        <ul>
-                                            <li>
-                                                <p class="option">자차미포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type01" type="radio">
-                                                    <label for="type01">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">일반자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type02" type="radio">
-                                                    <label for="type02">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="option">고급자차포함</p>
-                                                <p class="price">
-                                                    <input name="type" id="type03" type="radio">
-                                                    <label for="type03">80,000원</label>
-
-                                                    <i>(만 21세 이상, 운전경력 1년 이상)</i>
-                                                </p>
-                                            </li>
-
-                                        </ul>
-                                        <div class="toolBox">
-                                            <div class="count">
-
-                                                <div class="box">
-                                                    <span class="red">잔여수량 : <u>5</u></span>
-                                                    <p class="price">80,000원</p>
-                                                </div>
-
-                                                <div class="box right">
-                                                    <div class="control">
-                                                        <button class="minus">빼기</button>
-                                                        <u>1</u>
-                                                        <button class="plus">더하기</button>
-                                                    </div>
-                                                    <button class="reservation">바로예약</button>
-                                                </div>
-                                                <div class="links">
-                                                    <a href="">상세보기</a>
-                                                    <button>1:1문의</button>
-                                                    <a class="big" href="">온라인견적문의</a>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="text">
-                                            <p>
-                                                <strong>보상한도</strong>
-                                                일반자차: 250만원  /  고급자차: 3000만원
-                                            </p>
-                                            <p>
-                                                <strong>면책금</strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>휴차보상료 <span>등</span></strong>
-                                                일반자차: 수리비의 20%, 최소 10만원 ~ 50만원  /  고급자차: 없음
-                                            </p>
-                                            <p>
-                                                <strong>편의장비</strong>
-                                                가죽시트, 금연, 네비게이션, 운전석에어백, 조수석에어백, 후방센서, 후방카메라, ABS
-                                            </p>
-                                        </div>
-                                    </li>
 
                                 </ul>
                             </dd>

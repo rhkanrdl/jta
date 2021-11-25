@@ -77,123 +77,72 @@
                 <div class="container">
                     <h3 class="stitle">회원가입</h3>
 
+                    <nav id="sub-menu">
+                        <ul>
+                            <li><a href="">나의예약/구매내역</a></li>
+                            <li><a href="">1:1문의현황</a></li>
+                            <li><a href="">온라인 견적문의현황</a></li>
+                            <li class="on"><a href="">개인정보수정</a></li>
+                            <li><a href="">비밀번호 변경</a></li>
+                            <li><a href="">회원탈퇴</a></li>
+                        </ul>
+                    </nav>
 
-                    <div class="join">
+
+                    <div class="modify">
 
 
-                        <!-- 플랫폼안내 / 필요서류안내 들어갈 예정 -->
 
 
                         
-                        <h4>업체정보</h4>
                         <ul class="form">
                             <li>
-                                <label for="company">업체명</label>
-                                <p><input id="company" type="text" readonly=""></p>
+                                <label for="id">아이디(이메일)</label>
+                                <p><input id="id" type="text" readonly value="example@mail.com"></p>
 
-                                <p class="sub">
-                                    <strong>회사유형</strong>
-
-                                    <input name="comType" id="comType01" type="radio">
-                                    <label for="comType01">법인</label>
-
-                                    <input name="comType" id="comType02" type="radio">
-                                    <label for="comType02">개인</label>
-
-                                    <input name="comType" id="comType03" type="radio">
-                                    <label for="comType03">간이</label>
-
-                                </p>
                             </li>
                             <li>
-                                <label for="regNumber">사업자등록번호</label>
-                                <p class="wBtn">
-                                    <input id="regNumber" type="text">
 
-                                    <button>중복체크</button>
+                                <label for="company">기업명</label>
+                                <p><input id="company" type="text" readonly value="탐나오여행사"></p>
+                            </li>
+                            <li>
+                                <label for="tel">연락처(휴대전화)</label>
+                                <p class="wBtn">
+                                    <input id="tel" type="text" value="010-1234-5678">
+
+                                    <button>번호변경</button>
                                 
                                 </p>
                             </li>
-                            <li>
-                                <label for="tel">전화번호</label>
-                                <p><input id="tel" type="text"></p>
 
-                            </li>
-                            <li>
-                                <label for="fax">팩스번호</label>
-                                <p><input id="fax" type="text"></p>
-
-                            </li>
-                            <li>
-                                <label for="homepage">업체홈페이지</label>
-                                <p><input id="homepage" type="text"></p>
-
-                                <p class="sub">
-                                    <strong>협회소속분과</strong>
-
-                                    <input name="part" id="part01" type="radio">
-                                    <label for="part01">회원</label>
-
-                                    <input name="part" id="part02" type="radio">
-                                    <label for="part02">비회원</label>
-
-                                </p>
-                            </li>
                             <li>
                                 <label for="address">업체주소</label>
                                 <p class="zip">
                                     
-                                    <button>중복체크</button>
-                                    <input id="zipcode" readonly type="text">
+                                    <button>주소검색</button>
+                                    <input id="zipcode" readonly type="text" value="63126">
                                 </p>
-                                <p><input id="address01" type="text"></p>
-                                <p><input id="address02" type="text"></p>
+                                <p class="address add01"><input id="address01" type="text" value="제주특별자치도 제주시 연동 1523-1"></p>
+                                <p class="address"><input id="address02" type="text" value="수양빌딩 8층 801호"></p>
 
                             </li>
-                            <li>
-                                <label for="ceo">대표자 성명</label>
-                                <p><input id="ceo" type="text"></p>
 
-                            </li>
                             <li>
-                                <label for="condition">업태</label>
-                                <p><input id="condition" type="text"></p>
+                                <label for="agree">수신동의</label>
 
-                            </li>
-                            <li>
-                                <label for="sectors">업종</label>
-                                <p><input id="sectors" type="text"></p>
+                                <p class="sub">
+                                    <strong>이메일수신</strong>
 
-                            </li>
-                            <li>
-                                <label for="id">아이디</label>
-                                <p><input id="id" type="text"></p>
-                                <p class="mail">
-                                    
-                                    <input id="mail" type="text">
-                                    <select>
-                                        <option>이메일 선택</option>
-                                    </select>
+                                    <input name="agree" id="agree01" type="radio">
+                                    <label for="agree01">동의</label>
+
+                                    <input name="part" id="agree02" type="radio">
+                                    <label for="agree02">비동의</label>
+
                                 </p>
-
                             </li>
-                            <li>
-                                <label for="passwd">비밀번호</label>
-                                <p><input id="passwd" type="password"></p>
 
-                            </li>
-                            <li>
-                                <label for="passwdRe">비밀번호 확인</label>
-                                <p><input id="passwdRe" type="password"></p>
-
-                                <i class="red">일치하지 않습니다.</i>
-
-                            </li>
-                            <li>
-                                <label for="product">판매 예정 상품</label>
-                                <p><input id="product" type="text"></p>
-
-                            </li>
                         </ul>
 
                         <button class="bigFull">변경하기</button>

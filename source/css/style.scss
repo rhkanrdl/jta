@@ -47,6 +47,28 @@ body {
         }
     }
 
+
+    button.big {
+        display: block;
+        font-size: 20px;
+        background: #ED5351;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 50px;
+        min-width: 260px;
+        height: 80px;
+        border: 1px solid #C94745;
+        color: #fff;
+        margin: 0 auto;
+
+        @media (min-width: $screen-size-pc) {
+            font-size: 22px;
+            padding: 0 80px;
+            height: 80px;
+        }
+
+    }
+
     /* header */
     header {
         text-align: center;
@@ -1424,6 +1446,23 @@ body {
                             }
                         }
 
+                        &.bank {
+
+                            &::before {
+                                width: 42px;
+                                height: 51px;
+
+                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='61.513' height='74.426' viewBox='0 0 61.513 74.426'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Cpath  d='M0,0H61.513V74.426H0Z' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip-path)'%3E%3Cpath  d='M9.239,31.01,4.233,26a3.146,3.146,0,0,1,4.449-4.449l5.006,5.006' transform='translate(-0.947 -5.898)' fill='%23c9caca'/%3E%3Cpath d='M9.239,31.01,4.233,26a3.146,3.146,0,0,1,4.449-4.449l5.006,5.006' transform='translate(-0.947 -5.898)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath  d='M72.74,31.01,77.746,26A3.146,3.146,0,0,0,73.3,21.555l-5.006,5.006' transform='translate(-19.52 -5.898)' fill='%23c9caca'/%3E%3Cpath d='M72.74,31.01,77.746,26A3.146,3.146,0,0,0,73.3,21.555l-5.006,5.006' transform='translate(-19.52 -5.898)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath  d='M31.471,20.58A28.971,28.971,0,1,0,60.442,49.551,28.971,28.971,0,0,0,31.471,20.58Zm0,50.669a21.7,21.7,0,1,1,21.7-21.7A21.7,21.7,0,0,1,31.471,71.249Z' transform='translate(-0.715 -5.882)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath d='M34.345,52.426l.508-21.784q-.254-.006-.508-.006a21.79,21.79,0,1,0,21.79,21.79Z' transform='translate(-3.589 -8.757)' fill='%23ed5351'/%3E%3Cpath  d='M34.345,52.426l.508-21.784q-.254-.006-.508-.006a21.79,21.79,0,1,0,21.79,21.79Z' transform='translate(-3.589 -8.757)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath d='M44.428,9.579H35.775a3.539,3.539,0,1,1,0-7.078h8.652a3.539,3.539,0,1,1,0,7.078' transform='translate(-9.214 -0.715)' fill='%23c9caca'/%3E%3Cpath  d='M44.428,9.579H35.775a3.539,3.539,0,1,1,0-7.078h8.652a3.539,3.539,0,1,1,0,7.078Z' transform='translate(-9.214 -0.715)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cline y2='5.047' transform='translate(30.757 9.651)' fill='%23c9caca'/%3E%3Cline y2='5.047' transform='translate(30.757 9.651)' fill='none' stroke='%233e3a39' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width: 62px;
+                                    height: 75px;
+                                }
+                            }
+    
+
+                        }
+
                         span {
                             display: block;
 
@@ -2467,7 +2506,7 @@ body {
 
                     ul.choiceList {
                         list-style: none;
-                        margin: 0 0 30px;
+                        margin: 0 -15px 30px;
                         padding: 0;
                         border-top: 2px solid #aaa;
 
@@ -2623,13 +2662,15 @@ body {
                         line-height:50px;
                         font-size:17px;
                         font-weight:500;
-                        margin:0 0 40px;
+                        margin:0 -15px 40px;
+                        padding:0 15px;
                         
 
                         @media (min-width: $screen-size-pc) {
                             line-height:70px;
                             font-size:18px;
                             margin:0 0 140px;
+                            padding:0;
                         }
 
 
@@ -2735,7 +2776,697 @@ body {
                       }
                     }
 
-                    
+                    div.reservList {
+                        position:relative;
+                        padding-top:40px;
+                        margin-bottom:30px;
+
+                        @media (min-width: $screen-size-pc) {
+                            padding-top:42px;
+
+                        }
+
+                        button.delete {
+                            position:absolute;
+                            right:0;
+                            top:0;
+                            font-size:14px;
+                            color:#fff;
+                            border-radius:4px;
+                            border:1px solid #414B64;
+                            background:#57607B;
+                            width:62px;
+                            height:28px;
+
+                            @media (min-width: $screen-size-pc) {
+                                width:62px;
+                                height:32px;
+                                font-size:15px;
+
+                            }
+
+                        }
+
+                        div.title {
+                            position:relative;
+                            border:1px solid #CCCCCC;
+                            border-bottom:none;
+                            padding:10px;
+                            background:#F9F9F9;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding:15px 25px;
+    
+                            } 
+
+                            h5 {
+                                font-size:16px;
+                                font-weight:500;
+                                color:#222;
+                                margin:0;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:17px;
+        
+                                } 
+
+                                small {
+                                    display:block;
+                                    margin-top:6px;
+                                    font-weight:400;
+                                    font-size:14px;
+                                    color:#222222;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        font-size:15px;
+                                        display:inline-block;
+                                        margin:0 0 0 20px;
+            
+                                    } 
+                                }
+                            }
+
+                            p.price {
+                                position:absolute;
+                                right:20px;
+                                bottom:20px;
+                                margin:0;
+                                font-size:17px;
+                                color:#5970A7;
+                                font-weight:500;
+
+                            }
+                        }
+
+                        ul.list {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            border-top: 2px solid #aaa;
+    
+                            @media (min-width: $screen-size-pc) {
+    
+                            }
+    
+                            li {
+                                border: 1px solid #CCCCCC;
+                                border-top:none;;
+    
+                                div.box {
+                                    display: flex;
+    
+                                    div {
+                                        margin: 0;
+                                        flex-grow: 1;
+                                        position: relative;
+    
+                                        &.composition {
+                                            padding: 15px;
+                                            word-break: keep-all;
+    
+                                            @media (min-width: $screen-size-pc) {
+                                                flex-grow: 8;
+                                                padding: 20px;
+                                            }
+
+                                            strong {
+                                                display:block;
+                                                margin:0 0 10px;
+                                                font-size:15px;
+                                                font-weight:400;
+
+    
+                                                @media (min-width: $screen-size-pc) {
+                                                    font-size:16px;
+                                                    display:inline-block;
+                                                    width:100px;
+                                                }
+
+                                            }
+
+
+                                            div.control {
+                                                display:block;
+                                                padding-top:9px;
+                                                text-align:center;
+
+                                                @media (min-width: $screen-size-pc) {
+                                                    display:inline-block;
+                                                    padding-top:4px;
+                                                    margin-right:70px;
+                                                }
+
+                                                span {
+                                                    display:inline-block;
+                                                    margin:0 20px 0 0;
+                                                    font-size:15px;
+                                                    line-height:28px;
+
+                                                    @media (min-width: $screen-size-pc) {
+                                                        font-size:16px;
+                                                        line-height:30px;
+                                                    }
+                                                }
+
+                                                button {
+                                                    width:28px;
+                                                    height:28px;
+                                                    vertical-align:top;
+                                                    background:#EBEBEB;
+                                                    border-radius:50%;
+                                                    border:none;
+
+                                                    @media (min-width: $screen-size-pc) {
+                                                        width:30px;
+                                                        height:30px;
+                                                    }
+
+                                                    &.minus {
+                                                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.226' height='2.024' viewBox='0 0 11.226 2.024'%3E%3Cpath d='M75.932,137.674h-9.57a1.032,1.032,0,0,0,0,2.024h9.57a1.032,1.032,0,0,0,0-2.024' transform='translate(-65.534 -137.674)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+                                                    }
+
+                                                    &.plus {
+                                                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.097' height='13.097' viewBox='0 0 13.097 13.097'%3E%3Cpath d='M77.666,71.117H73.05V66.5a.966.966,0,0,0-1.932,0v4.616H66.5a.966.966,0,0,0,0,1.932h4.616v4.616a.966.966,0,0,0,1.932,0V73.05h4.616a.966.966,0,0,0,0-1.932' transform='translate(-65.535 -65.535)' fill='%2337425d'/%3E%3C/svg%3E%0A") no-repeat #EBEBEB center / 12px auto;
+                                                    }
+                                                }
+
+                                                u {
+                                                    display:inline-block;
+                                                    line-height:28px;
+                                                    vertical-align:top;
+                                                    text-decoration:none;
+                                                    font-size:18px;
+                                                    font-weight:500;
+                                                    padding:0 10px;
+
+                                                    @media (min-width: $screen-size-pc) {
+                                                        line-height:30px;
+                                                        padding:0 15px;
+                                                    }
+                                                }
+                                            }
+
+
+
+                                        }
+    
+                                        &.price {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: right;
+                                            padding:0 10px;
+                                            border-left: 1px solid #CCCCCC;
+                                            max-width: 120px;
+                                            min-width: 120px;
+    
+                                            @media (min-width: $screen-size-pc) {
+                                                flex-grow: 2;
+                                                max-width:160px;
+                                                min-width:160px;
+                                                padding:0 20px;
+                                            }
+    
+                                            span {
+                                                display: block;
+                                                font-size: 15px;
+                                                color:#5970A7;
+    
+                                                @media (min-width: $screen-size-pc) {
+                                                    font-size:16px;
+                                                }
+        
+    
+                                            }
+                                        }
+
+                                        
+    
+                                        &.form {
+                                            padding: 15px;
+                                            word-break: keep-all;
+    
+                                            @media (min-width: $screen-size-pc) {
+                                                flex-grow: 8;
+                                                padding: 20px 20px 10px;
+                                            }
+
+                                            strong {
+                                                display:block;
+                                                margin:0 0 10px;
+                                                font-size:15px;
+                                                font-weight:400;
+    
+                                                @media (min-width: $screen-size-pc) {
+                                                    font-size:16px;
+                                                }
+
+
+                                            }
+
+                                            div.outline {
+                                                position:relative;
+    
+                                                @media (min-width: $screen-size-pc) {
+                                                    display:inline-block;
+                                                    width:380px;
+                                                }
+
+                                                &:first-of-type {
+                                                    margin-bottom:20px;
+    
+                                                    @media (min-width: $screen-size-pc) {
+                                                        margin:0 80px 0 0;
+                                                    }
+    
+                                                }
+
+
+                                                input[type="text"],
+                                                input[type="tel"],
+                                                input[type="email"] {
+                                                    font-size:15px;
+                                                    border:1px solid #ccc;
+                                                    width:100%;
+                                                    height:38px;
+                                                    margin-bottom:10px;
+                                                    padding:0 10px;
+    
+                                                    @media (min-width: $screen-size-pc) {
+                                                        height:40px;
+                                                        font-size:16px;
+                                                        
+                                                        &.tel {
+                                                            width:calc(100% - 140px);
+                                                        }
+                                                    }
+    
+                                                    &.name {
+                                                        width:120px;
+                                                        max-width:100%;
+    
+                                                        @media (min-width: $screen-size-pc) {
+                                                            width:130px;
+                                                            margin-right:10px;
+                                                        }
+                                                    }
+                                                }
+
+
+                                                div.check {
+                                                    position:absolute;
+                                                    right:0;
+                                                    top:0;
+
+                                                    input {
+                                                        vertical-align:bottom;
+                                                        margin-right:6px;
+                                                        width:18px;
+                                                        height:18px;
+                                                    }
+
+                                                    label {
+                                                        font-size:13px;
+                                                        color:#555555;
+    
+                                                        @media (min-width: $screen-size-pc) {
+                                                            font-size:14px;
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+
+
+                                        }
+    
+                                        &.sms {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: right;
+                                            padding:0 10px 0 34px;
+                                            border-left: 1px solid #CCCCCC;
+                                            max-width: 120px;
+                                            min-width: 120px;
+    
+                                            @media (min-width: $screen-size-pc) {
+                                                flex-grow: 2;
+                                                max-width:160px;
+                                                min-width:160px;
+                                            }
+                                            span {
+                                                position:relative;
+                                                display: block;
+                                                font-size: 15px;
+                                                color:#5970A7;
+                                                word-break:keep-all;
+    
+                                                @media (min-width: $screen-size-pc) {
+                                                    font-size:16px;
+                                                }
+
+                                                input {
+                                                    position:absolute;
+                                                    left:-24px;
+                                                    top:6px;
+                                                    width:18px;
+                                                    height:18px;
+                                                }
+    
+                                            }
+                                        }
+
+    
+                                    }
+    
+                                }
+    
+                            }
+                        }
+                        
+
+                        div.total {
+                            border:1px solid #CCCCCC;
+                            border-top:none;
+                            padding:12px 10px;
+                            background:#F9F9F9;
+                            position:relative;
+    
+                            @media (min-width: $screen-size-pc) {
+                                padding:15px 25px;
+                            }
+
+                            h5 {
+                                font-size:17px;
+                                font-weight:400;
+                                color:#222;
+                                margin:0;
+    
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:18px;
+                                }
+                            }
+
+                            p.price {
+                                position:absolute;
+                                right:20px;
+                                top:12px;
+                                margin:0;
+                                font-size:19px;
+                                font-weight:500;
+                                color:#222;
+    
+                                @media (min-width: $screen-size-pc) {
+                                    top:13px;
+                                    font-size:20px;
+                                }
+                            }
+                        }
+                    }
+
+                    div.allPrice {
+                        position:relative;
+                        border:1px solid #777777;
+                        padding:15px;
+                        margin-bottom:30px;
+    
+                        @media (min-width: $screen-size-pc) {
+                            padding:25px;
+                        }
+
+                        h5 {
+                            font-size:17px;
+                            font-weight:500px;
+                            margin:0 0 10px;
+    
+                            @media (min-width: $screen-size-pc) {
+                                font-size:18px;
+                            }
+                        }
+
+                        p.price {
+                            margin:0;
+                            text-align:right;
+                            font-size:23px;
+                            color:#ED5351;
+                            font-weight:500;
+    
+                            @media (min-width: $screen-size-pc) {
+                                position:absolute;
+                                right:25px;
+                                top:23px;
+                                font-size:24px;
+                            }
+                        }
+                    }
+
+
+
+
+                    ul.bankInfo {
+                        list-style: none;
+                        margin: 0 -15px 30px;
+                        padding: 15px 0;
+                        border-top: 2px solid #aaa;
+                        border-bottom: 1px solid #CCCCCC;
+
+                        @media (min-width: $screen-size-pc) {
+
+                            margin: 0 0 40px;
+                            padding:0;
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                height: 44px;
+                                background: #DDDDDD;
+                            }
+
+                        }
+
+                        li {
+                            padding:0 15px;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding:0;
+                            }
+
+                            div.box {
+                                @media (min-width: $screen-size-pc) {
+                                    display: flex;
+                                }
+
+                                div {
+                                    margin: 0;
+                                    position: relative;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        flex-grow: 1;
+                                    }
+
+                                    &.bank {
+                                        display:block;
+
+                                        span {
+                                            font-size:15px;
+                                        }
+
+                                        @media (min-width: $screen-size-pc) {
+
+                                            border-right: 1px solid #CCCCCC;
+                                            min-width: 140px;
+                                            max-width: 140px;
+                                            flex-grow: 1;
+
+                                            span {
+                                                display: block;
+                                                margin: 20px 0;
+                                                font-size: 16px;
+                                                text-align: center;
+                                            }
+                                        }
+                                    }
+
+                                    &.num {
+                                        display: block;
+                                        word-break: keep-all;
+
+                                        span {
+                                            display: block;
+                                            font-weight:500;
+                                            font-size: 15px;
+
+                                            u {
+                                                text-decoration:none;
+                                                font-weight:400;
+                                                padding-left:10px;
+                                            }
+                                        }
+
+                                        @media (min-width: $screen-size-pc) {
+
+                                            border-right: 1px solid #CCCCCC;
+                                            flex-grow: 7;
+
+                                            span {
+                                                display: block;
+                                                margin: 20px;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+
+                                    &.name {
+                                        display:block;
+
+                                        strong {
+                                            display:inline;
+                                            font-size:15px;
+                                            font-weight:400;
+
+                                            &::after {
+                                                content:" : ";
+                                            }
+
+                                        }
+
+                                        span {
+                                            font-size: 15px;
+                                        }
+
+                                        @media (min-width: $screen-size-pc) {
+
+                                            border-right: 1px solid #CCCCCC;
+                                            flex-grow: 7;
+
+                                            strong {
+                                                &::after {
+                                                    display:none;
+                                                }
+                                            }
+
+                                            span {
+                                                display: block;
+                                                margin: 20px 0;
+                                                font-size: 16px;
+                                                text-align:center;
+                                            }
+                                        }
+                                    } 
+
+                                    &.time {
+                                        display:block;
+                                        text-align:right;
+                                        strong {
+                                            display:inline;
+                                            font-size:15px;
+                                            font-weight:400;
+
+                                            &::after {
+                                                content:" : ";
+                                            }
+
+                                        }
+
+                                        span {
+                                            font-size: 17px;
+                                            font-weight:500;
+                                            color:#ED5351;
+                                        }
+
+                                        @media (min-width: $screen-size-pc) {
+
+                                            border-right: 1px solid #CCCCCC;
+                                            flex-grow: 2;
+
+                                            strong {
+                                                &::after {
+                                                    display:none;
+                                                }
+                                            }
+
+                                            span {
+                                                display: block;
+                                                margin: 20px 0;
+                                                font-size: 18px;
+                                                text-align:center;
+                                            }
+                                        }
+                                    } 
+
+                                    &.price {
+                                        display:block;
+                                        text-align:right;
+
+                                        strong {
+                                            display:inline;
+                                            font-size:15px;
+                                            font-weight:400;
+
+                                            &::after {
+                                                content:" : ";
+                                            }
+
+                                        }
+
+                                        span {
+                                            font-size: 17px;
+                                            font-weight:500;
+                                            color:#222;
+                                        }
+
+                                        @media (min-width: $screen-size-pc) {
+
+                                            flex-grow: 2;
+
+                                            strong {
+                                                &::after {
+                                                    display:none;
+                                                }
+                                            }
+
+                                            span {
+                                                display: block;
+                                                margin: 20px 0;
+                                                font-size: 18px;
+                                                text-align:center;
+                                            }
+                                        }
+                                    } 
+
+
+                                    strong {
+                                        display: none;
+                                    }
+                                }
+
+                            }
+
+                            @media (min-width: $screen-size-pc) {
+
+                                &:first-child {
+                                    div.box {
+                                        div {
+                                            strong {
+                                                display: block;
+                                                font-size: 16px;
+                                                position: absolute;
+                                                left: 0;
+                                                right: 0;
+                                                top: -44px;
+                                                text-align: center;
+                                                line-height: 44px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+
+
 
                     ul.message {
                         list-style: none;
@@ -2851,7 +3582,7 @@ body {
 
                     ul.pay {
                         list-style: none;
-                        margin: 0 0 30px;
+                        margin: 0 -15px 30px;
                         padding: 0;
                         border-top: 2px solid #aaa;
 
@@ -2862,10 +3593,12 @@ body {
 
                         li {
                             border-bottom: 1px solid #ccc;
+                            padding:0 15px;
 
                             @media (min-width: $screen-size-pc) {
                                 border-left: 1px solid #ccc;
                                 flex-grow: 1;
+                                padding:0;
 
                                 &:first-child {
                                     border-left: none;
@@ -3181,27 +3914,6 @@ body {
                         }
                     }
 
-                    button.big {
-                        display: block;
-                        font-size: 20px;
-                        background: #ED5351;
-                        font-size: 20px;
-                        font-weight: 500;
-                        padding: 0 50px;
-                        min-width: 260px;
-                        height: 80px;
-                        border: 1px solid #C94745;
-                        color: #fff;
-                        margin: 0 auto;
-
-                        @media (min-width: $screen-size-pc) {
-                            font-size: 22px;
-                            padding: 0 80px;
-                            height: 80px;
-                        }
-
-                    }
-
 
                     div.itemSearch {
                         position:relative;
@@ -3233,7 +3945,7 @@ body {
                             line-height:50px;
                             font-weight:500;
                             color:#fff;
-                            width:100px;
+                            width:120px;
                             margin:0 0 5px;
                         
 
@@ -3291,51 +4003,6 @@ body {
                                 max-height:auto;
                                 
                             }
-
-
-                            div.form {
-                                padding:0 20px;
-
-                                @media (min-width: $screen-size-pc) {
-                                    width:465px;
-                                    position:absolute;
-                                    left:510px;
-                                    top:22px;
-                                }
-
-                                input {
-                                    font-size:15px;
-                                    margin-right:14px;
-                                    height:50px;
-                                    border:1px solid #21242A;
-                                    width:calc(100% - 94px);
-                                    padding:0 10px;
-
-                                    @media (min-width: $screen-size-pc) {
-                                        height:56px;
-                                    }
-    
-
-                        
-
-    
-                                }
-    
-                                button {
-                                    font-size:16px;
-                                    color:#fff;
-                                    font-weight:500;
-                                    background:#ED5351;
-                                    border:1px solid #C94745;
-                                    width:80px;
-                                    height:50px;
-
-                                    @media (min-width: $screen-size-pc) {
-                                        height:56px;
-                                    }
-                                }
-                            }
-    
                             div.date {
                                 display:inline-block;
                                 vertical-align:top;
@@ -3377,6 +4044,13 @@ body {
                                             font-size:16px;
                                         }
                                     }
+
+                                    select {
+                                        font-size:15px;
+                                        border:1px solid #ccc;
+                                        width:100%;
+                                        margin-top:6px;
+                                    }
     
                                     &.end {
                                         text-align:right;
@@ -3385,6 +4059,7 @@ body {
     
                                 u {
                                     display:inline-block;
+                                    text-decoration:none;
                                     vertical-align:top;
                                     width:40px;
                                     line-height:50px;
@@ -3402,8 +4077,99 @@ body {
                                         background:#707070;
                                     }
                                 }
+
                             }
 
+
+
+                            div.form {
+                                padding:0 20px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width:465px;
+                                    position:absolute;
+                                    left:510px;
+                                    top:22px;
+                                }
+
+                                input {
+                                    font-size:15px;
+                                    margin-right:14px;
+                                    height:50px;
+                                    border:1px solid #21242A;
+                                    width:calc(100% - 94px);
+                                    padding:0 10px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        height:56px;
+                                    }
+    
+
+                        
+
+    
+                                }
+    
+                                button {
+                                    font-size:16px;
+                                    color:#fff;
+                                    font-weight:500;
+                                    background:#ED5351;
+                                    border:1px solid #C94745;
+                                    width:80px;
+                                    height:50px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        height:56px;
+                                        left:60px;
+                                    }
+                                }
+                            }
+
+
+
+
+
+                            &.rent {
+
+                                div.date {
+                                    height:90px;
+
+                                    @media (min-width: $screen-size-pc) {
+
+                                        width:480px;
+                                        height:56px;
+
+                                        input {
+                                            display:inline-block;
+                                            width:128px;
+                                        }
+
+                                        select {
+                                            display:inline-block;
+                                            width:70px;
+                                            margin-top:0;
+                                        }
+                                    }
+
+
+                                    u {
+                                        line-height:90px;
+
+                                    }
+
+                                }
+
+                                div.form {
+
+                                    @media (min-width: $screen-size-pc) {
+                                        left:650px;
+                                        width:365px;
+                                    }
+                                }
+                            }
+
+    
                             dl {
                                 margin:22px 0 0;
                                 border-top:1px solid #677288;
@@ -3877,7 +4643,6 @@ body {
                                 height:62px;
                                 border:1px solid #aaa;
                                 border-top:2px solid #5970A7;
-                                border-right:none;
                                 padding:24px 80px 6px 12px;
                                 
 
@@ -3983,17 +4748,14 @@ body {
                                     list-style:none;
 
                                     &>li {
-                                        display:none;
                                         position:relative;
                                         border:1px solid #aaa;
                                         border-top:none;
                                         padding:15px;
 
-                                        &:first-child {
-                                            display:block;
-                                        }
 
                                         @media (min-width: $screen-size-pc) {
+                                            position:relative;
                                             padding:20px 420px 20px 20px;
                                             min-height:140px;
                                             margin-bottom:10px;
@@ -4001,6 +4763,17 @@ body {
 
                                             &:first-child {
                                                 border-top:none;
+                                            }
+
+                                            &::after {
+                                                content:"";
+                                                display:block;
+                                                position:absolute;
+                                                width:1px;
+                                                right:400px;
+                                                top:20px;
+                                                bottom:20px;
+                                                background:#ccc;
                                             }
                                         }
 
@@ -4032,11 +4805,11 @@ body {
                                             list-style:none;
 
                                             li {
-                                                border-bottom:1px solid #CCCCCC;
+                                                // border-bottom:1px solid #CCCCCC;
                                                 padding:14px 0;
                             
                                                 @media (min-width: $screen-size-pc) {
-                                                    padding:16px 0;
+                                                    padding:16px 0 0;
                                                 }
 
                                                 &:last-child {
@@ -4054,72 +4827,75 @@ body {
                                                         width:110px;
                                                     }
 
-                                                    &.price {
 
-                                                        width:calc(100% - 110px);
+                                                    i {
+                                                        display:block;
+                                                        font-style:normal;
+                                                        margin:0 0 0;
+                                                        font-size:14px;
+                                                        color:#555555;
+                        
+                                                        @media (min-width: $screen-size-pc) {
+                                                            display:inline-block;
+                                                            font-size:15px;
+                                                            margin:0;
 
-                                                        input {
-                                                            display: none;
                                                         }
-                            
-                                                        label {
-                                                            display: block;
-                                                            position: relative;
-                                                            font-size: 16px;
-                                                            padding: 0 0 0 34px;
-                                                            cursor:pointer;
-                                                            font-weight:500;
-                                                            color:#191919;
-                            
-                                                            @media (min-width: $screen-size-pc) {
-                                                                display:inline-block;
-                                                                font-size: 17px;
-                                                                min-width:130px;
-                                                            }
-                            
-                                                            &::before {
-                                                                content: "";
-                                                                display: block;
-                                                                position: absolute;
-                                                                left: 0;
-                                                                top: 50%;
-                                                                transform: translateY(-50%);
-                                                                width: 24px;
-                                                                height: 24px;
-                                                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
-                            
-                                                                @media (min-width: $screen-size-pc) {
-                                                                    width:26px;
-                                                                    height:26px;
-                                                                }
-                                                            }
-                            
-                                                        }
-                            
-                                                        input:checked + label {
-                                                            &::before {
-                                                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg transform='translate(-15 -465)'%3E%3Cg transform='translate(15 465)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='12' cy='12' r='12' stroke='none'/%3E%3Ccircle cx='12' cy='12' r='11.5' fill='none'/%3E%3C/g%3E%3Ccircle cx='7' cy='7' r='7' transform='translate(20 470)' fill='%23ed5351'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
-                                                            }
-                                                        }
-
-                                                        i {
-                                                            display:block;
-                                                            font-style:normal;
-                                                            margin:10px 0 0;
-                                                            font-size:14px;
-                                                            color:#555555;
-                            
-                                                            @media (min-width: $screen-size-pc) {
-                                                                display:inline-block;
-                                                                font-size:15px;
-                                                                margin:0;
-
-                                                            }
-                                                        }
-
                                                     }
                                                     
                                                 }
+
+
+
+
+                                                div.text {
+                                                    padding:22px 22px 2px;
+                                                    background:#F2F2F2;
+                                                    font-size:15px;
+                                                    margin:16px 0 0;
+                                    
+                                                    @media (min-width: $screen-size-pc) {
+                                                        font-size:16px;
+                                                        margin:15px 0 0;
+                                                    }
+        
+                                                    p {
+                                                        position:relative;
+                                                        margin:0 0 20px;
+                                                        word-break:keep-all;
+                                                        color:#555555;
+                                                        line-height:1.6;
+                                    
+                                                        @media (min-width: $screen-size-pc) {
+                                                        }
+        
+                                                        strong {
+                                                            display:block;
+                                                            color:#222;
+                                                            padding:0 0 10px 10px;
+                                                            font-weight:500;
+        
+                                                            &::before {
+                                                                content:"-";
+                                                                display:block;
+                                                                position:absolute;
+                                                                left:0;
+                                                            }
+        
+                                                            span {
+                                                                display:block;
+                                    
+                                                                @media (min-width: $screen-size-pc) {
+                                                                    display:unset;
+                                                                }
+                    
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+
                                             }
                                         }
 
@@ -4131,14 +4907,10 @@ body {
                                             padding-top:10px;
 
                                             @media (min-width: $screen-size-pc) {
-                                                position:absolute;
-                                                right:20px;
-                                                top:0;
-                                                margin-top:20px;
-                                                width:380px;
+                                                position:static;
                                                 border-top:none;
-                                                border-left:1px solid #CCCCCC;
-                                                padding-left:20px;
+                                                margin:0;
+                                                padding:0;
                                             }
 
                                             div.count {
@@ -4146,10 +4918,22 @@ body {
                                                 div.box {
                                                     clear:both;
 
+                                                    @media (min-width: $screen-size-pc) {
+                                                        position:absolute;
+                                                        right:20px;
+                                                        top:20px;
+                                                        width:360px;
+
+                                                        &.right {
+                                                            top:auto;
+                                                            bottom:70px;
+                                                        }
+                                                    }
+        
+
                                                     span {
                                                         display:block;
                                                         float:left;
-                                                        vertical-align:top;
                                                         font-size:13px;
                                                         color:#555555;
                                                         line-height:40px;
@@ -4262,9 +5046,17 @@ body {
                                                 }
 
                                                 div.links {
-
+                                                    
                                                     display:flex;
                                                     margin-top:15px;
+
+
+                                                    @media (min-width: $screen-size-pc) {
+                                                        position:absolute;
+                                                        right:20px;
+                                                        bottom:20px;
+                                                        width:360px;
+                                                    }
 
                                                     a,
                                                     button {
@@ -4297,55 +5089,6 @@ body {
                                                     
                                                     button {
                                                         margin:0 12px;
-                                                    }
-                                                }
-                                            }
-                                        }
-
-                                        div.text {
-                                            padding:22px 22px 2px;
-                                            background:#F2F2F2;
-                                            font-size:15px;
-                                            margin:16px 0 0;
-                            
-                                            @media (min-width: $screen-size-pc) {
-                                                font-size:16px;
-                                                margin:15px -400px 0 0;
-                                            }
-
-                                            p {
-                                                position:relative;
-                                                margin:0 0 20px;
-                                                padding:0 0 0 100px;
-                                                word-break:keep-all;
-                                                color:#555555;
-                            
-                                                @media (min-width: $screen-size-pc) {
-                                                    padding:0 0 0 130px;
-                                                }
-
-                                                strong {
-                                                    display:block;
-                                                    position:absolute;
-                                                    left:0;
-                                                    color:#222;
-                                                    padding:0 0 0 10px;
-                                                    font-weight:500;
-
-                                                    &::before {
-                                                        content:"-";
-                                                        display:block;
-                                                        position:absolute;
-                                                        left:0;
-                                                    }
-
-                                                    span {
-                                                        display:block;
-                            
-                                                        @media (min-width: $screen-size-pc) {
-                                                            display:unset;
-                                                        }
-            
                                                     }
                                                 }
                                             }
@@ -4718,12 +5461,22 @@ body {
                         color:#222;
                         margin:0 -15px;
                         padding:0 15px;
+        
+                        @media (min-width: $screen-size-pc) {
+                            margin:0;
+
+                        }
                       }
 
                       ul {
                         padding:0;
                         margin:0 -15px;
                         border-top:1px solid #2E3646;
+        
+                        @media (min-width: $screen-size-pc) {
+                            margin:0;
+
+                        }
 
                         li {
                           padding:15px;
@@ -4739,7 +5492,9 @@ body {
 
                           p {
 
-                            input[type="text"] {
+                            input[type="text"],
+                            input[type="password"],
+                            select {
                                 outline:none;
                                 font-size:16px;
                                 color:#555555;
@@ -4848,12 +5603,17 @@ body {
                             }
 
                             &.mail {
+                                margin-top:10px;
 
                                 input[type=text] {
                                     vertical-align:top;
-                                    width:120px;
+                                    width:calc(100% - 164px);
                                 }
 
+                                select {
+                                    width:154px;
+                                    margin-left:10px;
+                                }
 
 
                             }
@@ -4864,6 +5624,251 @@ body {
 
 
                     }
+                    
+                    div.modify {
+
+                      ul {
+                        padding:0;
+                        margin:0 -15px 40px;
+                        border-top:1px solid #2E3646;
+        
+                        @media (min-width: $screen-size-pc) {
+                            margin:40px 0 60px;
+
+                        }
+
+                        li {
+                          padding:15px;
+                          border-bottom:1px solid #AAAAAA;
+
+                          label {
+                            display:block;
+                            font-size:16px;
+                            font-weight:500;
+                            color:#222;
+                            margin-bottom:10px;
+        
+                            @media (min-width: $screen-size-pc) {
+                                width:170px;
+                                display:inline-block;
+                                vertical-align:top;
+                                margin:0;
+                                line-height:46px;
+                                font-size:17px;
+    
+                            }
+                          }
+
+                          p {
+        
+                            @media (min-width: $screen-size-pc) {
+                                width:350px;
+                                display:inline-block;
+                                vertical-align:top;
+    
+                            }
+
+                            input[type="text"],
+                            input[type="password"],
+                            select {
+                                outline:none;
+                                font-size:16px;
+                                color:#555555;
+                                width:100%;
+                                height:44px;
+                                border:1px solid #AAAAAA;
+                                border-radius:4px;
+                                padding:0 10px;
+        
+                                @media (min-width: $screen-size-pc) {
+                                    height:46px;
+        
+                                }
+
+                                &#address01 {
+                                    margin:10px 0;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        margin:0;
+            
+                                    }
+                                }
+
+                                &:read-only {
+                                    background:#EFF0F3;
+                                }
+
+
+
+                              &:focus {
+                                border-color:#7A94D3;
+                                @include drop-shadow($x: 0, $y: 3px, $blur: 6px, $spread: 0, $alpha: 0.16);
+
+                              }
+                              
+                            }
+
+                            &.sub {
+                                text-align:left;
+                                padding:18px 0 0;
+        
+                                @media (min-width: $screen-size-pc) {
+                                    width:calc(100% - 171px);
+                                    padding:14px 0;
+        
+                                }
+
+                                strong {
+                                    font-size:15px;
+                                    color:#222;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        font-size:16px;
+            
+                                    }
+
+                                }
+
+                                input {
+                                    display:none;
+                                }
+
+                                label {
+                                    display:inline-block;
+                                    position:relative;
+                                    margin-left:20px;
+                                    padding-left:30px;
+                                    font-size:15px;
+                                    font-weight:400;
+                                    color:#555;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        line-height:1.4;
+                                        width:auto;
+            
+                                    }
+
+                                    &::before {
+                                        content:"";
+                                        display:block;
+                                        position:absolute;
+                                        left:0;
+                                        top:2px;
+                                        width:20px;
+                                        height:20px;
+                                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+                                    }
+                                }
+
+                                input:checked + label {
+
+                                    &::before {
+                                        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg transform='translate(-160 -583)'%3E%3Cg  transform='translate(160 583)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3Cg transform='translate(163 586)' fill='%235175cc' stroke='%2333529f' stroke-width='1'%3E%3Ccircle cx='7' cy='7' r='7' stroke='none'/%3E%3Ccircle cx='7' cy='7' r='6.5' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+                                    }
+                                }
+                            }
+
+                            &.wBtn {
+
+                                input[type=text] {
+                                    vertical-align:top;
+                                    width:calc(100% - 102px);
+                                }
+
+                                button {
+                                    vertical-align:top;
+                                    width:92px;
+                                    margin-left:10px;
+                                    height:44px;
+                                    border-radius:4px;
+                                    background:#62697B;
+                                    border:1px solid #4A505B;
+                                    font-size:15px;
+                                    color:#fff;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        height:46px;
+            
+                                    }
+                                }
+                            }
+
+                            &.zip {
+        
+                                @media (min-width: $screen-size-pc) {
+                                    width:calc(100% - 171px);
+                                    margin-bottom:10px;
+        
+                                }
+
+                                input[type=text] {
+                                    vertical-align:top;
+                                    width:120px;
+                                    background:#EFF0F3;
+                                }
+
+                                button {
+                                    vertical-align:top;
+                                    width:92px;
+                                    margin-right:10px;
+                                    height:44px;
+                                    border-radius:4px;
+                                    background:#62697B;
+                                    border:1px solid #4A505B;
+                                    font-size:15px;
+                                    color:#fff;
+        
+                                    @media (min-width: $screen-size-pc) {
+                                        height:46px;
+            
+                                    }
+                                }
+                            }
+
+                            &.address {
+
+                                width:380px;
+        
+                                @media (min-width: $screen-size-pc) {
+                                    &.add01 {
+                                        width:480px;
+                                        margin-left:170px;
+                                        margin-right:10px;
+                                    }
+        
+                                }
+                            }
+
+                          }
+                        }
+                      }
+
+                      button.bigFull {
+                        display: block;
+                        font-size: 20px;
+                        background: #ED5351;
+                        font-size: 20px;
+                        font-weight: 500;
+                        padding: 0 50px;
+                        width:calc(100% - 20px);
+                        height: 64px;
+                        border: 1px solid #C94745;
+                        color: #fff;
+                        margin: 0 auto;
+
+                        @media (min-width: $screen-size-pc) {
+                          position:relative;
+                          left:80px;
+                          font-size: 22px;
+                          padding: 0 10px;
+                          width:330px;
+                          height: 70px;
+                        }
+
+                    }
+
+                    }
+
 
                 }
             }
