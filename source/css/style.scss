@@ -2363,6 +2363,348 @@ body {
 
                     }
 
+                    div.tabs2 {
+                        text-align: center;
+                        white-space: nowrap;
+                        margin: 30px 0 22px;
+
+                        @media (min-width: $screen-size-pc) {
+                            margin: 56px 0 46px;
+
+                        }
+
+                        button {
+                            width:50%;
+                            display: inline-block;
+                            font-size: 17px;
+                            line-height: 46px;
+                            background: #EEF1F8;
+                            color:#555555;
+                            border: 1px solid #AAAAAA;
+                            border-radius: 6px 0 0 6px;
+                            cursor: pointer;
+
+                            @media (min-width: $screen-size-pc) {
+                                width: 170px;
+                                line-height:52px;
+                                font-size: 18px;
+
+                            }
+
+                            &:last-of-type {
+                                border-radius:0 6px 6px 0;
+                            }
+
+                            &.on {
+                                background: #ED5351;
+                                border-color:#C94745;
+                                border-color: transparent;
+                                color: #fff;
+                                font-weight:500;
+
+    
+                            }
+                        }
+
+                    }
+
+
+                    p.attentionTable {
+                        position: relative;
+                        font-size: 12px;
+                        color: #5970A7;
+
+                        span {
+                            display: block;
+
+                            @media (min-width: $screen-size-pc) {
+                                display: none;
+                            }
+                        }
+
+                        a.more {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            padding: 0 22px 0 0;
+                            font-size: 14px;
+                            color: #555;
+
+                            @media (min-width: $screen-size-pc) {
+                                font-size: 16px;
+                                right: 0;
+                                bottom: 30px;
+                                padding: 0 26px 0 0;
+                            }
+
+                            &::after {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                right: 0;
+                                top: 2px;
+                                width: 16.5px;
+                                height: 16.5px;
+                                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16.471' height='16.471' viewBox='0 0 16.471 16.471'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect width='16.471' height='16.471' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d='M11.49,23.117h0Z' transform='translate(-7.473 -14.881)' fill='%23fff'/%3E%3Cg transform='translate(0 0)'%3E%3Cg transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath d='M19.131,22.829H10.846a.356.356,0,0,1,0-.713h8.284a.356.356,0,0,1,0,.713' transform='translate(-6.753 -14.237)'/%3E%3Cline y2='8.284' transform='translate(8.236 4.093)' fill='%23fff'/%3E%3Cpath d='M22.473,19.487a.356.356,0,0,1-.356-.356V10.846a.356.356,0,0,1,.713,0v8.284a.356.356,0,0,1-.356.356' transform='translate(-14.237 -6.753)'/%3E%3Cpath d='M8.236,16.471a8.236,8.236,0,1,1,8.236-8.236,8.245,8.245,0,0,1-8.236,8.236m0-15.759a7.523,7.523,0,1,0,7.523,7.523A7.532,7.532,0,0,0,8.236.713' transform='translate(0 0)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width: 18px;
+                                    height: 18px;
+                                    top: 4px;
+                                }
+                            }
+                        }
+                    }
+                    
+
+                    div.reservTable {
+                        width: 100%;
+                        overflow-x: scroll;
+                        position: relative;
+                        border-right: 2px solid rgba(0,0,0,.25);
+
+                        @media (min-width: $screen-size-pc) {
+                            border: none;
+                            overflow-x: auto;
+                        }
+
+                        table {
+                            width: 100%;
+                            min-width: 1000px;
+
+                            thead {
+                                tr {
+                                    th {
+                                        font-size: 15px;
+                                        height: 54px;
+                                        background: #E8EDF5;
+                                        text-align: center;
+                                        font-weight: 400;
+
+                                        @media (min-width: $screen-size-pc) {
+                                            height: 60px;
+                                            font-size: 16px;
+                                            background: #DCDCDC;
+                                        }
+
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    td {
+                                        font-size: 14px;
+                                        text-align: center;
+                                        padding: 10px;
+                                        border-bottom: 1px solid #CCCCCC;
+
+                                        @media (min-width: $screen-size-pc) {
+                                            font-size: 16px;
+                                        }
+
+                                        &.left {
+                                            text-align: left;
+                                        }
+
+                                        p {
+                                            margin: 0;
+                                        }
+
+                                        div {
+                                            display: inline-block;
+                                            position: relative;
+                                            vertical-align: top;
+                                            &:last-of-type {
+                                                margin-left: 50px;
+
+                                                &::before {
+                                                    content: "/";
+                                                    position: absolute;
+                                                    left: -25px;
+                                                    top: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    div.reservSort {
+                        border: 1px solid #CCCCCC;
+                        padding:15px;
+                        border-radius:6px;
+                        margin-bottom:30px;
+
+                        @media (min-width: $screen-size-pc) {
+                            padding:17px 70px;
+                            margin-bottom:40px;
+
+                        } 
+
+                        div.date {
+                            position:relative;
+                            margin-top:30px;
+                            border:1px solid #BEBEBE;
+                            margin-bottom:12px;
+
+                            @media (min-width: $screen-size-pc) {
+                                display:inline-block;
+                                vertical-align:top;
+                                width:330px;
+                                margin:0 240px 0 80px;
+    
+                            } 
+
+                            div.day {
+                                display:inline-block;
+                                width:calc(50% - 30px);
+
+                                @media (min-width: $screen-size-pc) {
+                                    width:calc(50% - 10px);
+                                } 
+
+
+                                label {
+                                    display:block;
+                                    position:absolute;
+                                    left:0;
+                                    top:-30px;
+                                    font-size:15px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        left:-80px;
+                                        top:0;
+                                        line-height:36px;
+                                        font-size:16px;
+            
+                                    } 
+                                }
+    
+                                input[type="date"] {
+                                    width:100%;
+                                    display:inline-block;
+                                    height:36px;
+                                    font-size:15px;
+                                    border:none;
+                                    padding:0 10px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        font-size:16px;
+                                    } 
+                                }
+
+                            }
+
+                            div.check {
+
+                                position:absolute;
+                                right:0;
+                                top:-32px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    top:6px;
+                                    right:-150px;
+                                } 
+
+
+                                input {
+                                    position:relative;
+                                    top:2px;
+                                    vertical-align:top;
+                                    margin-right:6px;
+                                    width:18px;
+                                    height:18px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        top:4px;
+                                    } 
+                                }
+                                label {
+                                    font-size:15px;
+
+                                    @media (min-width: $screen-size-pc) {
+                                        font-size:16px;
+                                    } 
+                                }
+                            }
+    
+                            u {
+                                width:60px;
+                                text-align:center;
+                                text-decoration:none;
+                                display:inline-block;
+                                font-size:15px;
+                                line-height:36px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width:20px;
+                                } 
+
+                            }
+                        }
+
+                        div.form {
+
+                            @media (min-width: $screen-size-pc) {
+                                display:inline-block;
+                                width:370px;
+                                vertical-align:top;
+    
+                            } 
+
+                            select {
+                                vertical-align:top;
+                                width: 112px;
+                                height:36px;
+                                font-size:15px;
+                                color:#555555;
+                                border:1px solid #BEBEBE;
+                                border-right:none;
+                                padding:0 10px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:16px;
+                                } 
+                            }
+
+                            input[type="text"] {
+                                vertical-align:top;
+                                width:calc(100% - 228px);
+                                height:36px;
+                                font: size 15px;
+                                border:1px solid #BEBEBE;
+                                font-size:15px;
+                                padding:0 10px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:16px;
+                                } 
+                            }
+
+                            button {
+                                vertical-align:top;
+                                font-size:15px;
+                                color:#fff;
+                                width:70px;
+                                height:36px;
+                                border-radius:4px;
+                                margin-left:26px;
+                                border:1px solid #4A505B;
+                                background:#62697B;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width:90px;
+                                    font-size:16px;
+                                } 
+
+                            }
+                        }
+
+                    }
+
+
                     ul.faqList {
                         display: none;
                         border-top: 2px solid #AAAAAA;
