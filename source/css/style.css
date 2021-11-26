@@ -4592,6 +4592,10 @@ body div#content.sub section.sub-contents div.container div.reservTable table th
   }
 }
 
+body div#content.sub section.sub-contents div.container div.reservTable table thead tr th p {
+  margin: 0;
+}
+
 body div#content.sub section.sub-contents div.container div.reservTable table tbody tr td {
   font-size: 14px;
   text-align: center;
@@ -4607,6 +4611,10 @@ body div#content.sub section.sub-contents div.container div.reservTable table tb
 
 body div#content.sub section.sub-contents div.container div.reservTable table tbody tr td.left {
   text-align: left;
+}
+
+body div#content.sub section.sub-contents div.container div.reservTable table tbody tr td.right {
+  text-align: right;
 }
 
 body div#content.sub section.sub-contents div.container div.reservTable table tbody tr td p {

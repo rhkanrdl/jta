@@ -2487,6 +2487,10 @@ body {
                                             background: #DCDCDC;
                                         }
 
+                                        p {
+                                            margin:0;
+                                        }
+
                                     }
                                 }
                             }
@@ -2504,6 +2508,10 @@ body {
 
                                         &.left {
                                             text-align: left;
+                                        }
+
+                                        &.right {
+                                            text-align: right;
                                         }
 
                                         p {
