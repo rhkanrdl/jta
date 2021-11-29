@@ -144,6 +144,41 @@ $(function(){
 
 
 
+    $(".reservTable").on("scroll", function(){
+
+        if (0 < $(this).scrollLeft()) {
+            $(this).addClass("shadow");
+        } else {
+            
+            $(this).removeClass("shadow");
+        }
+    });
+
+
+    $(".reservTable button.cancle").on("click", function(){
+        $("div.popup").addClass("on");
+    });
+    
+
+    $(".reservTable button.info").on("click", function(){
+        $("div.popBank").addClass("on");
+    });
+
+    $("div.popBank .close").on("click", function(){
+        $("div.popBank").removeClass("on");
+ 
+    });
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
@@ -213,3 +248,5 @@ function outlink() {
         $(this).toggleClass("on");
     });
 }
+
+
