@@ -3772,6 +3772,44 @@ body {
                         }
                     }
 
+                    div.allPrice + 
+                    div.btns {
+                        text-align:center;
+                        margin:30px 0 46px;
+                        
+                        a {
+                            display:inline-block;
+                            font-size:20px;
+                            font-weight:500;
+                            width:74px;
+                            line-height:66px;
+                            border:1px solid #999;
+                            background:#E5E5E5;
+                            color:#222;
+
+                            @media (min-width: $screen-size-pc) {
+                                line-height:70px;
+                                font-size:22px;
+                                width:160px;
+    
+                            }
+
+                            &.main {
+                                width:calc(100% - 84px);
+                                margin-left:10px;
+                                background:#ED5351;
+                                border-color:#C94745;
+                                color:#fff;
+
+                                @media (min-width: $screen-size-pc) {
+
+                                    width:260px;
+        
+                                }
+                            }
+                        }
+                    }
+
 
 
 

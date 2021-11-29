@@ -5953,6 +5953,49 @@ body div#content.sub section.sub-contents div.container div.allPrice p.price {
   }
 }
 
+body div#content.sub section.sub-contents div.container div.allPrice +
+div.btns {
+  text-align: center;
+  margin: 30px 0 46px;
+}
+
+body div#content.sub section.sub-contents div.container div.allPrice +
+div.btns a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  width: 74px;
+  line-height: 66px;
+  border: 1px solid #999;
+  background: #E5E5E5;
+  color: #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.allPrice +
+div.btns a {
+    line-height: 70px;
+    font-size: 22px;
+    width: 160px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.allPrice +
+div.btns a.main {
+  width: calc(100% - 84px);
+  margin-left: 10px;
+  background: #ED5351;
+  border-color: #C94745;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.allPrice +
+div.btns a.main {
+    width: 260px;
+  }
+}
+
 body div#content.sub section.sub-contents div.container ul.bankInfo {
   list-style: none;
   margin: 0 -15px 30px;
