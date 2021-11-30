@@ -882,6 +882,33 @@ body {
                             }
                         }
 
+
+                        div.idMessage {
+                            font-size:19px;
+                            padding:45px 0 65px;
+                            border-bottom:1px solid #AAAAAA;
+                            margin:0 0 30px;
+
+                            @media (min-width: $screen-size-pc) {
+                                padding:60px 0;
+                                margin:0 0 40px;
+                                font-size:20px;
+                                
+                            }
+
+                            strong {
+                                display:block;
+                                font-weight:500;
+                                color:#5970A7;
+                                margin-top:18px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    margin-top:26px;
+                                    
+                                }
+                            }
+                        }
+                        
                         div.pwMessage {
                             font-size:19px;
                             padding:45px 0 0;

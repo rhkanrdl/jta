@@ -2900,6 +2900,34 @@ body div#content.intro fieldset section.findResult div.box.pw::before {
   content: "비밀번호 변경";
 }
 
+body div#content.intro fieldset section.findResult div.box div.idMessage {
+  font-size: 19px;
+  padding: 45px 0 65px;
+  border-bottom: 1px solid #AAAAAA;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box div.idMessage {
+    padding: 60px 0;
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box div.idMessage strong {
+  display: block;
+  font-weight: 500;
+  color: #5970A7;
+  margin-top: 18px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box div.idMessage strong {
+    margin-top: 26px;
+  }
+}
+
 body div#content.intro fieldset section.findResult div.box div.pwMessage {
   font-size: 19px;
   padding: 45px 0 0;
