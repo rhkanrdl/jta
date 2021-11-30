@@ -6878,14 +6878,72 @@ body {
                     color:#222222;
                     font-weight: 500;
                     margin:0 0 10px;
+    
+                    @media (min-width: $screen-size-pc) {
+                        font-size:18px ;
+                    }
                 }
 
-                input {
-                    border:1px solid #999999;
-                    font-size:16px;
-                    width:100%;
-                    height:52px;
-                    margin:0 0 20px;
+                p {
+
+                    input,
+                    select {
+                        border:1px solid #999999;
+                        font-size:16px;
+                        width:100%;
+                        height:52px;
+                        margin:0 0 20px;
+                        padding:0 10px;
+
+                        @media (min-width: $screen-size-pc) {
+                            height:60px;
+                            font-size:17px;
+                        }
+                    }
+
+                    &.half {
+                        display:inline-block;
+                        width:calc(50% - 15px);
+
+                        &.mr {
+                            margin-right:30px;
+                        }
+                        @media (min-width: $screen-size-pc) {
+
+                            label {
+                                display:inline-block;
+                                line-height:60px;
+                                width:90px;
+                            }
+
+                            input,
+                            select {
+                                width:180px;
+                            }
+
+                        }
+                        
+                    }
+
+                    &.label {
+                        @media (min-width: $screen-size-pc) {
+
+                            label {
+                                display:inline-block;
+                                line-height:60px;
+                                width:90px;
+                                font-size:17px;
+                            }
+
+                            input,
+                            select {
+                                width:calc(100% - 90px);
+                            }
+
+                        }
+
+                    }
+
                 }
 
                 ul {
