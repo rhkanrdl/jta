@@ -9117,12 +9117,63 @@ body div.popup.cancle div.outline h4 {
   margin: 0 0 10px;
 }
 
-body div.popup.cancle div.outline input {
+@media (min-width: 1200px) {
+  body div.popup.cancle div.outline label,
+  body div.popup.cancle div.outline h4 {
+    font-size: 18px;
+  }
+}
+
+body div.popup.cancle div.outline p input,
+body div.popup.cancle div.outline p select {
   border: 1px solid #999999;
   font-size: 16px;
   width: 100%;
   height: 52px;
   margin: 0 0 20px;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.cancle div.outline p input,
+  body div.popup.cancle div.outline p select {
+    height: 60px;
+    font-size: 17px;
+  }
+}
+
+body div.popup.cancle div.outline p.half {
+  display: inline-block;
+  width: calc(50% - 15px);
+}
+
+body div.popup.cancle div.outline p.half.mr {
+  margin-right: 30px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.cancle div.outline p.half label {
+    display: inline-block;
+    line-height: 60px;
+    width: 90px;
+  }
+  body div.popup.cancle div.outline p.half input,
+  body div.popup.cancle div.outline p.half select {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div.popup.cancle div.outline p.label label {
+    display: inline-block;
+    line-height: 60px;
+    width: 90px;
+    font-size: 17px;
+  }
+  body div.popup.cancle div.outline p.label input,
+  body div.popup.cancle div.outline p.label select {
+    width: calc(100% - 90px);
+  }
 }
 
 body div.popup.cancle div.outline ul {
