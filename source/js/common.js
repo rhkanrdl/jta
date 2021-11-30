@@ -7,6 +7,13 @@ $(function(){
     outlink();
 
 
+    $("section.find .login-type button").on("click", function(){
+        
+        var check = $(this).attr("id"); 
+
+        $("div.find-box").removeClass("on");
+        $("div.find-box."+ check).addClass("on");
+    });
 
     
     $("section.main-list .data-type input[name=type]").on("click", function(){
@@ -23,7 +30,6 @@ $(function(){
 
         $("div.search-box").removeClass("on");
         $("div.search-box."+ check).addClass("on");
-        console.log(check);
     });
     
     

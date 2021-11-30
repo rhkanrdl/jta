@@ -2598,6 +2598,498 @@ body div#content.intro fieldset section.login div.login-box ul.tools li a.red {
   color: #ED5351;
 }
 
+body div#content.intro fieldset section.find {
+  margin: 30px 0 50px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find {
+    margin: 130px 0 110px;
+    min-height: 500px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-type {
+  font-size: 0;
+}
+
+body div#content.intro fieldset section.find div.find-type button {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  width: 50%;
+  border: 1px solid #BAC1CE;
+  line-height: 46px;
+  background: #F6F6F6;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-type button {
+    display: none;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-type button:first-of-type {
+  border-right: none;
+}
+
+body div#content.intro fieldset section.find div.find-type button.on {
+  border-bottom: none;
+  background: #fff;
+  font-weight: 500;
+  color: #ED5351;
+}
+
+body div#content.intro fieldset section.find div.find-box {
+  padding: 20px 10px 10px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box {
+    border-top: 1px solid #2E3646;
+    display: inline-block;
+    position: absolute;
+    width: 530px;
+    padding: 0;
+    height: 480px;
+    border-bottom: 1px solid #aaa;
+  }
+  body div#content.intro fieldset section.find div.find-box::before {
+    position: absolute;
+    display: block;
+    font-size: 18px;
+    top: -51px;
+    left: 0;
+    right: 0;
+    background: #F6F6F6;
+    font-weight: 500;
+    color: #222222;
+    line-height: 50px;
+    text-align: left;
+    padding: 0 20px;
+  }
+  body div#content.intro fieldset section.find div.find-box.type01 {
+    left: 0;
+  }
+  body div#content.intro fieldset section.find div.find-box.type01::before {
+    content: "아이디 찾기";
+  }
+  body div#content.intro fieldset section.find div.find-box.type02 {
+    right: 0;
+  }
+  body div#content.intro fieldset section.find div.find-box.type02::before {
+    content: "비밀번호 찾기";
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box.on {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box.on {
+    display: inline-block;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p {
+  border-bottom: 1px solid #aaa;
+  margin: 20px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box p {
+    text-align: left;
+    margin: 0;
+    padding: 12px 10px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  text-align: left;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box p label {
+    display: inline-block;
+    font-size: 17px;
+    width: 120px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p input[type=password],
+body div#content.intro fieldset section.find div.find-box p input[type=text] {
+  border: 1px solid #AAAAAA;
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  margin: 0 0 20px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box p input[type=password],
+  body div#content.intro fieldset section.find div.find-box p input[type=text] {
+    width: 280px;
+    height: 46px;
+    font-size: 17px;
+    margin: 0;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p input[type=password]:focus,
+body div#content.intro fieldset section.find div.find-box p input[type=text]:focus {
+  outline: none;
+  border-color: #363638;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+body div#content.intro fieldset section.find div.find-box p i {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  color: #555555;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box p i {
+    font-size: 15px;
+    margin: 10px 0 0;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p.wBtn input {
+  width: calc(100% - 102px);
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box p.wBtn input {
+    width: 280px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box p.wBtn button {
+  background: #62697B;
+  border: 1px solid #4A505B;
+  height: 48px;
+  width: 92px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+}
+
+body div#content.intro fieldset section.find div.find-box p:last-of-type {
+  border: none;
+  margin-bottom: 40px;
+}
+
+body div#content.intro fieldset section.find div.find-box button.next {
+  height: 54px;
+  width: 180px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #C94745;
+  background: #ED5351;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box button.next {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
+    height: 56px;
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box ul.tools {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+body div#content.intro fieldset section.find div.find-box ul.tools li a {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.find div.find-box ul.tools li a {
+    font-size: 14px;
+  }
+}
+
+body div#content.intro fieldset section.find div.find-box ul.tools li a.red {
+  color: #ED5351;
+}
+
+body div#content.intro fieldset section.findResult {
+  margin: 80px 0 50px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult {
+    margin: 130px 0 110px;
+    min-height: 500px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box {
+  padding: 10px;
+  position: relative;
+  border-top: 1px solid #2E3646;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box {
+    padding: 0;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box::before {
+  position: absolute;
+  display: block;
+  font-size: 17px;
+  top: -47px;
+  left: 0;
+  right: 0;
+  background: #F6F6F6;
+  font-weight: 500;
+  color: #222222;
+  line-height: 46px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box::before {
+    font-size: 18px;
+    top: -51px;
+    line-height: 50px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box.id {
+  left: 0;
+}
+
+body div#content.intro fieldset section.findResult div.box.id::before {
+  content: "아이디 찾기완료";
+}
+
+body div#content.intro fieldset section.findResult div.box.pw {
+  left: 0;
+}
+
+body div#content.intro fieldset section.findResult div.box.pw::before {
+  content: "비밀번호 변경";
+}
+
+body div#content.intro fieldset section.findResult div.box div.pwMessage {
+  font-size: 19px;
+  padding: 45px 0 0;
+  border-bottom: 1px solid #AAAAAA;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box div.pwMessage {
+    padding: 60px 0 20px;
+    margin: 0 0 40px;
+    font-size: 20px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box div.pwMessage strong {
+  display: block;
+  font-weight: 500;
+  color: #5970A7;
+  margin-top: 18px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box div.pwMessage strong {
+    margin-top: 26px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box span {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box span {
+    margin-bottom: 50px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p {
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box p {
+    text-align: center;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  text-align: left;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box p label {
+    display: inline-block;
+    font-size: 17px;
+    width: 142px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p input[type=password],
+body div#content.intro fieldset section.findResult div.box p input[type=text] {
+  border: 1px solid #AAAAAA;
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  margin: 0 0 20px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box p input[type=password],
+  body div#content.intro fieldset section.findResult div.box p input[type=text] {
+    width: 280px;
+    height: 46px;
+    font-size: 17px;
+    margin: 0;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p input[type=password]:focus,
+body div#content.intro fieldset section.findResult div.box p input[type=text]:focus {
+  outline: none;
+  border-color: #363638;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+body div#content.intro fieldset section.findResult div.box p i {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  color: #555555;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box p i {
+    font-size: 15px;
+    margin: 10px 0 0;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p.wBtn input {
+  width: calc(100% - 102px);
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box p.wBtn input {
+    width: 280px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box p.wBtn button {
+  background: #62697B;
+  border: 1px solid #4A505B;
+  height: 48px;
+  width: 92px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+}
+
+body div#content.intro fieldset section.findResult div.box p:last-of-type {
+  border: none;
+  margin-bottom: 40px;
+}
+
+body div#content.intro fieldset section.findResult div.box button {
+  display: block;
+  height: 54px;
+  width: 180px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 0 auto 12px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box button {
+    display: inline-block;
+    height: 56px;
+    width: 200px;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box button.main {
+  border: 1px solid #C94745;
+  background: #ED5351;
+  color: #fff;
+}
+
+body div#content.intro fieldset section.findResult div.box button.sub {
+  border: 1px solid #999999;
+  background: #E5E5E5;
+  color: #222222;
+}
+
+body div#content.intro fieldset section.findResult div.box ul.tools {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+body div#content.intro fieldset section.findResult div.box ul.tools li a {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.intro fieldset section.findResult div.box ul.tools li a {
+    font-size: 14px;
+  }
+}
+
+body div#content.intro fieldset section.findResult div.box ul.tools li a.red {
+  color: #ED5351;
+}
+
 body div#content.main section.main-list {
   margin-bottom: 40px;
 }
@@ -8947,6 +9439,7 @@ body div.popup.awake div.outline h3 {
   font-weight: 500;
   margin: 0 0 20px;
   padding: 30px 0 0;
+  word-break: keep-all;
 }
 
 @media (min-width: 1200px) {
