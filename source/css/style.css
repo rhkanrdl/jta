@@ -9081,14 +9081,17 @@ body div.popup.cancle div.outline {
   position: relative;
   background: #fff;
   padding: 20px;
-  margin: 90px 0 0;
+  margin: 40px 0 0;
   border: 1px solid #555555;
+  max-height: 95vh;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @media (min-width: 1200px) {
   body div.popup.cancle div.outline {
     width: 900px;
-    margin: 20vh auto;
+    margin: 6vh auto;
     padding: 55px;
   }
 }
