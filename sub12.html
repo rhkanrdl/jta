@@ -81,7 +81,9 @@
                     <div class="join">
 
 
-                        <!-- 플랫폼안내 / 필요서류안내 들어갈 예정 -->
+                        <div class="head">
+                            <img src="source/images/img_join.png">
+                        </div>
 
 
                         
@@ -129,7 +131,7 @@
                                 <p><input id="homepage" type="text"></p>
 
                                 <p class="sub">
-                                    <strong>협회소속분과</strong>
+                                    <strong>협회회원사</strong>
 
                                     <input name="part" id="part01" type="radio">
                                     <label for="part01">회원</label>
@@ -143,7 +145,7 @@
                                 <label for="address">업체주소</label>
                                 <p class="zip">
                                     
-                                    <button>중복체크</button>
+                                    <button>주소검색</button>
                                     <input id="zipcode" readonly type="text">
                                 </p>
                                 <p><input id="address01" type="text"></p>
@@ -161,16 +163,28 @@
 
                             </li>
                             <li>
-                                <label for="sectors">업종</label>
-                                <p><input id="sectors" type="text"></p>
+                                <label for="bankName">계좌정보</label>
+                                <p class="small"><input id="bank" type="text" placeholder="결제은행"></p>
+                                <p class="small2"><input id="bankNumber" type="text" placeholder="계좌번호"></p>
+                                <p class="small"><input id="bankName" type="text" placeholder="예금주"></p>
+
+                            </li>
+                        </ul>
+
+
+                        
+                        <h4>담당자정보</h4>
+                        <ul class="form">
+                            <li>
+                                <label for="headName">담당자 성명</label>
+                                <p><input id="headName" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="id">아이디</label>
-                                <p><input id="id" type="text"></p>
+                                <label for="headEmail">담당자 이메일</label>
                                 <p class="mail">
                                     
-                                    <input id="mail" type="text">
+                                    <input id="headEmail" type="text">
                                     <select>
                                         <option>이메일 선택</option>
                                     </select>
@@ -178,25 +192,89 @@
 
                             </li>
                             <li>
-                                <label for="passwd">비밀번호</label>
-                                <p><input id="passwd" type="password"></p>
+                                <label for="headTel">담당자 휴대전화</label>
+                                <p><input id="headTel" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="passwdRe">비밀번호 확인</label>
-                                <p><input id="passwdRe" type="password"></p>
-
-                                <i class="red">일치하지 않습니다.</i>
+                                <label for="headTel2">담당자 직통전화</label>
+                                <p><input id="headTel2" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="product">판매 예정 상품</label>
-                                <p><input id="product" type="text"></p>
+                                <label for="headDiv">소속부서</label>
+                                <p><input id="headDiv" type="text"></p>
+
+                            </li>
+                            <li>
+                                <label for="headRank">직위</label>
+                                <p><input id="headRank" type="text"></p>
 
                             </li>
                         </ul>
 
-                        <button class="bigFull">변경하기</button>
+                        
+                        <h4>
+                            입점서류
+                            
+                            <small>*등록가능 파일:5MB 이하의 PNG,JPG,JPEG,GIF,PDF 파일</small>
+                        </h4>
+                        <ul class="form">
+                            <li>
+                                <label for="file01">사업자등록증</label>
+                                <p class="wBtn left">
+                                    <button>파일선택</button>
+                                    <input id="file01" type="text" value="선택된 파일 없음">
+                                </p>
+
+                            </li>
+                            <li>
+                                <label for="file02">통장</label>
+                                <p class="wBtn left">
+                                    <button>파일선택</button>
+                                    <input id="file02" type="text" value="선택된 파일 없음">
+                                </p>
+
+                            </li>
+                            <li>
+                                <label for="file03">관광사업등록증</label>
+                                <p class="wBtn left">
+                                    <button>파일선택</button>
+                                    <input id="file03" type="text" value="선택된 파일 없음">
+                                </p>
+
+                            </li>
+                            <li>
+                                <label for="file04">통신판매업신고증</label>
+                                <p class="wBtn left">
+                                    <button>파일선택</button>
+                                    <input id="file04" type="text" value="선택된 파일 없음">
+                                </p>
+
+                            </li>
+                        </ul>
+                        <h4>
+                            탐나오비즈니스 판매약관
+                        </h4>
+                        <ul class="form">
+                            <li>
+                                <div class="scroll">
+
+                                    판매약관 내용
+                                </div>
+
+                                <p class="agree">
+                                    
+
+                                    <input id="agree" type="checkbox">
+                                    <label for="agree">판매약관 내용을 확인하고 동의합니다.</label>
+
+                                    <a href="">동의하지 않습니다.</a>
+                                </p>
+
+                            </li>
+                        </ul>
+                        <button class="bigFull">가입 신청하기</button>
                     </div>
 
 
