@@ -15,15 +15,7 @@ $(function(){
         $("div.find-box."+ check).addClass("on");
     });
 
-    
-    $("section.main-list .data-type input[name=type]").on("click", function(){
-        
-        var check = $(this).attr("id"); 
 
-        $("div.data-box").removeClass("on");
-        $("div.data-box."+ check).addClass("on");
-    });
-    
     $("section.main-reserv button").on("click", function(){
         
         var check = $(this).attr("data"); 
