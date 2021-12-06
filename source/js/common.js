@@ -27,7 +27,8 @@ $(function(){
     $("section.main-reserv button").on("click", function(){
         
         var check = $(this).attr("data"); 
-
+        $("section.main-reserv button").removeClass("on");
+        $(this).addClass("on");
         $("div.search-box").removeClass("on");
         $("div.search-box."+ check).addClass("on");
     });
