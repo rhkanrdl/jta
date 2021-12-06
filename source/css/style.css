@@ -3224,12 +3224,29 @@ body div#content.main section.main-list div.container div.data-box div.filter di
 }
 
 body div#content.main section.main-list div.container div.data-box div.filter div.rows.data input {
-  width: calc(100% - 115px);
+  width: calc(100% - 175px);
+  border-right: none;
 }
 
 @media (min-width: 1200px) {
   body div#content.main section.main-list div.container div.data-box div.filter div.rows.data input {
     width: 200px;
+  }
+}
+
+body div#content.main section.main-list div.container div.data-box div.filter div.rows.data button.search {
+  font-size: 14px;
+  width: 60px;
+  height: 38px;
+  background: #57607B;
+  border: 1px solid #414B64;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-list div.container div.data-box div.filter div.rows.data button.search {
+    width: 62px;
+    font-size: 16px;
   }
 }
 

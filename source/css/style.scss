@@ -1204,10 +1204,25 @@ body {
                                     }
 
                                     input {
-                                        width: calc(100% - 115px);
+                                        width: calc(100% - 175px);
+                                        border-right:none;
 
                                         @media (min-width: $screen-size-pc) {
                                             width: 200px;
+                                        }
+                                    }
+
+                                    button.search {
+                                        font-size:14px;
+                                        width: 60px;
+                                        height:38px;
+                                        background:#57607B;
+                                        border:1px solid #414B64;
+                                        color:#fff;
+
+                                        @media (min-width: $screen-size-pc) {
+                                            width:62px;
+                                            font-size:16px;
                                         }
                                     }
                                 }
