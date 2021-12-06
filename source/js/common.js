@@ -24,9 +24,9 @@ $(function(){
         $("div.data-box."+ check).addClass("on");
     });
     
-    $("section.main-reserv .data-type input[name=reservType]").on("click", function(){
+    $("section.main-reserv button").on("click", function(){
         
-        var check = $(this).attr("id"); 
+        var check = $(this).attr("data"); 
 
         $("div.search-box").removeClass("on");
         $("div.search-box."+ check).addClass("on");

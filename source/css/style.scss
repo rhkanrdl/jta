@@ -1668,11 +1668,7 @@ body {
                     div.data-type {
                         background: #ED5351;
 
-                        input {
-                            display: none;
-                        }
-
-                        label {
+                        button {
                             display: inline-block;
                             vertical-align: top;
                             text-align: center;
@@ -1680,18 +1676,20 @@ body {
                             line-height: 50px;
                             color: #fff;
                             font-size: 16px;
+                            background:transparent;
+                            border:none;
 
                             @media (min-width: $screen-size-pc) {
                                 width: 200px;
                                 line-height: 54px;
                                 font-size: 18px;
                             }
-                        }
 
-                        input:checked + label {
-                            background: #fff;
-                            color: #ED5351;
-                            font-weight: 500;
+                            &.on {
+                                background: #fff;
+                                color: #ED5351;
+                                font-weight: 500;
+                            }
                         }
                     }
 

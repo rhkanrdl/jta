@@ -3691,11 +3691,7 @@ body div#content.main section.main-reserv div.container div.data-type {
   background: #ED5351;
 }
 
-body div#content.main section.main-reserv div.container div.data-type input {
-  display: none;
-}
-
-body div#content.main section.main-reserv div.container div.data-type label {
+body div#content.main section.main-reserv div.container div.data-type button {
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -3703,17 +3699,19 @@ body div#content.main section.main-reserv div.container div.data-type label {
   line-height: 50px;
   color: #fff;
   font-size: 16px;
+  background: transparent;
+  border: none;
 }
 
 @media (min-width: 1200px) {
-  body div#content.main section.main-reserv div.container div.data-type label {
+  body div#content.main section.main-reserv div.container div.data-type button {
     width: 200px;
     line-height: 54px;
     font-size: 18px;
   }
 }
 
-body div#content.main section.main-reserv div.container div.data-type input:checked + label {
+body div#content.main section.main-reserv div.container div.data-type button.on {
   background: #fff;
   color: #ED5351;
   font-weight: 500;
