@@ -10101,6 +10101,17 @@ body div#content.sub section.sub-contents div.container div.charts2 dl.summary d
   display: inline-block;
 }
 
+body div.loading {
+  font-size: 0;
+  position: fixed;
+  z-index: 400;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(../images/loading.svg) no-repeat rgba(0, 0, 0, 0.7) center top 30vh/100px auto;
+}
+
 body div.popup {
   position: fixed;
   z-index: 20000;
