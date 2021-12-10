@@ -1496,16 +1496,61 @@ body {
                     &.mail {
                         margin-top:10px;
 
+                        @media (min-width: $screen-size-pc) {
+                            width:auto;
+                        }
+
+                        span {
+                            display:block;
+
+                            @media (min-width: $screen-size-pc) {
+                                display:inline-block;
+                                vertical-align:top;
+                                margin-right:10px;
+                                width:300px
+                            }
+
+                            &:first-of-type {
+                                margin-bottom:10px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    width:380px
+                                }
+    
+                            }
+                        }
+
                         input[type=text] {
                             vertical-align:top;
-                            width:calc(100% - 164px);
+                            width:calc(50% - 10px);
+                        }
+
+                        u {
+                            display:inline-block;
+                            line-height:44px;
+                            width:20px;
+                            text-align:center;
+                            font-size:14px;
+                            text-decoration:none;
+
                         }
 
                         select {
-                            width:154px;
-                            margin-left:10px;
+                            width:calc(100% - 102px);
                         }
 
+
+                        button {
+                            vertical-align:top;
+                            width:92px;
+                            margin-left:10px;
+                            height:44px;
+                            border-radius:4px;
+                            background:#62697B;
+                            border:1px solid #4A505B;
+                            font-size:15px;
+                            color:#fff;
+                        }
 
                     }
 
@@ -4639,6 +4684,15 @@ body {
                                         margin:0 0 0 20px;
             
                                     } 
+
+                                    span {
+                                        display:block;
+
+                                        @media (min-width: $screen-size-pc) {
+                                            display:inline;
+                
+                                        } 
+                                    }
                                 }
                             }
 

@@ -3520,14 +3520,63 @@ body div#content.join div.join ul li p.mail {
   margin-top: 10px;
 }
 
+@media (min-width: 1200px) {
+  body div#content.join div.join ul li p.mail {
+    width: auto;
+  }
+}
+
+body div#content.join div.join ul li p.mail span {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.join div.join ul li p.mail span {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: 300px;
+  }
+}
+
+body div#content.join div.join ul li p.mail span:first-of-type {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.join div.join ul li p.mail span:first-of-type {
+    width: 380px;
+  }
+}
+
 body div#content.join div.join ul li p.mail input[type=text] {
   vertical-align: top;
-  width: calc(100% - 164px);
+  width: calc(50% - 10px);
+}
+
+body div#content.join div.join ul li p.mail u {
+  display: inline-block;
+  line-height: 44px;
+  width: 20px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 body div#content.join div.join ul li p.mail select {
-  width: 154px;
+  width: calc(100% - 102px);
+}
+
+body div#content.join div.join ul li p.mail button {
+  vertical-align: top;
+  width: 92px;
   margin-left: 10px;
+  height: 44px;
+  border-radius: 4px;
+  background: #62697B;
+  border: 1px solid #4A505B;
+  font-size: 15px;
+  color: #fff;
 }
 
 body div#content.join div.join ul li div.scroll {
@@ -6789,6 +6838,16 @@ body div#content.sub section.sub-contents div.container div.reservList div.title
     font-size: 15px;
     display: inline-block;
     margin: 0 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.reservList div.title h5 small span {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.reservList div.title h5 small span {
+    display: inline;
   }
 }
 
