@@ -9467,7 +9467,8 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
   margin: 30px 0 46px;
 }
 
-body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a {
+body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a,
+body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns button {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
@@ -9479,14 +9480,16 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a {
+  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a,
+  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns button {
     line-height: 70px;
     font-size: 22px;
     width: 160px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a.main {
+body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a.main,
+body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns button.main {
   width: calc(100% - 84px);
   margin-left: 10px;
   background: #ED5351;
@@ -9495,7 +9498,8 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a.main {
+  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns a.main,
+  body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.btns button.main {
     width: 260px;
   }
 }
