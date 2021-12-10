@@ -41,29 +41,28 @@
                         </div>
 
 
-                        
+                        <p class="fieldInfo">
+                            * 표시는 필수입력사항 입니다.
+                        </p>
                         <h4>업체정보</h4>
                         <ul class="form">
                             <li>
-                                <label for="company">업체명</label>
+                                <label for="company">업체명 <span class="pilsu">*</span></label>
                                 <p><input id="company" type="text" readonly=""></p>
 
                                 <p class="sub">
-                                    <strong>회사유형</strong>
+                                    <strong>회사유형 <span class="pilsu">*</span></strong>
 
                                     <input name="comType" id="comType01" type="radio">
-                                    <label for="comType01">법인</label>
+                                    <label for="comType01">국내여행업</label>
 
                                     <input name="comType" id="comType02" type="radio">
-                                    <label for="comType02">개인</label>
-
-                                    <input name="comType" id="comType03" type="radio">
-                                    <label for="comType03">간이</label>
+                                    <label for="comType02">일반여행업</label>
 
                                 </p>
                             </li>
                             <li>
-                                <label for="regNumber">사업자등록번호</label>
+                                <label for="regNumber">사업자등록번호 <span class="pilsu">*</span></label>
                                 <p class="wBtn">
                                     <input id="regNumber" type="text">
 
@@ -72,12 +71,12 @@
                                 </p>
                             </li>
                             <li>
-                                <label for="tel">전화번호</label>
+                                <label for="tel">전화번호 <span class="pilsu">*</span></label>
                                 <p><input id="tel" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="fax">팩스번호</label>
+                                <label for="fax">팩스번호 <span class="pilsu">*</span></label>
                                 <p><input id="fax" type="text"></p>
 
                             </li>
@@ -97,7 +96,7 @@
                                 </p>
                             </li>
                             <li>
-                                <label for="address">업체주소</label>
+                                <label for="address">업체주소 <span class="pilsu">*</span></label>
                                 <p class="zip">
                                     
                                     <button>주소검색</button>
@@ -108,17 +107,12 @@
 
                             </li>
                             <li>
-                                <label for="ceo">대표자 성명</label>
+                                <label for="ceo">대표자 성명 <span class="pilsu">*</span></label>
                                 <p><input id="ceo" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="condition">업태</label>
-                                <p><input id="condition" type="text"></p>
-
-                            </li>
-                            <li>
-                                <label for="bankName">계좌정보</label>
+                                <label for="bankName">계좌정보 <span class="pilsu">*</span></label>
                                 <p class="small"><input id="bank" type="text" placeholder="결제은행"></p>
                                 <p class="small2"><input id="bankNumber" type="text" placeholder="계좌번호"></p>
                                 <p class="small"><input id="bankName" type="text" placeholder="예금주"></p>
@@ -131,12 +125,12 @@
                         <h4>담당자정보</h4>
                         <ul class="form">
                             <li>
-                                <label for="headName">담당자 성명</label>
+                                <label for="headName">담당자 성명 <span class="pilsu">*</span></label>
                                 <p><input id="headName" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="headEmail">담당자 이메일</label>
+                                <label for="headEmail">담당자 이메일 <span class="pilsu">*</span></label>
                                 <p class="mail">
                                     
                                     <input id="headEmail" type="text">
@@ -147,22 +141,22 @@
 
                             </li>
                             <li>
-                                <label for="headTel">담당자 휴대전화</label>
+                                <label for="headTel">담당자 휴대전화 <span class="pilsu">*</span></label>
                                 <p><input id="headTel" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="headTel2">담당자 직통전화</label>
+                                <label for="headTel2">담당자 직통전화 <span class="pilsu">*</span></label>
                                 <p><input id="headTel2" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="headDiv">소속부서</label>
+                                <label for="headDiv">소속부서 <span class="pilsu">*</span></label>
                                 <p><input id="headDiv" type="text"></p>
 
                             </li>
                             <li>
-                                <label for="headRank">직위</label>
+                                <label for="headRank">직위 <span class="pilsu">*</span></label>
                                 <p><input id="headRank" type="text"></p>
 
                             </li>
@@ -176,7 +170,7 @@
                         </h4>
                         <ul class="form">
                             <li>
-                                <label for="file01">사업자등록증</label>
+                                <label for="file01">사업자등록증 <span class="pilsu">*</span></label>
                                 <p class="wBtn left">
                                     <button>파일선택</button>
                                     <input id="file01" type="text" value="선택된 파일 없음">
@@ -184,7 +178,7 @@
 
                             </li>
                             <li>
-                                <label for="file02">통장</label>
+                                <label for="file02">통장 <span class="pilsu">*</span></label>
                                 <p class="wBtn left">
                                     <button>파일선택</button>
                                     <input id="file02" type="text" value="선택된 파일 없음">
@@ -192,7 +186,7 @@
 
                             </li>
                             <li>
-                                <label for="file03">관광사업등록증</label>
+                                <label for="file03">관광사업등록증 <span class="pilsu">*</span></label>
                                 <p class="wBtn left">
                                     <button>파일선택</button>
                                     <input id="file03" type="text" value="선택된 파일 없음">
