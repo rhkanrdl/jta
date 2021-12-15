@@ -6179,7 +6179,7 @@ body div#content.sub section.sub-contents div.container div.reservSort div.date 
   body div#content.sub section.sub-contents div.container div.reservSort div.date {
     display: inline-block;
     vertical-align: top;
-    width: 330px;
+    width: 340px;
     margin: 0 240px 0 80px;
   }
 }
@@ -9454,6 +9454,7 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
 
 body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.inner div.item dl {
   margin-bottom: 24px;
+  margin-left: -50px;
 }
 
 @media (min-width: 1200px) {
@@ -9461,7 +9462,8 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
     position: absolute;
     right: 0;
     top: -22px;
-    width: 458px;
+    width: 485px;
+    margin-left: 0;
   }
 }
 
@@ -9519,7 +9521,7 @@ body div#content.sub section.sub-contents div.container div.onlineEstimate div.b
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.inner div.item dl dd p input,
   body div#content.sub section.sub-contents div.container div.onlineEstimate div.box div.inner div.item dl dd p select {
-    width: 140px;
+    width: 154px;
   }
 }
 
@@ -10041,7 +10043,7 @@ body div#content.sub section.sub-contents div.container div.charts2 div.filter d
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.charts2 div.filter div.date {
     display: inline-block;
-    width: 330px;
+    width: 340px;
   }
 }
 
