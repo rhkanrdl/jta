@@ -6186,7 +6186,7 @@ body div#content.sub section.sub-contents div.container div.reservSort div.date 
 
 body div#content.sub section.sub-contents div.container div.reservSort div.date div.day {
   display: inline-block;
-  width: calc(50% - 30px);
+  width: calc(50% - 10px);
 }
 
 @media (min-width: 1200px) {
@@ -6266,7 +6266,7 @@ body div#content.sub section.sub-contents div.container div.reservSort div.date 
 }
 
 body div#content.sub section.sub-contents div.container div.reservSort div.date u {
-  width: 60px;
+  width: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -8136,7 +8136,7 @@ body div#content.sub section.sub-contents div.container div.itemSearch div.moreC
 
 body div#content.sub section.sub-contents div.container div.itemSearch div.moreCheck div.date div {
   display: inline-block;
-  width: calc(50% - 20px);
+  width: calc(50% - 10px);
   padding: 4px 10px 0;
 }
 
@@ -8179,7 +8179,7 @@ body div#content.sub section.sub-contents div.container div.itemSearch div.moreC
   display: inline-block;
   text-decoration: none;
   vertical-align: top;
-  width: 40px;
+  width: 20px;
   line-height: 50px;
   text-align: center;
 }
