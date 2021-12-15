@@ -8249,12 +8249,12 @@ body div#content.sub section.sub-contents div.container div.itemSearch div.moreC
 
 @media (min-width: 1200px) {
   body div#content.sub section.sub-contents div.container div.itemSearch div.moreCheck.rent div.date {
-    width: 490px;
+    width: 494px;
     height: 56px;
   }
   body div#content.sub section.sub-contents div.container div.itemSearch div.moreCheck.rent div.date input {
     display: inline-block;
-    width: 128px;
+    width: 136px;
   }
   body div#content.sub section.sub-contents div.container div.itemSearch div.moreCheck.rent div.date select {
     display: inline-block;
