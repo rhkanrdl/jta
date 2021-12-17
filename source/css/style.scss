@@ -501,11 +501,12 @@ body {
 
                     div.login-box {
                         border: 1px solid #BAC1CE;
-                        border-top: none;
+                        // border-top: none;
                         padding: 52px 32px 32px;
 
                         @media (min-width: $screen-size-pc) {
                             padding: 40px 40px 20px;
+                            min-height:501px;
                         }
 
 
