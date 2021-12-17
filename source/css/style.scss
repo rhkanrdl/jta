@@ -10,6 +10,10 @@ $screen-size-pc: 1200px;
     // @include ani(0.3s);
 }
 
+.ajax-file-upload-container {
+    font-size:14px;
+}
+
 html {
     min-width: $min-width;
     max-width: 100%;
