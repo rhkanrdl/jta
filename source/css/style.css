@@ -4248,7 +4248,7 @@ body div#content.main section.main-reserv div.container div.search-box div.filte
 @media (min-width: 1200px) {
   body div#content.main section.main-reserv div.container div.search-box div.filter div.rows {
     display: inline-block;
-    margin: 0 40px 0 0;
+    margin: 0 34px 0 0;
   }
 }
 
@@ -4315,10 +4315,10 @@ body div#content.main section.main-reserv div.container div.search-box div.filte
 
 @media (min-width: 1200px) {
   body div#content.main section.main-reserv div.container div.search-box div.filter div.rows input[type=date] {
-    width: 150px;
+    width: 164px;
   }
   body div#content.main section.main-reserv div.container div.search-box div.filter div.rows input[type=date].full {
-    width: 150px;
+    width: 164px;
   }
 }
 
@@ -8967,7 +8967,7 @@ body div#content.sub section.sub-contents div.container div.carItemList dl dd > 
 
 body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p.option {
   font-size: 16px;
-  width: 110px;
+  width: 160px;
 }
 
 body div#content.sub section.sub-contents div.container div.carItemList dl dd > ul > li ul li p i {
