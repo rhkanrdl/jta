@@ -10180,6 +10180,701 @@ body div#content.sub section.sub-contents div.container div.charts2 dl.summary d
   display: inline-block;
 }
 
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail {
+    padding: 30px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail h3.hotelTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail h3.hotelTitle {
+    font-size: 26px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images {
+  font-size: 0;
+  margin: 0 0 40px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.images {
+    position: relative;
+    padding-left: 770px;
+    height: 430px;
+    margin: 0 0 52px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p {
+  display: inline-block;
+  vertical-align: top;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p img {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p.big {
+  width: 100%;
+  height: 196px;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.images p.big {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 760px;
+    height: 430px;
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p.small {
+  height: 94px;
+  display: inline-block;
+  margin: 0 6px 0 0;
+  width: calc(100% - 208px);
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.images p.small {
+    width: 100%;
+    height: 250px;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p.block {
+  width: 98px;
+  height: 94px;
+  margin: 0 6px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.images p.block {
+    width: 180px;
+    height: 170px;
+    margin: 0 10px 0 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p.block.link {
+  position: relative;
+  margin: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.images p.block.link a {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 94px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.images p.block.link a {
+    line-height: 170px;
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail h3.carTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail h3.carTitle {
+    font-size: 26px;
+    margin: 0 0 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead {
+    position: relative;
+    padding: 0 0 0 440px;
+    min-height: 336px;
+    margin: 0 0 56px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg {
+  background: #F5F7FB;
+  padding: 16px 5px;
+  margin: 0 0 26px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 336px;
+    padding: 25px;
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg img {
+  display: block;
+  margin: 0 auto;
+  width: 304px;
+  height: 219px;
+  max-width: 100%;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul {
+  list-style: none;
+  padding: 0 10px;
+  margin: 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul li {
+  display: inline-block;
+  font-size: 17px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul li {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul li:nth-child(1) {
+  padding-left: 40px;
+  background: url(../images/icon_car01.svg) no-repeat left center/36px auto;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul li:nth-child(2) {
+  padding-left: 28px;
+  background: url(../images/icon_car02.svg) no-repeat left center/23px auto;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.carimg ul li:nth-child(3) {
+  padding-left: 34px;
+  background: url(../images/icon_car03.svg) no-repeat left center/29px auto;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead h4 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead h4 {
+    font-size: 24px;
+    margin: 0 0 32px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info {
+  margin: 0 0 20px;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info strong {
+  display: block;
+  font-weight: 500;
+  color: #222222;
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info strong button {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0 0 0 26px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info strong button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-info.svg) no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box {
+  background: #F3F3F3;
+  border-radius: 10px;
+  font-size: 0;
+  color: #555555;
+  padding: 18px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box {
+    padding: 24px 24px 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box p {
+  margin: 0 0 6px;
+  color: #555;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box p {
+    font-size: 16px;
+  }
+  body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box p.inline {
+    display: inline-block;
+    margin-right: 40px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box p span {
+  font-weight: 500;
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info div.box p u {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ED5351;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.carHead div.info i {
+  display: block;
+  padding: 10px 0 0;
+  font-style: normal;
+  font-size: 14px;
+  color: #ED5351;
+  text-align: right;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail p.address {
+  font-size: 14px;
+  color: #555555;
+  margin: 0 0 12px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail p.address {
+    margin: 0 0 20px;
+    font-size: 14px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.amenities {
+  background: #F3F3F3;
+  border-radius: 10px;
+  font-size: 0;
+  color: #555555;
+  padding: 18px;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.amenities {
+    padding: 24px;
+    margin: 0 0 36px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.amenities h4 {
+  margin: 0 0 6px;
+  font-weight: 500;
+  color: #222222;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.amenities h4 {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.amenities span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.amenities span {
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.amenities span::after {
+  content: "·";
+  padding: 0 5px;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.amenities span:last-of-type::after {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.text {
+  position: relative;
+  font-size: 15px;
+  color: #555555;
+  margin: 0 0 56px;
+  overflow: hidden;
+  height: 160px;
+  padding: 60px 0 30px;
+  font-size: 15px;
+  background: url(../images/iconText.svg) no-repeat top center/41px auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.text {
+    margin: 0 0 65px;
+    padding: 0 0 30px 140px;
+    background-position: left 46px top;
+    background-size: 56px auto;
+    font-size: 16px;
+    height: 104px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.text.on {
+  height: auto;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.text button {
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  text-align: left;
+  height: 30px;
+  background: #fff;
+  color: #ED5351;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.text button {
+    padding-left: 140px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue {
+  margin: 0 0 40px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue {
+    margin: 0 0 60px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue h4 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  color: #222222;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue h4 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box {
+  border: 1px solid #AAAAAA;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box {
+    position: relative;
+    padding: 35px;
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box strong {
+  display: block;
+  font-size: 16px;
+  word-break: keep-all;
+  color: #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box strong {
+    font-size: 17px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box span {
+    font-size: 15px;
+    position: absolute;
+    right: 35px;
+    top: 37px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box p {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box2 {
+  border: 1px solid #AAAAAA;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 0 10px;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box2 {
+    position: relative;
+    padding: 35px;
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box2 strong {
+  font-weight: 500;
+  color: #222;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box2 u {
+  color: #ED5351;
+  text-decoration: none;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.issue div.box2 p {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail h4 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  color: #222222;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail h4 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box {
+  color: #555555;
+  padding: 0 0 20px;
+  margin: 0 0 30px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box:last-of-type {
+  border-bottom: none;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  width: 168px;
+  line-height: 40px;
+  text-align: center;
+  background: #36466A;
+  border-radius: 40px 40px 40px 0;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box strong {
+    font-size: 17px;
+    width: 180px;
+    line-height: 44px;
+    margin: 0 0 24px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box strong.big {
+  width: 240px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box strong.big {
+    width: 270px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box p {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box p {
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box p.inline {
+  display: inline-block;
+  width: 50%;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box p.inline {
+    width: auto;
+    margin-right: 60px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box p u {
+  color: #ED5351;
+  text-decoration: none;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box span {
+  display: inline-block;
+  color: #5970A7;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 38px;
+  padding: 0 25px;
+  background: #F3F3F3;
+  margin: 0 12px 12px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box span {
+    font-size: 16px;
+    line-height: 42px;
+    margin: 0 15px 15px 0;
+    padding: 0 27px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box span.off {
+  color: #AAAAAA;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box div.map {
+  background: #eee;
+  height: 320px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.detail div.box div.map {
+    height: 460px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo h4 {
+  font-size: 18px;
+  margin: 0 0 16px;
+  color: #222222;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo h4 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo p {
+  position: relative;
+  padding: 0 0 0 160px;
+  font-size: 15px;
+  line-height: 33px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo p {
+    font-size: 16px;
+    line-height: 34px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  text-align: center;
+  background: #ED5351;
+  color: #fff;
+  font-weight: 500;
+}
+
+body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo span {
+  display: block;
+  padding: 10px 0 0;
+  font-size: 15px;
+  color: #666666;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo span {
+    font-size: 16px;
+  }
+}
+
 body div.loading {
   font-size: 0;
   position: fixed;
@@ -10716,6 +11411,210 @@ body div.popup.cancle div.outline button.big {
 }
 
 body div.popup.cancle div.outline button.close {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #303339;
+  background: url("data:image/svg+xml,%3Csvg id='그룹_1493' data-name='그룹 1493' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22.5' height='22.5' viewBox='0 0 22.5 22.5'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_767' data-name='사각형 767' width='22.5' height='22.5' fill='%23222'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1492' data-name='그룹 1492' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_21473' data-name='패스 21473' d='M22.186.314a1.071,1.071,0,0,0-1.515,0L11.25,9.735,1.829.314A1.071,1.071,0,0,0,.314,1.829L9.735,11.25.314,20.671a1.071,1.071,0,0,0,1.515,1.515l9.421-9.421,9.421,9.421a1.071,1.071,0,0,0,1.515-1.515L12.765,11.25l9.421-9.421a1.071,1.071,0,0,0,0-1.515' transform='translate(0 0)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat #DCE0E9 center/22px auto;
+}
+
+body div.popup.insurance div.outline {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0 0;
+  border: 1px solid #555555;
+  max-height: 95vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline {
+    width: 900px;
+    margin: 6vh auto;
+    padding: 55px;
+  }
+}
+
+body div.popup.insurance div.outline h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding: 30px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline h3 {
+    font-size: 26px;
+    padding: 0 0 20px;
+  }
+}
+
+body div.popup.insurance div.outline p.text {
+  font-size: 15px;
+  color: #555555;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline p.text {
+    font-size: 16px;
+  }
+}
+
+body div.popup.insurance div.outline dl {
+  margin: 0 0 20px;
+}
+
+body div.popup.insurance div.outline dl dt {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  background: #F2F2F2;
+  border: 1px solid #CCCCCC;
+  padding: 12px 14px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dt {
+    font-size: 20px;
+    padding: 16px;
+  }
+}
+
+body div.popup.insurance div.outline dl dt small {
+  font-size: 15px;
+  color: #555555;
+  padding-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dt small {
+    font-size: 16px;
+  }
+}
+
+body div.popup.insurance div.outline dl dt.red {
+  background: #ED5351;
+  border-color: #C94745;
+  color: #fff;
+}
+
+body div.popup.insurance div.outline dl dt.red small {
+  color: #fff;
+}
+
+body div.popup.insurance div.outline dl dd {
+  border: 1px solid #CCCCCC;
+  border-top: none;
+  margin: 0;
+  padding: 12px;
+  color: #555;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dd {
+    padding: 18px;
+  }
+}
+
+body div.popup.insurance div.outline dl dd strong {
+  display: block;
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dd strong {
+    font-size: 18px;
+  }
+}
+
+body div.popup.insurance div.outline dl dd span {
+  display: block;
+  padding-right: 15px;
+  font-size: 15px;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dd span {
+    font-size: 16px;
+  }
+}
+
+body div.popup.insurance div.outline dl dd i {
+  display: block;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  color: #ED5351;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline dl dd i {
+    font-size: 16px;
+  }
+}
+
+body div.popup.insurance div.outline dl dd u {
+  text-decoration: none;
+  color: #EE5351;
+}
+
+body div.popup.insurance div.outline ul {
+  position: relative;
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+body div.popup.insurance div.outline ul::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 6px;
+  background: url(../images/icon-infoR.svg) no-repeat center/100% auto;
+}
+
+body div.popup.insurance div.outline ul li {
+  position: relative;
+  font-size: 15px;
+  padding-left: 14px;
+  color: #555;
+}
+
+body div.popup.insurance div.outline ul li::before {
+  content: "·";
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+body div.popup.insurance div.outline button.big {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  width: 160px;
+  height: 64px;
+  background: #ED5351;
+  border: 1px solid #C94745;
+  margin: 25px auto 0;
+}
+
+@media (min-width: 1200px) {
+  body div.popup.insurance div.outline button.big {
+    font-size: 22px;
+    width: 180px;
+    height: 70px;
+  }
+}
+
+body div.popup.insurance div.outline button.close {
   position: absolute;
   right: -1px;
   top: -1px;

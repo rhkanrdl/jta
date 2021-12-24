@@ -129,6 +129,10 @@ $(function(){
         $("div.popup.qna").addClass("on");
     });
 
+    $(".product-detail div.info strong button").on("click", function(){
+        $("div.popup.insurance").addClass("on");
+    });
+
     $("div.popup button.close").on("click", function(){
         $("div.popup").removeClass("on");
     });
@@ -169,6 +173,11 @@ $(function(){
     });
 
 
+
+
+    $(".product-detail div.text button").on("click", function () {
+        $(".product-detail div.text").toggleClass("on");
+    });
 
 
 
@@ -213,17 +222,10 @@ function coverimage() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
 
-    // $(".main-content .news p.image").each(function(){
-    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    // });
+    $(".product-detail .images p").each(function(){
+        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
+    });
 
-    // $(".main-equipment .slide p.image").each(function(){
-    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    // });
-
-    // $(".sub-content .sub-agency-detail p.image").each(function(){
-    //     $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    // });
 }
 
 /* ----- main tab ----- */ 
