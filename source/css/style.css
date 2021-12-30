@@ -6216,7 +6216,7 @@ body div#content.sub section.sub-contents div.container div.reservSort div.date 
   }
 }
 
-body div#content.sub section.sub-contents div.container div.reservSort div.date div.day input[type="date"] {
+body div#content.sub section.sub-contents div.container div.reservSort div.date div.day input[type="text"] {
   width: 100%;
   display: inline-block;
   height: 36px;
@@ -6226,7 +6226,7 @@ body div#content.sub section.sub-contents div.container div.reservSort div.date 
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.reservSort div.date div.day input[type="date"] {
+  body div#content.sub section.sub-contents div.container div.reservSort div.date div.day input[type="text"] {
     font-size: 16px;
   }
 }
