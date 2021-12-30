@@ -7189,6 +7189,51 @@ body div#content.sub section.sub-contents div.container div.reservList ul.list l
   height: 18px;
 }
 
+body div#content.sub section.sub-contents div.container div.reservList div.sumPrice {
+  border: 1px solid #CCCCCC;
+  border-bottom: none;
+  border-top: none;
+  padding: 6px 10px;
+  background: #fff;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.reservList div.sumPrice {
+    padding: 10px 25px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.reservList div.sumPrice h5 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #222;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.reservList div.sumPrice h5 {
+    font-size: 18px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.reservList div.sumPrice p.price {
+  position: absolute;
+  right: 20px;
+  top: 6px;
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.reservList div.sumPrice p.price {
+    top: 13px;
+    font-size: 18px;
+  }
+}
+
 body div#content.sub section.sub-contents div.container div.reservList div.total {
   border: 1px solid #CCCCCC;
   border-top: none;

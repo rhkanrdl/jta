@@ -4999,6 +4999,46 @@ body {
                         }
                         
 
+                        div.sumPrice {
+                            border:1px solid #CCCCCC;
+                            border-bottom:none;
+                            border-top:none;
+                            padding:6px 10px;
+                            background:#fff;
+                            position:relative;
+    
+                            @media (min-width: $screen-size-pc) {
+                                padding:10px 25px;
+                            }
+                            
+
+                            h5 {
+                                font-size:17px;
+                                font-weight:400;
+                                color:#222;
+                                margin:0;
+    
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:18px;
+                                }
+                            }
+
+                            p.price {
+                                position:absolute;
+                                right:20px;
+                                top:6px;
+                                margin:0;
+                                font-size:17px;
+                                font-weight:500;
+                                color:#222;
+    
+                                @media (min-width: $screen-size-pc) {
+                                    top:13px;
+                                    font-size:18px;
+                                }
+                            }
+                        }
+
                         div.total {
                             border:1px solid #CCCCCC;
                             border-top:none;
