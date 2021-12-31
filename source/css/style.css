@@ -8784,21 +8784,21 @@ body div#content.sub section.sub-contents div.container div.itemList dl dd ul li
   }
 }
 
-body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links a.big,
-body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button.big {
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links a.ex,
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button.ex {
   background: #D5DFEF;
   border-color: #8994A7;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links a.big,
-  body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button.big {
+  body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links a.ex,
+  body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button.ex {
     min-width: 140px;
     max-width: 140px;
   }
 }
 
-body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button {
+body div#content.sub section.sub-contents div.container div.itemList dl dd ul li div.toolBox div.count div.links button.qna {
   margin: 0 12px;
 }
 
