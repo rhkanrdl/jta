@@ -6995,7 +6995,7 @@ body {
                                                     button {
                                                         display:inline-block;
                                                         font-size:14px;
-                                                        flex-grow: 1;;
+                                                        flex-grow: 1;
                                                         line-height:32px;
                                                         border:1px solid #798291;
                                                         padding:0;
@@ -7008,7 +7008,7 @@ body {
                                                         }
     
 
-                                                        &.big {
+                                                        &.ex {
                                                             background:#D5DFEF;
                                                             border-color:#8994A7;
 
@@ -7020,7 +7020,7 @@ body {
                                                         }
                                                     }
                                                     
-                                                    button {
+                                                    button.qna {
                                                         margin:0 12px;
                                                     }
                                                 }
