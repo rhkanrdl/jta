@@ -4563,6 +4563,23 @@ body div#content.sub section.sub-contents div.container h4.bTitle {
   }
 }
 
+body div#content.sub section.sub-contents div.container h4.bTitle.red {
+  color: red;
+}
+
+body div#content.sub section.sub-contents div.container h5.cTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container h5.cTitle {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+}
+
 @media (max-width: 1199px) {
   body div#content.sub section.sub-contents div.container nav#sub-menu ul {
     position: relative;
@@ -10918,6 +10935,131 @@ body div#content.sub section.sub-contents div.container div.product-detail div.c
   body div#content.sub section.sub-contents div.container div.product-detail div.companyInfo span {
     font-size: 16px;
   }
+}
+
+body div#content.sub section.sub-contents div.container div.terms {
+  word-break: keep-all;
+}
+
+body div#content.sub section.sub-contents div.container div.terms strong.red {
+  color: red;
+}
+
+body div#content.sub section.sub-contents div.container div.terms p.text {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.terms p.text {
+    font-size: 15px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.terms > ol, body div#content.sub section.sub-contents div.container div.terms ul {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 10px 0px 40px;
+  margin: 0 0 30px;
+  background: #efefef;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.terms > ol, body div#content.sub section.sub-contents div.container div.terms ul {
+    font-size: 15px;
+    padding: 20px 20px 10px 60px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.terms > ol.red, body div#content.sub section.sub-contents div.container div.terms ul.red {
+  color: red;
+}
+
+body div#content.sub section.sub-contents div.container div.terms > ol li, body div#content.sub section.sub-contents div.container div.terms ul li {
+  margin: 0 0 10px;
+}
+
+body div#content.sub section.sub-contents div.container div.terms > ol li.red, body div#content.sub section.sub-contents div.container div.terms ul li.red {
+  color: red;
+}
+
+body div#content.sub section.sub-contents div.container div.terms ul.inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 10px 0 0;
+  background: none;
+}
+
+body div#content.sub section.sub-contents div.container div.terms ul.nums {
+  background: none;
+  list-style: none;
+  padding: 0 0 0 20px;
+}
+
+body div#content.sub section.sub-contents div.container div.terms ul.nums > li {
+  position: relative;
+  padding: 0 0 0 24px;
+}
+
+body div#content.sub section.sub-contents div.container div.terms ul.nums > li span {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline {
+  max-width: 100%;
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table {
+  font-size: 14px;
+  border-top: 2px solid #222;
+  border-left: 1px solid #ccc;
+  width: 1200px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.terms div.table-outline table {
+    font-size: 15px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table thead tr th {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  background: #efefef;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td.center {
+  text-align: center;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td.width {
+  width: 30%;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td p {
+  margin: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td p.strong {
+  font-weight: 600;
+}
+
+body div#content.sub section.sub-contents div.container div.terms div.table-outline table tbody tr td p.red {
+  color: red;
 }
 
 body div.loading {

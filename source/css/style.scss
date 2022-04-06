@@ -2532,6 +2532,22 @@ body {
                             margin: 0 0 16px;
 
                         }
+
+                        &.red {
+                            color:red;
+                        }
+                    }
+
+                    h5.cTitle {
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin: 0 0 5px;
+
+                        @media (min-width: $screen-size-pc) {
+                            font-size: 16px;
+                            margin: 0 0 10px;
+                        }
+
                     }
 
                     @media (max-width: $screen-size-pc - 1) {
@@ -5152,9 +5168,6 @@ body {
                         }
                     }
 
-
-
-
                     ul.bankInfo {
                         list-style: none;
                         margin: 0 -15px 30px;
@@ -5397,9 +5410,6 @@ body {
                             }
                         }
                     }
-
-
-
 
                     ul.message {
                         list-style: none;
@@ -8573,6 +8583,136 @@ body {
                         }
 
 
+                    }
+
+                    div.terms {
+
+                        word-break:keep-all;
+
+                        strong {
+                            &.red {
+                                color:red;
+                            }
+                        }
+
+                        p.text {
+                            font-size:14px;
+                            margin-bottom:30px;
+
+                            @media (min-width: $screen-size-pc) {
+                                font-size:15px;
+                            }
+                        }
+
+                        &>ol,ul {
+                            display:inline-block;
+                            width:100%;
+                            font-size:14px;
+                            padding:10px 10px 0px 40px;
+                            margin:0 0 30px;
+                            background:#efefef;
+
+                            @media (min-width: $screen-size-pc) {
+                                font-size:15px;
+                                padding:20px 20px 10px 60px;
+                            }
+
+                            &.red {
+                                color:red;
+                            }
+
+                            li {
+                                margin:0 0 10px;
+
+                                &.red {
+                                    color:red;
+                                }
+                            }
+                        }
+
+                        ul.inner {
+                            margin:0;
+                            padding:0;
+                            list-style:none;
+                            margin:10px 0 0;
+                            background:none;
+                        }
+
+                        ul.nums {
+                            background:none;
+                            list-style:none;
+                            padding:0 0 0 20px;
+
+                            &>li {
+                                position:relative;
+                                padding:0 0 0 24px;
+                                span {
+                                    display:inline-block;
+                                    position:absolute;
+                                    left:0;
+                                }
+                            }
+                        }
+
+                        div.table-outline {
+                            max-width:100%;
+                            overflow-x:auto;
+                            margin-bottom:30px;
+
+                            table {
+                                font-size:14px;
+                                border-top:2px solid #222;
+                                border-left:1px solid #ccc;
+                                width:1200px;
+
+                                @media (min-width: $screen-size-pc) {
+                                    font-size:15px;
+                                }
+
+                                thead {
+                                    tr {
+                                        th {
+                                            border-right:1px solid #ccc;
+                                            border-bottom:1px solid #ccc;
+                                            text-align:center;
+                                            padding:10px;
+                                            background:#efefef;
+                                        }
+                                    }
+                                }
+
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding:10px;
+                                            border-right:1px solid #ccc;
+                                            border-bottom:1px solid #ccc;
+                                            
+                                            &.center {
+                                                text-align:center;
+                                            }
+
+                                            &.width {
+                                                width:30%;
+                                            }
+
+                                            p {
+                                                margin:0;
+
+                                                &.strong {
+                                                    font-weight:600;
+                                                }
+
+                                                &.red {
+                                                    color:red;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
                     }
 
                 }
