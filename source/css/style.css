@@ -3332,6 +3332,7 @@ body div#content.join div.join ul li p.sub {
 @media (min-width: 1200px) {
   body div#content.join div.join ul li p.sub {
     padding: 10px 0 0 50px;
+    width: auto;
     text-align: left;
   }
 }
