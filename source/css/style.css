@@ -5302,6 +5302,206 @@ body div#content.sub section.sub-contents div.container ul.noticeList li.reply h
   }
 }
 
+body div#content.sub section.sub-contents div.container ul.apiList {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  border-top: 2px solid #aaa;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList {
+    margin: 0 0 40px;
+  }
+  body div#content.sub section.sub-contents div.container ul.apiList::before {
+    content: "";
+    display: block;
+    height: 44px;
+    background: #DDDDDD;
+  }
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li {
+  border-bottom: 1px solid #CCCCCC;
+  position: relative;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 18px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList li div.box div.div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 106px;
+    min-width: 106px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.div span {
+  display: block;
+  font-size: 15px;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.category {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList li div.box div.category {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 160px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.category span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.date {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList li div.box div.date {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.date span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.key {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0 0 22px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList li div.box div.key {
+    width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 18px 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div.key span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+body div#content.sub section.sub-contents div.container ul.apiList li div.box div strong {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container ul.apiList li:first-child div.box div strong {
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -44px;
+    text-align: center;
+    line-height: 44px;
+    font-weight: 400;
+  }
+}
+
 body div#content.sub section.sub-contents div.container ul.estimateList {
   list-style: none;
   margin: 0 0 30px;
@@ -9927,6 +10127,510 @@ body div#content.sub section.sub-contents div.container div.modify button.bigFul
     width: 330px;
     height: 70px;
   }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul {
+  padding: 0;
+  margin: 0 -15px 40px;
+  border-top: 1px solid #2E3646;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul {
+    margin: 40px 0 60px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li {
+  padding: 15px;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li label {
+    width: 170px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    line-height: 46px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"],
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"],
+body div#content.sub section.sub-contents div.container div.api ul li p select {
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #AAAAAA;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"],
+  body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"],
+  body div#content.sub section.sub-contents div.container div.api ul li p select {
+    height: 46px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"]#address01,
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"]#address01,
+body div#content.sub section.sub-contents div.container div.api ul li p select#address01 {
+  margin: 10px 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"]#address01,
+  body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"]#address01,
+  body div#content.sub section.sub-contents div.container div.api ul li p select#address01 {
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"]:-moz-read-only,
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"]:-moz-read-only,
+body div#content.sub section.sub-contents div.container div.api ul li p select:-moz-read-only {
+  background: #EFF0F3;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"]:read-only,
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"]:read-only,
+body div#content.sub section.sub-contents div.container div.api ul li p select:read-only {
+  background: #EFF0F3;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="text"]:focus,
+body div#content.sub section.sub-contents div.container div.api ul li p input[type="password"]:focus,
+body div#content.sub section.sub-contents div.container div.api ul li p select:focus {
+  border-color: #7A94D3;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub {
+  text-align: left;
+  padding: 18px 0 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.sub {
+    width: calc(100% - 171px);
+    padding: 14px 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub strong {
+  font-size: 15px;
+  color: #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.sub strong {
+    font-size: 16px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub input {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub label {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.sub label {
+    line-height: 1.4;
+    width: auto;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.sub input:checked + label::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg transform='translate(-160 -583)'%3E%3Cg  transform='translate(160 583)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3Cg transform='translate(163 586)' fill='%235175cc' stroke='%2333529f' stroke-width='1'%3E%3Ccircle cx='7' cy='7' r='7' stroke='none'/%3E%3Ccircle cx='7' cy='7' r='6.5' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.wBtn {
+  width: calc(100vw - 30px);
+  min-width: 290px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.wBtn {
+    width: 452px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.wBtn input[type=text] {
+  vertical-align: top;
+  width: calc(100% - 102px);
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.wBtn button {
+  vertical-align: top;
+  width: 92px;
+  margin-left: 10px;
+  height: 44px;
+  border-radius: 4px;
+  background: #62697B;
+  border: 1px solid #4A505B;
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.wBtn button {
+    height: 46px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.zip {
+    width: calc(100% - 171px);
+    margin-bottom: 10px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.zip input[type=text] {
+  vertical-align: top;
+  width: 120px;
+  background: #EFF0F3;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.zip button {
+  vertical-align: top;
+  width: 92px;
+  margin-right: 10px;
+  height: 44px;
+  border-radius: 4px;
+  background: #62697B;
+  border: 1px solid #4A505B;
+  font-size: 15px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.zip button {
+    height: 46px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li p.address {
+  width: 380px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api ul li p.address.add01 {
+    width: 480px;
+    margin-left: 170px;
+    margin-right: 10px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li div.ip {
+  display: inline-block;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li div.ip p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+body div#content.sub section.sub-contents div.container div.api ul li div.ip p:last-of-type {
+  margin-bottom: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl {
+  padding: 0;
+  margin: 0 -15px 40px;
+  border-top: 1px solid #2E3646;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl {
+    margin: 40px 0 60px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt {
+  position: relative;
+  padding: 20px 15px 0 52px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dt {
+    z-index: 2;
+    padding: 20px 35px 0 66px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt input {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dt label {
+    font-size: 17px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #555555;
+  border-radius: 50%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.655' height='14' viewBox='0 0 14.655 14'%3E%3Cpath d='M11.943-1,6.222,7.725,2.351,3.467,0,5.6l5.3,5.826L6.723,13l1.105-1.809L14.654.657Z' transform='translate(0 1.001)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat #fff center/50% auto;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dt label::before {
+    left: 25px;
+    top: 22px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt input:checked + label:before {
+  border-color: #455782;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.655' height='14' viewBox='0 0 14.655 14'%3E%3Cpath d='M11.943-1,6.222,7.725,2.351,3.467,0,5.6l5.3,5.826L6.723,13l1.105-1.809L14.654.657Z' transform='translate(0 1.001)' fill='%23fff'/%3E%3C/svg%3E%0A") no-repeat #5970A7 center/50% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd {
+  padding: 20px 15px 20px 52px;
+  margin: 0;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dd {
+    position: relative;
+    padding: 20px 35px 25px 66px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd input {
+  display: none;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd label {
+  position: relative;
+  font-size: 16px;
+  color: #555555;
+  padding: 0 0 0 30px;
+  margin-right: 28px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dd label {
+    font-size: 17px;
+    margin-right: 50px;
+    padding: 0 0 0 32px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd label:last-of-type {
+  margin-right: 0;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #555555;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd input:checked + label::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.655' height='12.001' viewBox='0 0 12.655 12.001'%3E%3Cpath d='M10.313-1,5.373,6.478,2.03,2.829,0,4.661,4.574,9.655,5.805,11l.955-1.55L12.654.42Z' transform='translate(0 1.001)' fill='%237b7b7b'/%3E%3C/svg%3E%0A") no-repeat #F1F1F1 center/50% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd > button {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 15px;
+  -webkit-transform: translateX(-37px);
+          transform: translateX(-37px);
+  height: 44px;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 600;
+  min-width: 110px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dd > button {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    min-width: 120px;
+    height: 46px;
+    margin: 0;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd > button.check {
+  border: 1px solid #3C3C49;
+  background: #3C3C49;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd > button.apply {
+  color: #AAAAAA;
+  background: #fff;
+  border: 1px solid #555555;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd > button.apply.on {
+  color: #fff;
+  background: #5970A7;
+  border-color: #455782;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd > button.progress {
+  color: #555555;
+  background: #fff;
+  border: 1px solid #555555;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd p.not {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 15px;
+  -webkit-transform: translateX(-37px);
+          transform: translateX(-37px);
+  line-height: 44px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  width: 120px;
+  background: #fff;
+  border: 1px solid #555555;
+  padding: 0 0 0 24px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dd p.not {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    margin: 0;
+    min-width: 120px;
+    line-height: 46px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd p.not span {
+  display: inline-block;
+  position: relative;
+  color: #5970A7;
+  text-decoration: underline;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd p.not span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -24px;
+  top: 12px;
+  width: 19px;
+  height: 19px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='19' height='19' viewBox='0 0 19 19'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect width='6.377' height='10.399' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg transform='translate(-958.5 -1761.5)'%3E%3Cg transform='translate(-288.5 915.5)'%3E%3Cg transform='translate(1247 846)' fill='%235970a7' stroke='%235970a7' stroke-width='1'%3E%3Ccircle cx='9.5' cy='9.5' r='9.5' stroke='none'/%3E%3Ccircle cx='9.5' cy='9.5' r='9' fill='none'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(964.812 1765.801)'%3E%3Cg  transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath d='M2.257,5.781a2.221,2.221,0,0,1,.452-.855A3.539,3.539,0,0,1,3.49,4.3a3.022,3.022,0,0,0,.779-.694,1.36,1.36,0,0,0,.273-.862,1.276,1.276,0,0,0-.178-.677,1.209,1.209,0,0,0-.494-.451,1.574,1.574,0,0,0-1.374-.007,1.279,1.279,0,0,0-.518.469,1.513,1.513,0,0,0-.225.764H0A2.862,2.862,0,0,1,.448,1.293,2.7,2.7,0,0,1,1.588.325,3.791,3.791,0,0,1,3.182,0,3.957,3.957,0,0,1,4.846.332a2.618,2.618,0,0,1,1.128.95,2.563,2.563,0,0,1,.4,1.436,2.573,2.573,0,0,1-.389,1.409,3.287,3.287,0,0,1-1.1,1.017,3.221,3.221,0,0,0-.669.525,1.669,1.669,0,0,0-.368.624,2.926,2.926,0,0,0-.126.883V7.3H2.088V7.176a5.086,5.086,0,0,1,.169-1.394M2.012,8.77a1.093,1.093,0,0,1,.4-.4,1.068,1.068,0,0,1,.547-.147,1.033,1.033,0,0,1,.536.147,1.1,1.1,0,0,1,.4.4,1.036,1.036,0,0,1,.147.536,1.064,1.064,0,0,1-.147.547,1.093,1.093,0,0,1-.4.4,1.032,1.032,0,0,1-.536.147,1.068,1.068,0,0,1-.547-.147,1.085,1.085,0,0,1-.4-.4,1.064,1.064,0,0,1-.147-.547,1.036,1.036,0,0,1,.147-.536' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd div.not-text {
+  display: none;
+  position: relative;
+  border: 1px solid #4A505B;
+  margin: 10px 0 0 -37px;
+  padding: 30px 15px 15px 15px;
+  font-size: 14px;
+  color: #555555;
+  background: #fff;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-contents div.container div.api dl dd div.not-text {
+    position: absolute;
+    z-index: 10;
+    right: 125px;
+    top: 30px;
+    margin: 0;
+    min-width: 320px;
+    line-height: 46px;
+  }
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd div.not-text.on {
+  display: block;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dd div.not-text button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='12' height='12' viewBox='0 0 12 12'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_767' data-name='사각형 767' width='12' height='12' fill='%23222'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1492' data-name='그룹 1492' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_21473' data-name='패스 21473' d='M11.832.167a.571.571,0,0,0-.808,0L6,5.192.975.167A.571.571,0,0,0,.167.975L5.192,6,.167,11.024a.571.571,0,1,0,.808.808L6,6.808l5.025,5.025a.571.571,0,0,0,.808-.808L6.808,6,11.832.975a.571.571,0,0,0,0-.808' transform='translate(0 0)' fill='%23222'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+
+body div#content.sub section.sub-contents div.container div.api dl dt.master,
+body div#content.sub section.sub-contents div.container div.api dl dt.master + dd {
+  background: #F4F4F6;
 }
 
 body div#content.sub section.sub-contents div.container div.charts {

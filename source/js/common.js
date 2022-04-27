@@ -45,6 +45,16 @@ $(function(){
         $(".tab."+ check).addClass("on");
     });
     
+
+    $("p.not").on("click", function(){
+        $("div.not-text").toggleClass("on");
+    });
+
+    $("div.not-text button").on("click", function(){
+        $("div.not-text").removeClass("on");
+    });
+
+
     
     var searchToogle = "";
 
