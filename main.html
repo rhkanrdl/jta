@@ -73,6 +73,93 @@
         <!-- S:mainContent -->
         <div id="content" class="main">
 
+          <section class="main-reserv">
+            <div class="container">
+
+                <div class="data-type">
+                    <button data="reservType01" class="on">숙박 예약하기</button>
+                    <button data="reservType02">렌터카 예약하기</button>
+                </div>
+
+                <div class="search-box reservType01 on">
+
+                    <div class="filter">
+                    
+                        <div class="rows">
+                            <label for="sDay">대여일</label>
+                            <input id="sDay" type="date">
+                            <select class="withInput">
+                                <option>12:00</option>
+                            </select>
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="eDay">반납일</label>
+                            <input id="eDay" type="date">
+                            <select class="withInput">
+                                <option>12:00</option>
+                            </select>
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="carType">렌터카 유형</label>
+                            <select>
+                                <option>전체</option>
+                            </select>
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="carName">차 이름</label>
+                            <input id="carName" type="text" placeholder="차명을 입력해주세요">
+                        </div>
+
+                        <button class="search">검색</button>
+                    </div>
+
+
+
+                    
+                </div>
+
+                <div class="search-box reservType02">
+
+                    <div class="filter">
+                    
+                        <div class="rows">
+                            <label for="sDay2">입실일</label>
+                            <input id="sDay2" class="full" type="date">
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="eDay2">퇴실일</label>
+                            <input id="eDay2" class="full" type="date">
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="hotelType">지역</label>
+                            <select di="hotelType">
+                                <option>제주도전체</option>
+                            </select>
+                        </div>
+                    
+                        <div class="rows">
+                            <label for="hotelName">수량</label>
+                            <input id="hotelName" type="text">
+                        </div>
+
+                        <button class="search">검색</button>
+                    </div>
+
+
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+
             <section class="main-list">
                 <div class="container">
 
@@ -508,93 +595,7 @@
                 </div>
             </section>
 
-            <section class="main-reserv">
-                <div class="container">
-
-
-
-                    <div class="data-type">
-                        <button data="reservType01" class="on">숙박 예약하기</button>
-                        <button data="reservType02">렌터카 예약하기</button>
-                    </div>
-
-                    <div class="search-box reservType01 on">
-
-                        <div class="filter">
-                        
-                            <div class="rows">
-                                <label for="sDay">대여일</label>
-                                <input id="sDay" type="date">
-                                <select class="withInput">
-                                    <option>12:00</option>
-                                </select>
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="eDay">반납일</label>
-                                <input id="eDay" type="date">
-                                <select class="withInput">
-                                    <option>12:00</option>
-                                </select>
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="carType">렌터카 유형</label>
-                                <select>
-                                    <option>전체</option>
-                                </select>
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="carName">차 이름</label>
-                                <input id="carName" type="text" placeholder="차명을 입력해주세요">
-                            </div>
-
-                            <button class="search">검색</button>
-                        </div>
-
-
-
-                        
-                    </div>
-
-                    <div class="search-box reservType02">
-
-                        <div class="filter">
-                        
-                            <div class="rows">
-                                <label for="sDay2">입실일</label>
-                                <input id="sDay2" class="full" type="date">
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="eDay2">퇴실일</label>
-                                <input id="eDay2" class="full" type="date">
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="hotelType">지역</label>
-                                <select di="hotelType">
-                                    <option>제주도전체</option>
-                                </select>
-                            </div>
-                        
-                            <div class="rows">
-                                <label for="hotelName">수량</label>
-                                <input id="hotelName" type="text">
-                            </div>
-
-                            <button class="search">검색</button>
-                        </div>
-
-
-
-                        
-                    </div>
-
-                </div>
-
-            </section>
+            
 
 
 

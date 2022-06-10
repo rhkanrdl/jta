@@ -4038,10 +4038,6 @@ body div#content.main section.main-stat div.container div.box.qna a::before {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.446' height='27.259' viewBox='0 0 30.446 27.259'%3E%3Cg transform='translate(0.5 0.5)' opacity='0.6'%3E%3Cpath d='M153.614,487.434h-7.174a9.518,9.518,0,1,0,0,19.034h2.99a.771.771,0,0,1,.773.768V510.6a13.663,13.663,0,0,0,12.988-13.148c.009-.173.013-.337.013-.5a7.844,7.844,0,0,0-.1-1.367A9.619,9.619,0,0,0,153.614,487.434ZM145.641,501.1a.773.773,0,0,1-1.546,0V494.66l-.7.691a.778.778,0,0,1-1.094,0,.763.763,0,0,1,0-1.086l2.016-2a.778.778,0,0,1,.843-.166.767.767,0,0,1,.477.709Zm3.92-1.131a.841.841,0,1,1,.848-.841A.844.844,0,0,1,149.562,499.964Zm0-4.344a.841.841,0,1,1,.848-.841A.844.844,0,0,1,149.562,495.62Zm6.619,5.475a.773.773,0,0,1-1.547,0V494.66l-.7.691a.777.777,0,0,1-1.094,0,.764.764,0,0,1,0-1.086l2.016-2a.778.778,0,0,1,.843-.166.767.767,0,0,1,.477.709Z' transform='translate(-135.303 -485.899)' fill='none' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M157.049,502.681a.778.778,0,0,0-.843.166l-2.016,2a.764.764,0,0,0,0,1.086.778.778,0,0,0,1.094,0l.7-.691v6.435a.773.773,0,0,0,1.546,0V503.39A.767.767,0,0,0,157.049,502.681Z' transform='translate(-147.189 -496.481)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M191.544,502.681a.778.778,0,0,0-.843.166l-2.016,2a.764.764,0,0,0,0,1.086.778.778,0,0,0,1.094,0l.7-.691v6.435a.773.773,0,0,0,1.547,0V503.39A.767.767,0,0,0,191.544,502.681Z' transform='translate(-171.144 -496.481)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M176.53,508.883a.841.841,0,1,0,.848.841A.844.844,0,0,0,176.53,508.883Z' transform='translate(-162.272 -500.844)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M176.53,523.209a.841.841,0,1,0,.848.841A.844.844,0,0,0,176.53,523.209Z' transform='translate(-162.272 -510.825)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath d='M161.115,491.809a11.165,11.165,0,0,0-11.016-9.438h-7.174a11.053,11.053,0,1,0,0,22.105h2.216v3.386a.771.771,0,0,0,.774.768,15.207,15.207,0,0,0,15.306-14.638q.015-.282.015-.568A9.186,9.186,0,0,0,161.115,491.809Zm-1.44,2.116a13.663,13.663,0,0,1-12.988,13.148v-3.365a.77.77,0,0,0-.773-.768h-2.99a9.518,9.518,0,1,1,0-19.034H150.1a9.619,9.619,0,0,1,9.49,8.15,7.842,7.842,0,0,1,.1,1.367C159.688,493.588,159.683,493.752,159.675,493.925Z' transform='translate(-131.788 -482.371)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
 }
 
-body div#content.main section.main-board {
-  margin-bottom: 20px;
-}
-
 body div#content.main section.main-board div.container div.box {
   background: #fff;
   padding: 15px;
@@ -4193,6 +4189,10 @@ body div#content.main section.main-board div.container div.box ul.notice li a i 
     width: 90px;
     font-size: 16px;
   }
+}
+
+body div#content.main section.main-reserv {
+  margin-bottom: 40px;
 }
 
 body div#content.main section.main-reserv div.container div.data-type {
@@ -12996,4 +12996,3 @@ body.intro footer#footer div.container div.agency a {
 body.intro footer#footer div.container div.agency a:hover {
   background: #000;
 }
-/*# sourceMappingURL=style.css.map */
