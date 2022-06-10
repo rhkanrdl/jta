@@ -1265,6 +1265,55 @@ body {
                 }
               }
 
+              &.radio {
+
+                @media (min-width: $screen-size-pc) {
+                  padding: 10px 0 ;
+                  width: auto;
+                  text-align: left;
+                }
+                input {
+                  display: none;
+                }
+
+                label {
+                  display: inline-block;
+                  position: relative;
+                  margin-left: 20px;
+                  padding-left: 30px;
+                  font-size: 15px;
+                  font-weight: 400;
+                  color: #555;
+                  &.radio01{
+                    margin-left: 0;
+                  }
+
+                  @media (min-width: $screen-size-pc) {
+                    font-size: 17px;
+                    
+                  }
+
+                  &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    width: 20px;
+                    height: 20px;
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A")
+                      no-repeat center / 100% auto;
+                  }
+                }
+
+                input:checked + label {
+                  &::before {
+                    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg transform='translate(-160 -583)'%3E%3Cg  transform='translate(160 583)' fill='%23fff' stroke='%23aaa' stroke-width='1'%3E%3Ccircle cx='10' cy='10' r='10' stroke='none'/%3E%3Ccircle cx='10' cy='10' r='9.5' fill='none'/%3E%3C/g%3E%3Cg transform='translate(163 586)' fill='%235175cc' stroke='%2333529f' stroke-width='1'%3E%3Ccircle cx='7' cy='7' r='7' stroke='none'/%3E%3Ccircle cx='7' cy='7' r='6.5' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
+                      no-repeat center / 100% auto;
+                  }
+                }
+              }
+
               &.agree {
                 position: relative;
                 text-align: center;
